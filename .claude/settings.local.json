@@ -17,7 +17,9 @@
       "Bash(grep:*)",
       "Bash(python3:*)",
       "Bash(chmod:*)",
-      "Bash(./check_songs.sh:*)"
+      "Bash(./check_songs.sh:*)",
+      "Bash(mkdir:*)",
+      "Bash(rm:*)"
     ],
     "deny": []
   }

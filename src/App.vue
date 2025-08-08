@@ -150,54 +150,59 @@ export default {
       hasSearched.value = false;
     };
 
-    // 搜尋台灣點歌王
+    // 搜尋台灣點歌王 - 使用後端API代理
     const searchTaiwanKtv = async () => {
       if (!songName.value.trim()) return;
       
       loadingTaiwan.value = true;
       
       try {
-        const url = 'https://song.corp.com.tw/api/song.aspx';
+        // 使用我們的後端API代理
+        const apiUrl = '/api/taiwan-ktv';
         const params = new URLSearchParams({
-          company: '全部',
-          cusType: 'searchList',
           keyword: songName.value.trim()
         });
         
-        const response = await fetch(`${url}?${params}`, {
+        console.log('🔍 搜尋台灣點歌王:', songName.value.trim());
+        
+        const response = await fetch(`${apiUrl}?${params}`, {
           method: 'GET',
           headers: {
-            'Accept': 'application/json, text/javascript, */*; q=0.01',
-            'X-Requested-With': 'XMLHttpRequest',
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
           }
         });
         
         if (response.ok) {
-          const data = await response.json();
-          if (Array.isArray(data)) {
-            taiwanResults.value = data.slice(0, 50); // 限制最多50首
-            console.log('✅ 台灣點歌王搜尋成功，找到', data.length, '首歌曲');
+          const result = await response.json();
+          
+          if (result.success && Array.isArray(result.data)) {
+            taiwanResults.value = result.data;
+            console.log('✅ 台灣點歌王搜尋成功，找到', result.total || result.data.length, '首歌曲');
           } else {
             taiwanResults.value = [];
             console.log('⚠️  台灣點歌王沒有找到相關歌曲');
           }
         } else {
           console.error('❌ 台灣點歌王搜尋失敗:', response.status, response.statusText);
-          taiwanResults.value = [];
+          const errorData = await response.json().catch(() => ({}));
+          
+          taiwanResults.value = [{
+            name: '❌ 搜尋失敗',
+            singer: errorData.error || `HTTP ${response.status} 錯誤`,
+            code: '--',
+            company: '請稍後再試或聯繫系統管理員'
+          }];
         }
       } catch (error) {
         console.error('❌ 台灣點歌王搜尋錯誤:', error.message);
-        // CORS 錯誤的備用提示
-        if (error.message.includes('CORS') || error.message.includes('fetch')) {
-          taiwanResults.value = [{
-            name: '⚠️ 網路限制',
-            singer: '由於瀏覽器安全限制，無法直接搜尋台灣點歌王',
-            code: '--',
-            company: '建議使用手機或平板直接訪問 song.corp.com.tw 搜尋'
-          }];
-        } else {
-          taiwanResults.value = [];
-        }
+        
+        taiwanResults.value = [{
+          name: '⚠️ 連線錯誤',
+          singer: '無法連接到搜尋服務',
+          code: '--',
+          company: '請檢查網路連線或稍後再試'
+        }];
       }
       
       loadingTaiwan.value = false;
