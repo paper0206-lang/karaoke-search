@@ -16,7 +16,8 @@
       "Bash(node:*)",
       "Bash(grep:*)",
       "Bash(python3:*)",
-      "Bash(chmod:*)"
+      "Bash(chmod:*)",
+      "Bash(./check_songs.sh:*)"
     ],
     "deny": []
   }

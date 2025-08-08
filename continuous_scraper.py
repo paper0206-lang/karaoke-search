@@ -11,7 +11,7 @@ import random
 from urllib.parse import quote
 from datetime import datetime
 
-def continuous_scrape(max_songs=5000):
+def continuous_scrape(max_songs=10000):
     """持續爬取直到達到指定歌曲數量"""
     
     base_url = "https://song.corp.com.tw"
@@ -187,9 +187,9 @@ if __name__ == "__main__":
     print("=" * 50)
     
     # 設定目標歌曲數量
-    target = input("請輸入目標歌曲數量 (預設: 3000): ").strip()
+    target = input("請輸入目標歌曲數量 (預設: 10000): ").strip()
     if not target.isdigit():
-        target = 3000
+        target = 10000
     else:
         target = int(target)
     
