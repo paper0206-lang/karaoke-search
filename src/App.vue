@@ -56,66 +56,40 @@
       </div>
     </div>
 
-    <!-- 沒有本地結果時顯示實時搜尋選項 -->
+    <!-- 沒有本地結果時的提示 -->
     <div v-if="!loading && songName.trim() && searchResults.length === 0 && hasSearched" class="no-results">
       <h3>😔 本地資料庫沒有找到相關歌曲</h3>
-      <p>試試實時搜尋功能 (展示版本)</p>
-      
-      <div class="search-options">
-        <button @click="liveSearch('auto')" class="live-search-btn auto" :disabled="loadingLive">
-          <div v-if="loadingLive" class="loading-spinner small"></div>
-          🔍 智能搜尋
-        </button>
-        <button @click="liveSearch('song')" class="live-search-btn song" :disabled="loadingLive">
-          🎵 歌名搜尋
-        </button>
-        <button @click="liveSearch('singer')" class="live-search-btn singer" :disabled="loadingLive">
-          🎤 歌手搜尋
-        </button>
-      </div>
-      
-      <div v-if="loadingLive" class="live-search-status">
-        <p>🔄 {{ liveSearchStatus }}</p>
-        <div class="progress-bar">
-          <div class="progress-fill" :style="{ width: liveSearchProgress + '%' }"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- 實時搜尋結果 -->
-    <div v-if="liveResults.length > 0" class="results live-results">
-      <div class="results-header">
-        <h3>🚀 實時搜尋：找到 {{ liveResults.length }} 首相關歌曲</h3>
-        <div class="header-info">
-          <span class="search-info">{{ liveSearchInfo }}</span>
-          <button @click="clearLiveSearch" class="clear-btn">清除結果</button>
-        </div>
-      </div>
-      <div v-for="(song, index) in liveResults" :key="'live-' + index" class="song-card live-card">
-        <div class="song-header">
-          <h4>{{ song.歌名 }}</h4>
-          <span v-if="song.語言" class="song-lang">{{ song.語言 }}</span>
-        </div>
-        <p><strong>歌手：</strong>{{ song.歌手 }}</p>
+      <div class="suggestions">
+        <p>💡 建議：</p>
+        <ul>
+          <li>嘗試搜尋歌手名稱 (如：周杰倫、蔡依林)</li>
+          <li>使用部分歌詞或歌名關鍵字</li>
+          <li>切換到「歌手專區」查看完整歌手作品</li>
+          <li>檢查是否有拼字錯誤</li>
+        </ul>
         
-        <div class="song-codes">
-          <div 
-            v-for="(codeInfo, codeIndex) in song.編號資訊" 
-            :key="codeIndex" 
-            :class="['code-item', getCompanyClass(codeInfo.公司)]"
-          >
-            <span class="company-name">{{ codeInfo.公司 }}</span>
-            <span class="song-code">{{ codeInfo.編號 }}</span>
+        <div class="quick-suggestions">
+          <p>🔥 熱門搜尋:</p>
+          <div class="suggestion-tags">
+            <button 
+              v-for="suggestion in quickSuggestions" 
+              :key="suggestion"
+              @click="quickSearch(suggestion)"
+              class="suggestion-tag"
+            >
+              {{ suggestion }}
+            </button>
           </div>
         </div>
       </div>
     </div>
 
+
       <div class="info">
         <p>💡 提示：支援模糊搜尋，輸入部分歌名即可</p>
         <p>🏢 本地資料庫：錢櫃、好樂迪、音圓、金嗓等各大卡拉OK品牌</p>
-        <p>🚀 實時搜尋：當本地找不到時，可即時搜尋台灣點歌王完整資料庫</p>
-        <p>🔍 搜尋模式：智能搜尋(自動判斷) / 歌名搜尋 / 歌手搜尋</p>
+        <p>📊 目前收錄：24,491 首歌曲，持續更新中</p>
+        <p>🎤 歌手專區：查看完整歌手作品集，按公司分類顯示編號</p>
       </div>
     </div>
 
@@ -143,11 +117,9 @@ export default {
     const hasSearched = ref(false);
     const taiwanResults = ref([]);
     const loadingTaiwan = ref(false);
-    const liveResults = ref([]);
-    const loadingLive = ref(false);
-    const liveSearchStatus = ref("");
-    const liveSearchProgress = ref(0);
-    const liveSearchInfo = ref("");
+    const quickSuggestions = ref([
+      "周杰倫", "蔡依林", "五月天", "告五人", "茄子蛋", "愛情", "想念", "青春"
+    ]);
 
     // 載入歌曲資料
     const loadSongs = async () => {
@@ -213,98 +185,13 @@ export default {
     const clearSearch = () => {
       searchResults.value = [];
       taiwanResults.value = [];
-      liveResults.value = [];
       hasSearched.value = false;
-      liveSearchInfo.value = "";
     };
 
-    // 實時搜尋功能
-    const liveSearch = async (searchType) => {
-      if (!songName.value.trim()) return;
-      
-      loadingLive.value = true;
-      liveSearchStatus.value = "正在連接台灣點歌王...";
-      liveSearchProgress.value = 10;
-      
-      try {
-        // 模擬進度更新
-        const progressTimer = setInterval(() => {
-          if (liveSearchProgress.value < 90) {
-            liveSearchProgress.value += Math.random() * 10;
-            if (liveSearchProgress.value < 30) {
-              liveSearchStatus.value = "正在搜尋各大KTV品牌...";
-            } else if (liveSearchProgress.value < 60) {
-              liveSearchStatus.value = "正在收集歌曲資訊...";
-            } else {
-              liveSearchStatus.value = "正在整理搜尋結果...";
-            }
-          }
-        }, 500);
-
-        const response = await fetch('/api/live-search', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json',
-          },
-          body: JSON.stringify({
-            keyword: songName.value.trim(),
-            searchType: searchType
-          }),
-        });
-
-        clearInterval(progressTimer);
-        liveSearchProgress.value = 100;
-        liveSearchStatus.value = "搜尋完成！";
-
-        if (response.ok) {
-          const data = await response.json();
-          
-          if (data.success && data.results) {
-            liveResults.value = data.results;
-            liveSearchInfo.value = `${searchType === 'auto' ? '智能' : searchType === 'song' ? '歌名' : '歌手'}搜尋 - ${data.timestamp.split('T')[0]}`;
-            
-            console.log(`✅ 實時搜尋成功: ${data.results.length} 首歌曲`);
-          } else {
-            throw new Error(data.message || '搜尋失敗');
-          }
-        } else {
-          throw new Error(`HTTP ${response.status}`);
-        }
-
-      } catch (error) {
-        console.error('❌ 實時搜尋失敗:', error);
-        liveSearchStatus.value = `搜尋失敗: ${error.message}`;
-        
-        // 顯示錯誤後清除
-        setTimeout(() => {
-          loadingLive.value = false;
-          liveSearchStatus.value = "";
-          liveSearchProgress.value = 0;
-        }, 3000);
-        return;
-      }
-
-      // 成功後清除載入狀態
-      setTimeout(() => {
-        loadingLive.value = false;
-        liveSearchStatus.value = "";
-        liveSearchProgress.value = 0;
-      }, 1000);
-    };
-
-    // 清除實時搜尋結果
-    const clearLiveSearch = () => {
-      liveResults.value = [];
-      liveSearchInfo.value = "";
-    };
-
-    // 取得公司樣式類別
-    const getCompanyClass = (company) => {
-      const priorityCompanies = ['錢櫃', '好樂迪', '銀櫃'];
-      if (priorityCompanies.includes(company)) {
-        return 'priority-company';
-      }
-      return 'regular-company';
+    // 快速搜尋功能
+    const quickSearch = (suggestion) => {
+      songName.value = suggestion;
+      searchBySongName();
     };
 
     // 搜尋台灣點歌王 - 顯示搜尋提示和連結
@@ -364,18 +251,12 @@ export default {
       hasSearched,
       taiwanResults,
       loadingTaiwan,
-      liveResults,
-      loadingLive,
-      liveSearchStatus,
-      liveSearchProgress,
-      liveSearchInfo,
+      quickSuggestions,
       searchBySongName,
       clearSearch,
       searchTaiwanKtv,
       clearTaiwanSearch,
-      liveSearch,
-      clearLiveSearch,
-      getCompanyClass
+      quickSearch
     };
   }
 };
@@ -759,187 +640,61 @@ p {
   font-size: 14px;
 }
 
-/* 實時搜尋樣式 */
-.search-options {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+/* 搜尋建議樣式 */
+.suggestions {
+  text-align: left;
   margin: 20px 0;
-  flex-wrap: wrap;
 }
 
-.live-search-btn {
-  padding: 10px 20px;
-  border: none;
-  border-radius: 20px;
-  font-size: 14px;
+.suggestions p {
+  text-align: left;
   font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  gap: 5px;
-}
-
-.live-search-btn.auto {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-}
-
-.live-search-btn.song {
-  background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
-  color: white;
-}
-
-.live-search-btn.singer {
-  background: linear-gradient(135deg, #00b894 0%, #55a3ff 100%);
-  color: white;
-}
-
-.live-search-btn:hover:not(:disabled) {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
-}
-
-.live-search-btn:disabled {
-  opacity: 0.6;
-  cursor: not-allowed;
-  transform: none;
-}
-
-.live-search-status {
-  margin: 20px 0;
-  text-align: center;
-}
-
-.live-search-status p {
-  color: #667eea;
-  font-weight: 600;
+  color: #2c3e50;
   margin-bottom: 10px;
 }
 
-.progress-bar {
-  width: 100%;
-  height: 8px;
-  background: #e2e8f0;
-  border-radius: 4px;
-  overflow: hidden;
+.suggestions ul {
+  text-align: left;
+  color: #636e72;
+  margin: 15px 0;
+  padding-left: 20px;
 }
 
-.progress-fill {
-  height: 100%;
-  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
-  transition: width 0.3s ease;
-  border-radius: 4px;
+.suggestions li {
+  margin: 8px 0;
 }
 
-/* 實時搜尋結果 */
-.live-results {
-  margin-top: 30px;
-  border: 2px solid #667eea;
-  border-radius: 12px;
-  overflow: hidden;
+.quick-suggestions {
+  margin-top: 20px;
+  text-align: center;
 }
 
-.live-results .results-header {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  color: white;
-  padding: 15px 20px;
-  margin: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.live-results .results-header h3 {
-  color: white;
-  margin: 0;
-}
-
-.header-info {
-  display: flex;
-  align-items: center;
-  gap: 15px;
-}
-
-.search-info {
-  font-size: 12px;
-  opacity: 0.8;
-}
-
-.live-card {
-  background: linear-gradient(135deg, #f8f9ff 0%, #e6f3ff 100%);
-  border-left: 4px solid #667eea;
-  margin: 0 15px 15px 15px;
-}
-
-.live-card:first-of-type {
-  margin-top: 15px;
-}
-
-.song-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.quick-suggestions p {
+  text-align: center;
   margin-bottom: 15px;
 }
 
-.song-header h4 {
-  margin: 0;
-  color: #2c3e50;
-  font-size: 1.3em;
-}
-
-.song-header .song-lang {
-  background: #e3f2fd;
-  padding: 4px 8px;
-  border-radius: 12px;
-  font-size: 12px;
-  color: #1976d2;
-}
-
-.song-codes {
+.suggestion-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
+  justify-content: center;
 }
 
-.code-item {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 8px 12px;
-  border-radius: 8px;
-  font-size: 14px;
-  transition: all 0.2s;
-}
-
-.priority-company {
-  background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
+.suggestion-tag {
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
-  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: all 0.3s;
 }
 
-.regular-company {
-  background: #e9ecef;
-  color: #495057;
-}
-
-.code-item:hover {
-  transform: scale(1.05);
-}
-
-.company-name {
-  font-size: 12px;
-  opacity: 0.9;
-}
-
-.code-item .song-code {
-  font-family: 'Courier New', monospace;
-  font-weight: bold;
-  padding: 2px 6px;
-  background: rgba(255,255,255,0.3);
-  border-radius: 4px;
+.suggestion-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
 }
 
 @media (max-width: 600px) {
@@ -955,24 +710,13 @@ p {
     font-size: 2em;
   }
   
-  .search-options {
-    flex-direction: column;
-    gap: 8px;
+  .suggestion-tags {
+    gap: 6px;
   }
   
-  .live-search-btn {
-    width: 100%;
-    justify-content: center;
-  }
-  
-  .song-codes {
-    flex-direction: column;
-  }
-  
-  .header-info {
-    flex-direction: column;
-    gap: 8px;
-    text-align: center;
+  .suggestion-tag {
+    font-size: 12px;
+    padding: 6px 12px;
   }
 }
 </style>
