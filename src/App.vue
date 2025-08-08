@@ -59,7 +59,7 @@
     <!-- 沒有本地結果時顯示實時搜尋選項 -->
     <div v-if="!loading && songName.trim() && searchResults.length === 0 && hasSearched" class="no-results">
       <h3>😔 本地資料庫沒有找到相關歌曲</h3>
-      <p>要不要使用實時搜尋台灣點歌王資料庫？</p>
+      <p>試試實時搜尋功能 (展示版本)</p>
       
       <div class="search-options">
         <button @click="liveSearch('auto')" class="live-search-btn auto" :disabled="loadingLive">
