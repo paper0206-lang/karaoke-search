@@ -51,15 +51,19 @@ export default {
         console.log('開始載入歌曲資料...');
         const response = await fetch('/songs_simplified.json');
         
+        console.log('Response status:', response.status);
+        console.log('Response headers:', response.headers.get('content-type'));
+        
         if (response.ok) {
           const data = await response.json();
           allSongs.value = data;
           console.log('✅ 歌曲資料載入成功！共', allSongs.value.length, '首');
         } else {
-          throw new Error('無法載入歌曲資料');
+          throw new Error(`HTTP ${response.status}: ${response.statusText}`);
         }
       } catch (error) {
-        console.log('❌ 載入歌曲資料失敗，使用示例資料');
+        console.log('❌ 載入歌曲資料失敗:', error.message);
+        console.log('使用示例資料作為備用方案');
         // 如果載入失敗，使用示例資料
         allSongs.value = [
           { "歌名": "愛情", "歌手": "周華健", "編號": "12345", "公司": "錢櫃" },
@@ -71,9 +75,11 @@ export default {
           { "歌名": "千里之外", "歌手": "周杰倫", "編號": "55555", "公司": "錢櫃" },
           { "歌名": "青花瓷", "歌手": "周杰倫", "編號": "66666", "公司": "好樂迪" },
           { "歌名": "聽海", "歌手": "張惠妹", "編號": "77777", "公司": "音圓" },
-          { "歌名": "記得", "歌手": "張惠妹", "編號": "88888", "公司": "金嗓" }
+          { "歌名": "記得", "歌手": "張惠妹", "編號": "88888", "公司": "金嗓" },
+          { "歌名": "漂洋過海來看你", "歌手": "蔡琴", "編號": "99999", "公司": "音圓" },
+          { "歌名": "被遺忘的時光", "歌手": "蔡琴", "編號": "10101", "公司": "錢櫃" }
         ];
-        console.log('使用示例資料，共', allSongs.value.length, '首');
+        console.log('示例資料已載入，共', allSongs.value.length, '首');
       }
     };
 
