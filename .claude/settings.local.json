@@ -13,7 +13,9 @@
       "Bash(jq:*)",
       "Bash(jq length:*)",
       "Bash(find:*)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "Bash(grep:*)",
+      "Bash(python3:*)"
     ],
     "deny": []
   }
