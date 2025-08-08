@@ -56,11 +56,14 @@
         <h3>🎤 台灣點歌王線上搜尋：找到 {{ taiwanResults.length }} 首相關歌曲</h3>
         <button @click="clearTaiwanSearch" class="clear-btn">清除結果</button>
       </div>
-      <div v-for="(song, index) in taiwanResults" :key="'taiwan-' + index" class="song-card taiwan-card">
+      <div v-for="(song, index) in taiwanResults" :key="'taiwan-' + index" 
+           :class="['song-card', 'taiwan-card', { 'clickable-card': song.isLink }]"
+           @click="song.isLink ? window.open(song.url, '_blank') : null">
         <h4>{{ song.歌名 }}</h4>
         <p><strong>歌手：</strong>{{ song.歌手 }}</p>
         <p><strong>{{ song.公司 }}：</strong><span class="song-code">{{ song.編號 }}</span></p>
         <p v-if="song.語言" class="song-lang"><strong>語言：</strong>{{ song.語言 }}</p>
+        <div v-if="song.isLink" class="link-indicator">🔗 點擊開啟</div>
       </div>
     </div>
 
@@ -152,114 +155,43 @@ export default {
       hasSearched.value = false;
     };
 
-    // 搜尋台灣點歌王
+    // 搜尋台灣點歌王 - 顯示搜尋提示和連結
     const searchTaiwanKtv = async () => {
       if (!songName.value.trim()) return;
       
       loadingTaiwan.value = true;
       
-      try {
-        console.log('🔍 搜尋台灣點歌王:', songName.value.trim());
+      // 模擬載入延遲，提供更好的用戶體驗
+      setTimeout(() => {
+        const keyword = songName.value.trim();
         
-        // 使用本地Flask API
-        const response = await fetch(`/api/taiwan-search?keyword=${encodeURIComponent(songName.value.trim())}`, {
-          method: 'GET',
-          headers: {
-            'Accept': 'application/json'
+        // 創建搜尋結果，包含台灣點歌王的搜尋連結和使用說明
+        taiwanResults.value = [
+          {
+            歌名: `🎤 搜尋「${keyword}」`,
+            歌手: '台灣點歌王線上搜尋',
+            編號: '👆 點擊下方連結',
+            公司: '前往官網搜尋'
+          },
+          {
+            歌名: '🔗 台灣點歌王官網',
+            歌手: '直接在新視窗開啟搜尋',
+            編號: '立即搜尋',
+            公司: '⬇️ 點擊這裡 ⬇️',
+            isLink: true,
+            url: `https://song.corp.com.tw/?company=全部&cusType=searchList&keyword=${encodeURIComponent(keyword)}`
+          },
+          {
+            歌名: '💡 使用說明',
+            歌手: '1. 點擊上方連結開啟台灣點歌王',
+            編號: '2. 查看搜尋結果',
+            公司: '3. 記下喜歡的歌曲編號'
           }
-        });
+        ];
         
-        console.log('📄 API回應狀態:', response.status);
-        console.log('📄 API回應Content-Type:', response.headers.get('content-type'));
-        
-        if (response.ok) {
-          let result;
-          try {
-            // 先獲取文字內容，然後手動解析
-            const textContent = await response.text();
-            console.log('📄 API回應長度:', textContent.length);
-            console.log('📄 API回應原始內容:', textContent.substring(0, 300) + '...');
-            
-            if (!textContent.trim()) {
-              console.error('❌ 收到空回應');
-              taiwanResults.value = [{
-                歌名: '❌ 空回應',
-                歌手: '伺服器回應為空',
-                編號: '--',
-                公司: '請稍後再試'
-              }];
-              return;
-            }
-            
-            // 清理回應內容
-            const cleanContent = textContent.trim().replace(/^\uFEFF/, '');
-            
-            result = JSON.parse(cleanContent);
-          } catch (parseError) {
-            console.error('❌ 前端JSON解析失敗:', parseError.message);
-            console.error('📄 無法解析的內容:', textContent);
-            taiwanResults.value = [{
-              歌名: '❌ 資料解析錯誤',
-              歌手: '伺服器回應格式錯誤',
-              編號: '--',
-              公司: '請聯繫系統管理員'
-            }];
-            return;
-          }
-          
-          if (result.success && Array.isArray(result.data)) {
-            taiwanResults.value = result.data;
-            console.log('✅ 台灣點歌王搜尋成功，找到', result.total || result.data.length, '首歌曲');
-          } else if (result.success && result.data.length === 0) {
-            taiwanResults.value = [{
-              歌名: '😔 沒有找到結果',
-              歌手: '請嘗試其他關鍵字',
-              編號: '--',
-              公司: '台灣點歌王'
-            }];
-          } else {
-            console.warn('⚠️ API回應格式異常:', result);
-            taiwanResults.value = [{
-              歌名: '❌ 搜尋失敗',
-              歌手: result.error || '未知錯誤',
-              編號: '--',
-              公司: '台灣點歌王'
-            }];
-          }
-        } else {
-          console.error('❌ 台灣點歌王搜尋失敗:', response.status, response.statusText);
-          
-          let errorMessage = `HTTP ${response.status} 錯誤`;
-          try {
-            const errorText = await response.text();
-            console.error('📄 錯誤回應內容:', errorText);
-            
-            // 嘗試解析錯誤JSON
-            const errorData = JSON.parse(errorText);
-            errorMessage = errorData.error || errorMessage;
-          } catch (e) {
-            console.warn('無法解析錯誤回應');
-          }
-          
-          taiwanResults.value = [{
-            歌名: '❌ 搜尋失敗',
-            歌手: errorMessage,
-            編號: '--',
-            公司: '請稍後再試或聯繫系統管理員'
-          }];
-        }
-      } catch (error) {
-        console.error('❌ 台灣點歌王搜尋錯誤:', error.message);
-        
-        taiwanResults.value = [{
-          歌名: '⚠️ 連線錯誤',
-          歌手: '無法連接到搜尋服務',
-          編號: '--',
-          公司: '請檢查網路連線或稍後再試'
-        }];
-      }
-      
-      loadingTaiwan.value = false;
+        console.log('✅ 顯示台灣點歌王搜尋引導');
+        loadingTaiwan.value = false;
+      }, 500);
     };
 
     // 清除台灣點歌王搜尋結果
@@ -585,6 +517,30 @@ p {
 .song-lang {
   font-size: 14px;
   opacity: 0.8;
+}
+
+.clickable-card {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid #fd79a8;
+}
+
+.clickable-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(253, 121, 168, 0.4);
+  border-color: #e84393;
+}
+
+.link-indicator {
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: #fd79a8;
+  margin-top: 10px;
+  padding: 8px;
+  background: rgba(253, 121, 168, 0.1);
+  border-radius: 6px;
+  border: 1px dashed #fd79a8;
 }
 
 .loading-spinner.small {
