@@ -92,4 +92,37 @@ else
 fi
 
 echo ""
+
+# 詢問是否自動提交歌手資料
+if [[ -f "public/singers_data.json" ]]; then
+    echo "💾 發現歌手資料更新"
+    read -p "是否自動提交歌手資料到GitHub？(y/n, 預設y): " auto_commit_singers
+    
+    if [[ -z "$auto_commit_singers" || $auto_commit_singers == "y" || $auto_commit_singers == "Y" ]]; then
+        echo "🤖 自動提交歌手資料到GitHub..."
+        
+        SINGER_COUNT=$(python3 -c "import json; data = json.load(open('public/singers_data.json', 'r')); print(len(data))" 2>/dev/null || echo "0")
+        SONG_COUNT=$(python3 -c "import json; data = json.load(open('public/singers_data.json', 'r')); total = sum(len(singer['歌曲清單']) for singer in data.values()); print(total)" 2>/dev/null || echo "0")
+        
+        git add public/singers_data.json
+        git commit -m "歌手資料庫更新: $SINGER_COUNT 位歌手
+
+📊 統計資訊:
+- 歌手數量: $SINGER_COUNT 位
+- 歌曲總數: $SONG_COUNT 首
+- 更新時間: $(date '+%Y-%m-%d %H:%M:%S')
+
+🎤 完整歌手作品集收錄
+✨ 突破50首限制的多策略搜尋
+🎯 錢櫃→好樂迪→銀櫃優先排序
+
+🤖 Generated with [Claude Code](https://claude.ai/code)
+
+Co-Authored-By: Claude <noreply@anthropic.com>"
+        
+        git push
+        echo "✅ 歌手資料已推送，網站將在2-3分鐘內更新"
+    fi
+fi
+
 echo "🌐 完成後可在歌手專區查看: https://karaoke-search-theta.vercel.app"

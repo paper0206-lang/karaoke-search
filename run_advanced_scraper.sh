@@ -61,9 +61,9 @@ echo "🌐 網站: https://karaoke-search-theta.vercel.app"
 
 # 詢問是否自動提交到GitHub
 echo ""
-read -p "是否自動提交更新到GitHub？(y/n): " auto_commit
+read -p "是否自動提交更新到GitHub？(y/n, 預設y): " auto_commit
 
-if [[ $auto_commit == "y" || $auto_commit == "Y" ]]; then
+if [[ -z "$auto_commit" || $auto_commit == "y" || $auto_commit == "Y" ]]; then
     echo "🤖 自動提交到GitHub..."
     
     NEW_COUNT=$(python3 -c "import json; print(len(json.load(open('public/songs_simplified.json', 'r'))))" 2>/dev/null || echo "0")
