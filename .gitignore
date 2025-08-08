@@ -1,17 +1,30 @@
-.DS_Store
-node_modules
+# Dependencies
+node_modules/
+venv/
+
+# Build outputs
 /dist
 
-
-# local env files
+# Environment variables
+.env
 .env.local
 .env.*.local
 
-# Log files
+# Logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
+scraper.log
+
+# Cache files
+.cache/
+.npm/
+
+# OS generated files
+.DS_Store
+Thumbs.db
 
 # Editor directories and files
 .idea
@@ -21,3 +34,25 @@ pnpm-debug.log*
 *.njsproj
 *.sln
 *.sw?
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+*.tmp
+*.temp
+checkpoint*.json
+page_source.html
+current_page.html
+debug_page.html
+error_page.html
+search_results.html
+network_log.json
+
+# Large data files (keep data/ structure but ignore content)
+data/*.json
+songs*.json
+songs*.txt
+js_files/
