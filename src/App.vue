@@ -42,30 +42,24 @@
     <!-- 沒有本地結果時顯示台灣點歌王搜尋選項 -->
     <div v-if="!loading && songName.trim() && searchResults.length === 0 && hasSearched" class="no-results">
       <h3>😔 本地資料庫沒有找到相關歌曲</h3>
-      <p>要不要試試搜尋台灣點歌王線上資料庫？</p>
-      <button @click="searchTaiwanKtv" class="taiwan-search-btn" :disabled="loadingTaiwan">
-        <div v-if="loadingTaiwan" class="loading-spinner small"></div>
-        🎤 搜尋台灣點歌王
-      </button>
-    </div>
-
-    <!-- 台灣點歌王搜尋結果 -->
-    <div v-if="taiwanResults.length > 0" class="results taiwan-results">
-      <div class="results-header">
-        <h3>🎤 台灣點歌王線上搜尋：找到 {{ taiwanResults.length }} 首相關歌曲</h3>
-        <button @click="clearTaiwanSearch" class="clear-btn">清除結果</button>
-      </div>
-      <div v-for="(song, index) in taiwanResults" :key="'taiwan-' + index" class="song-card taiwan-card">
-        <h4>{{ song.name }}</h4>
-        <p><strong>歌手：</strong>{{ song.singer }}</p>
-        <p><strong>{{ song.company }}：</strong><span class="song-code">{{ song.code }}</span></p>
+      <p>試試搜尋台灣點歌王線上資料庫？</p>
+      
+      <div class="taiwan-options">
+        <a :href="getTaiwanKtvUrl()" target="_blank" class="taiwan-link-btn">
+          🎤 前往台灣點歌王搜尋
+          <span class="external-icon">↗</span>
+        </a>
+        
+        <p class="taiwan-hint">
+          💡 將在新視窗開啟台灣點歌王官網，自動搜尋「{{ songName.trim() }}」
+        </p>
       </div>
     </div>
 
     <div class="info">
       <p>💡 提示：支援模糊搜尋，輸入部分歌名即可</p>
       <p>🏢 本地資料庫：錢櫃、好樂迪、音圓、金嗓等各大卡拉OK品牌</p>
-      <p>🎤 台灣點歌王：當本地找不到歌曲時，可搜尋線上最新資料庫</p>
+      <p>🎤 台灣點歌王：當本地找不到歌曲時，可前往官網搜尋最新歌曲</p>
     </div>
   </div>
 </template>
@@ -79,8 +73,6 @@ export default {
     const searchResults = ref([]);
     const loading = ref(false);
     const allSongs = ref([]);
-    const taiwanResults = ref([]);
-    const loadingTaiwan = ref(false);
     const hasSearched = ref(false);
 
     // 載入歌曲資料
@@ -130,7 +122,6 @@ export default {
       }
 
       loading.value = true;
-      taiwanResults.value = []; // 清除台灣點歌王結果
       
       setTimeout(() => {
         const keyword = songName.value.trim().toLowerCase();
@@ -146,122 +137,23 @@ export default {
     // 清除搜尋結果
     const clearSearch = () => {
       searchResults.value = [];
-      taiwanResults.value = [];
       hasSearched.value = false;
     };
 
-    // 搜尋台灣點歌王 - 使用CORS代理
-    const searchTaiwanKtv = async () => {
-      if (!songName.value.trim()) return;
+    // 生成台灣點歌王搜尋URL
+    const getTaiwanKtvUrl = () => {
+      const keyword = songName.value.trim();
+      if (!keyword) return 'https://song.corp.com.tw/';
       
-      loadingTaiwan.value = true;
+      const params = new URLSearchParams({
+        company: '全部',
+        cusType: 'searchList',
+        keyword: keyword
+      });
       
-      try {
-        console.log('🔍 搜尋台灣點歌王:', songName.value.trim());
-        
-        // 使用CORS代理服務
-        const taiwanApiUrl = 'https://song.corp.com.tw/api/song.aspx';
-        const params = new URLSearchParams({
-          company: '全部',
-          cusType: 'searchList',
-          keyword: songName.value.trim()
-        });
-        
-        // 使用allorigins.win作為CORS代理
-        const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(`${taiwanApiUrl}?${params}`)}`;
-        
-        const response = await fetch(proxyUrl, {
-          method: 'GET',
-          headers: {
-            'Accept': 'application/json'
-          }
-        });
-        
-        if (response.ok) {
-          try {
-            const proxyResult = await response.json();
-            console.log('📄 CORS代理回應:', proxyResult.status);
-            
-            if (proxyResult.status.http_code !== 200) {
-              console.error('❌ 台灣點歌王API請求失敗:', proxyResult.status.http_code);
-              taiwanResults.value = [{
-                name: '❌ API錯誤',
-                singer: `HTTP ${proxyResult.status.http_code}`,
-                code: '--',
-                company: '台灣點歌王服務異常'
-              }];
-              return;
-            }
-            
-            // 解析台灣點歌王的回應
-            const taiwanData = JSON.parse(proxyResult.contents);
-            console.log('📊 搜尋結果:', taiwanData.length, '首歌曲');
-            
-            if (Array.isArray(taiwanData) && taiwanData.length > 0) {
-              // 限制顯示數量並轉換格式
-              const limitedData = taiwanData.slice(0, 50).map(song => ({
-                name: song.name || '',
-                singer: song.singer || '',
-                code: song.code || '',
-                company: song.company || ''
-              }));
-              
-              taiwanResults.value = limitedData;
-              console.log('✅ 台灣點歌王搜尋成功，找到', taiwanData.length, '首歌曲，顯示', limitedData.length, '首');
-            } else {
-              taiwanResults.value = [{
-                name: '😔 沒有找到結果',
-                singer: '請嘗試其他關鍵字',
-                code: '--',
-                company: '台灣點歌王'
-              }];
-            }
-            
-          } catch (parseError) {
-            console.error('❌ CORS代理回應解析失敗:', parseError.message);
-            taiwanResults.value = [{
-              name: '❌ 資料解析錯誤',
-              singer: '代理服務回應格式錯誤',
-              code: '--',
-              company: '請稍後再試'
-            }];
-          }
-        } else {
-          console.error('❌ 台灣點歌王搜尋失敗:', response.status, response.statusText);
-          
-          let errorMessage = `HTTP ${response.status} 錯誤`;
-          try {
-            const errorData = await response.json();
-            errorMessage = errorData.error || errorMessage;
-          } catch (e) {
-            console.warn('無法解析錯誤回應');
-          }
-          
-          taiwanResults.value = [{
-            name: '❌ 搜尋失敗',
-            singer: errorMessage,
-            code: '--',
-            company: '請稍後再試或聯繫系統管理員'
-          }];
-        }
-      } catch (error) {
-        console.error('❌ 台灣點歌王搜尋錯誤:', error.message);
-        
-        taiwanResults.value = [{
-          name: '⚠️ 連線錯誤',
-          singer: '無法連接到搜尋服務',
-          code: '--',
-          company: '請檢查網路連線或稍後再試'
-        }];
-      }
-      
-      loadingTaiwan.value = false;
+      return `https://song.corp.com.tw/?${params}`;
     };
 
-    // 清除台灣點歌王搜尋結果
-    const clearTaiwanSearch = () => {
-      taiwanResults.value = [];
-    };
 
     onMounted(async () => {
       await loadSongs();
@@ -271,13 +163,10 @@ export default {
       songName, 
       searchResults, 
       loading,
-      taiwanResults,
-      loadingTaiwan,
       hasSearched,
       searchBySongName,
       clearSearch,
-      searchTaiwanKtv,
-      clearTaiwanSearch
+      getTaiwanKtvUrl
     };
   }
 };
@@ -503,57 +392,50 @@ p {
   transform: none;
 }
 
-.taiwan-results {
-  margin-top: 30px;
-  border: 2px solid #fd79a8;
-  border-radius: 12px;
-  overflow: hidden;
+.taiwan-options {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
 }
 
-.taiwan-results .results-header {
+.taiwan-link-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 28px;
   background: linear-gradient(135deg, #fd79a8 0%, #fdcb6e 100%);
   color: white;
-  padding: 15px 20px;
-  margin: 0;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(253, 121, 168, 0.4);
 }
 
-.taiwan-results .results-header h3 {
+.taiwan-link-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(253, 121, 168, 0.6);
+  text-decoration: none;
   color: white;
+}
+
+.external-icon {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.taiwan-hint {
+  font-size: 14px;
+  color: #7f8c8d;
+  text-align: center;
   margin: 0;
-}
-
-.taiwan-results .results-header .clear-btn {
-  background: rgba(255,255,255,0.2);
-  border: 1px solid rgba(255,255,255,0.3);
-}
-
-.taiwan-results .results-header .clear-btn:hover {
-  background: rgba(255,255,255,0.3);
-}
-
-.taiwan-card {
-  background: linear-gradient(135deg, #ffeaa7 0%, #fab1a0 30%, #fd79a8 100%);
-  border-left: 4px solid #fd79a8;
-  margin: 0 15px 15px 15px;
-}
-
-.taiwan-card:first-of-type {
-  margin-top: 15px;
-}
-
-.taiwan-card h4 {
-  color: #2d3436;
-}
-
-.taiwan-card p {
-  color: #636e72;
-}
-
-.loading-spinner.small {
-  width: 16px;
-  height: 16px;
-  border: 2px solid rgba(255,255,255,0.3);
-  border-top: 2px solid white;
+  padding: 8px 16px;
+  background: rgba(253, 121, 168, 0.1);
+  border-radius: 8px;
+  border-left: 3px solid #fd79a8;
 }
 
 .info {
