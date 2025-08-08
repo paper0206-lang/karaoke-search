@@ -28,8 +28,9 @@ echo "2. 爬取前50位歌手 (包含新生代)"
 echo "3. 爬取全部121位歌手 (完整資料庫)"
 echo "4. 從指定位置開始爬取"
 echo "5. 只爬取尚未收錄的歌手"
+echo "6. 🔄 重新爬取現有歌手 (突破之前的限制)"
 
-read -p "請選擇 (1-5): " choice
+read -p "請選擇 (1-6): " choice
 
 case $choice in
     1)
@@ -59,6 +60,11 @@ case $choice in
         END_LINE=$TOTAL_SINGERS
         DESCRIPTION="尚未收錄的歌手"
         SKIP_EXISTING=true
+        ;;
+    6)
+        echo "🔄 啟動現有歌手刷新系統..."
+        python3 refresh_singer_scraper.py
+        exit 0
         ;;
     *)
         echo "❌ 無效選擇"
