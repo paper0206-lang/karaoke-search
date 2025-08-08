@@ -19,7 +19,8 @@
       "Bash(chmod:*)",
       "Bash(./check_songs.sh:*)",
       "Bash(mkdir:*)",
-      "Bash(rm:*)"
+      "Bash(rm:*)",
+      "WebFetch(domain:song.corp.com.tw)"
     ],
     "deny": []
   }

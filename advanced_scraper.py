@@ -50,8 +50,33 @@ class AdvancedKaraokeScraper:
         return random.choice(agents)
     
     def generate_smart_keywords(self):
-        """生成智能關鍵字列表"""
+        """生成智能關鍵字列表 - 2025年優化版"""
         keywords = []
+        
+        # 0. 2025年熱門關鍵字 (優先搜尋)
+        keywords_2025 = {
+            "2025新歌": [
+                "2025", "新歌", "熱門", "最新", "流行", "爆紅", "夯歌", "當紅", "熱播",
+                "排行榜", "冠軍", "單曲", "專輯", "首發", "新專輯", "新作", "話題"
+            ],
+            "2025熱門藝人": [
+                "告五人", "茄子蛋", "持修", "ØZI", "高爾宣", "LEO王", "9m88", "吳卓源",
+                "血肉果汁機", "理想混蛋", "康士坦的變化球", "傷心欲絕", "壞特", "孫盛希",
+                "陳零九", "顏人中", "宋念宇", "Crispy脆樂團", "deca joins", "原子邦妮"
+            ],
+            "2025音樂風格": [
+                "療癒系", "治癒系", "放鬆", "chill", "lofi", "indie", "民謠", "搖滾",
+                "電音", "嘻哈", "R&B", "爵士", "藍調", "古風", "國風", "城市民謠"
+            ],
+            "2025音樂主題": [
+                "夏日", "海邊", "公路", "旅行", "青春", "校園", "畢業", "告白",
+                "分手", "療傷", "勵志", "正能量", "夜晚", "星空", "月光", "日落"
+            ]
+        }
+        
+        # 優先加入2025年關鍵字
+        for category, words in keywords_2025.items():
+            keywords.extend(words)
         
         # 1. 歌手數據庫 - 大幅擴展
         singers = {
@@ -89,8 +114,8 @@ class AdvancedKaraokeScraper:
                 "下雨", "晴天", "星空", "月亮", "太陽", "海邊", "山上", "城市", "鄉村"
             ],
             "時代關鍵字": [
-                "新歌", "熱門", "最新", "2024", "2023", "2022", "經典", "懷舊", "復古",
-                "流行", "搖滾", "民謠", "R&B", "嘻哈", "電子", "爵士", "藍調"
+                "2025", "新歌", "熱門", "最新", "2024", "2023", "2022", "經典", "懷舊", "復古",
+                "流行", "搖滾", "民謠", "R&B", "嘻哈", "電子", "爵士", "藍調", "話題歌曲", "病毒式"
             ]
         }
         
@@ -161,48 +186,69 @@ class AdvancedKaraokeScraper:
         return keywords
     
     def search_single_keyword(self, keyword, session_id):
-        """單個關鍵字搜尋"""
+        """單個關鍵字搜尋 - 支援多頁結果"""
         try:
             session = self.session_pool[session_id % len(self.session_pool)]
+            all_results = []
+            total_new_songs = 0
             
-            url = f"{self.base_url}/api/song.aspx"
-            params = {
-                'company': '全部',
-                'cusType': 'searchList',
-                'keyword': keyword
-            }
+            # 嘗試多種搜尋方式以獲取更多結果
+            search_methods = [
+                {'company': '全部', 'cusType': 'searchList', 'keyword': keyword},
+                {'company': '錢櫃', 'cusType': 'searchList', 'keyword': keyword},
+                {'company': '好樂迪', 'cusType': 'searchList', 'keyword': keyword},
+                {'company': '音圓', 'cusType': 'searchList', 'keyword': keyword},
+                {'company': '金嗓', 'cusType': 'searchList', 'keyword': keyword}
+            ]
             
-            # 隨機延遲避免被封鎖
-            time.sleep(random.uniform(1, 3))
-            
-            response = session.get(url, params=params, timeout=10)
-            
-            if response.status_code == 200:
-                data = response.json()
-                
-                if isinstance(data, list):
-                    new_songs = 0
-                    with self.lock:
-                        for song in data:
-                            song_id = f"{song.get('name', '')}-{song.get('singer', '')}-{song.get('code', '')}"
-                            if song_id not in self.all_songs and song.get('name'):
-                                self.all_songs[song_id] = {
-                                    '歌名': song.get('name', ''),
-                                    '歌手': song.get('singer', ''),
-                                    '編號': song.get('code', ''),
-                                    '公司': song.get('company', ''),
-                                    '語言': song.get('lang', ''),
-                                    '性別': song.get('sex', '')
-                                }
-                                new_songs += 1
-                        
-                        self.search_stats[keyword] = len(data)
+            for method_params in search_methods:
+                try:
+                    url = f"{self.base_url}/api/song.aspx"
                     
-                    return f"🔍 {keyword}: 找到 {len(data)} 首，新增 {new_songs} 首 (總計: {len(self.all_songs)})"
-                else:
-                    return f"⚠️ {keyword}: 無結果"
+                    # 隨機延遲避免被封鎖
+                    time.sleep(random.uniform(0.5, 1.5))
+                    
+                    response = session.get(url, params=method_params, timeout=10)
+                    
+                    if response.status_code == 200:
+                        data = response.json()
+                        
+                        if isinstance(data, list) and data:
+                            all_results.extend(data)
+                            
+                except Exception as e:
+                    continue  # 如果某個方法失敗，繼續嘗試其他方法
+            
+            # 去重並處理所有結果
+            seen_songs = set()
+            unique_results = []
+            for song in all_results:
+                song_key = f"{song.get('name', '')}-{song.get('singer', '')}-{song.get('code', '')}"
+                if song_key not in seen_songs:
+                    seen_songs.add(song_key)
+                    unique_results.append(song)
+            
+            # 加入到總資料庫
+            with self.lock:
+                for song in unique_results:
+                    song_id = f"{song.get('name', '')}-{song.get('singer', '')}-{song.get('code', '')}"
+                    if song_id not in self.all_songs and song.get('name'):
+                        self.all_songs[song_id] = {
+                            '歌名': song.get('name', ''),
+                            '歌手': song.get('singer', ''),
+                            '編號': song.get('code', ''),
+                            '公司': song.get('company', ''),
+                            '語言': song.get('lang', ''),
+                            '性別': song.get('sex', '')
+                        }
+                        total_new_songs += 1
+                
+                self.search_stats[keyword] = len(unique_results)
+            
+            if unique_results:
+                return f"🔍 {keyword}: 找到 {len(unique_results)} 首，新增 {total_new_songs} 首 (總計: {len(self.all_songs)})"
             else:
-                return f"❌ {keyword}: HTTP {response.status_code}"
+                return f"⚠️ {keyword}: 無結果"
                 
         except Exception as e:
             return f"💥 {keyword}: {str(e)}"
