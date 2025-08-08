@@ -11,22 +11,24 @@ chmod +x auto_update_database.sh
 
 echo ""
 echo "選擇執行模式:"
-echo "1) 前台執行 (可看到即時輸出)"
-echo "2) 背景執行 (在背景持續運行)"
-echo "3) 定時執行 (設定每日自動執行)"
+echo "1) 一般爬蟲 - 前台執行 (經典+新歌混合搜尋)"
+echo "2) 一般爬蟲 - 背景執行 (經典+新歌混合搜尋)"  
+echo "3) 新歌專用爬蟲 - 前台執行 (專門搜尋2024新歌)"
+echo "4) 新歌專用爬蟲 - 背景執行 (專門搜尋2024新歌)"
+echo "5) 定時執行 (設定每日自動執行)"
 echo ""
 
-read -p "請選擇 (1-3): " choice
+read -p "請選擇 (1-5): " choice
 
 case $choice in
     1)
         echo ""
-        echo "🚀 前台執行中，請勿關閉終端..."
+        echo "🚀 一般爬蟲前台執行中，請勿關閉終端..."
         ./auto_update_database.sh
         ;;
     2)
         echo ""
-        echo "🚀 啟動背景執行..."
+        echo "🚀 啟動一般爬蟲背景執行..."
         nohup ./auto_update_database.sh > auto_update.log 2>&1 &
         PID=$!
         echo "✅ 背景程序已啟動 (PID: $PID)"
@@ -38,6 +40,33 @@ case $choice in
         tail -n 10 auto_update.log
         ;;
     3)
+        echo ""
+        echo "🎵 新歌專用爬蟲前台執行中..."
+        python3 new_songs_scraper.py
+        echo ""
+        echo "是否要自動提交到 GitHub? (y/n)"
+        read -p "> " commit_choice
+        if [[ $commit_choice == "y" || $commit_choice == "Y" ]]; then
+            git add public/songs_simplified.json
+            git commit -m "新歌爬蟲更新: 新增2024流行歌曲"
+            git push
+            echo "✅ 已自動提交並推送到 GitHub"
+        fi
+        ;;
+    4)
+        echo ""
+        echo "🎵 啟動新歌專用爬蟲背景執行..."
+        nohup python3 new_songs_scraper.py > new_songs.log 2>&1 &
+        PID=$!
+        echo "✅ 新歌爬蟲背景程序已啟動 (PID: $PID)"
+        echo "📋 查看即時日誌: tail -f new_songs.log"
+        echo "⏹️  停止程序: kill $PID"
+        echo ""
+        echo "等待 5 秒後顯示初始日誌..."
+        sleep 5
+        tail -n 10 new_songs.log
+        ;;
+    5)
         echo ""
         echo "📅 設定定時執行..."
         echo "將每天凌晨 2:00 自動執行爬蟲"
@@ -66,7 +95,7 @@ case $choice in
         fi
         ;;
     *)
-        echo "❌ 無效選擇"
+        echo "❌ 無效選擇，請選擇 1-5"
         exit 1
         ;;
 esac
