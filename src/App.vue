@@ -6,26 +6,36 @@
     <div class="search-container">
       <input 
         v-model="songName" 
-        placeholder="輸入歌曲名稱（例：愛情、玫瑰）" 
+        placeholder="輸入歌曲名稱或歌手（例：愛情、周杰倫）" 
         @keyup.enter="searchBySongName"
+        @input="clearSearch"
         class="search-input"
       />
-      <button @click="searchBySongName" class="search-btn">🔍 查詢</button>
+      <button @click="searchBySongName" class="search-btn" :disabled="!songName.trim()">
+        🔍 查詢
+      </button>
     </div>
 
-    <div v-if="loading" class="loading">搜尋中...</div>
+    <!-- 只在有搜尋關鍵字但還沒搜尋時顯示提示 -->
+    <div v-if="songName.trim() && searchResults.length === 0 && !loading" class="search-hint">
+      請按「查詢」按鈕或按 Enter 鍵開始搜尋
+    </div>
+
+    <div v-if="loading" class="loading">
+      <div class="loading-spinner"></div>
+      搜尋中，請稍候...
+    </div>
     
-    <div v-if="searchResults.length > 0" class="results">
-      <h3>找到 {{ searchResults.length }} 首相關歌曲：</h3>
+    <div v-if="!loading && searchResults.length > 0" class="results">
+      <div class="results-header">
+        <h3>找到 {{ searchResults.length }} 首相關歌曲</h3>
+        <button @click="clearSearch" class="clear-btn">清除結果</button>
+      </div>
       <div v-for="(song, index) in searchResults" :key="index" class="song-card">
         <h4>{{ song.歌名 }}</h4>
         <p><strong>歌手：</strong>{{ song.歌手 }}</p>
         <p><strong>{{ song.公司 }}：</strong><span class="song-code">{{ song.編號 }}</span></p>
       </div>
-    </div>
-    
-    <div v-else-if="!loading && songName && searchResults.length === 0" class="no-results">
-      找不到「{{ songName }}」相關的歌曲
     </div>
 
     <div class="info">
@@ -83,7 +93,7 @@ export default {
       }
     };
 
-    // 搜尋歌曲
+    // 搜尋歌曲 - 只在手動觸發時執行
     const searchBySongName = () => {
       if (!songName.value.trim()) {
         searchResults.value = [];
@@ -93,13 +103,18 @@ export default {
       loading.value = true;
       
       setTimeout(() => {
-        const keyword = songName.value.toLowerCase();
+        const keyword = songName.value.trim().toLowerCase();
         searchResults.value = allSongs.value.filter(song => 
           song.歌名.toLowerCase().includes(keyword) ||
           song.歌手.toLowerCase().includes(keyword)
         );
         loading.value = false;
       }, 300);
+    };
+
+    // 清除搜尋結果
+    const clearSearch = () => {
+      searchResults.value = [];
     };
 
     onMounted(async () => {
@@ -110,7 +125,8 @@ export default {
       songName, 
       searchResults, 
       loading,
-      searchBySongName 
+      searchBySongName,
+      clearSearch
     };
   }
 };
@@ -183,11 +199,68 @@ p {
   background: #5a67d8;
 }
 
+.search-btn:disabled {
+  background: #cbd5e0;
+  color: #a0aec0;
+  cursor: not-allowed;
+}
+
+.search-hint {
+  text-align: center;
+  color: #667eea;
+  background: #e6fffa;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 20px 0;
+  font-size: 14px;
+  border: 1px solid #b2f5ea;
+}
+
 .loading {
   text-align: center;
   color: #667eea;
   font-size: 18px;
   margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.loading-spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #e2e8f0;
+  border-top: 2px solid #667eea;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.clear-btn {
+  padding: 6px 12px;
+  background: #e53e3e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.clear-btn:hover {
+  background: #c53030;
 }
 
 .results h3 {
