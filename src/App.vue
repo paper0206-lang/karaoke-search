@@ -150,81 +150,80 @@ export default {
       hasSearched.value = false;
     };
 
-    // 搜尋台灣點歌王 - 使用後端API代理
+    // 搜尋台灣點歌王 - 使用CORS代理
     const searchTaiwanKtv = async () => {
       if (!songName.value.trim()) return;
       
       loadingTaiwan.value = true;
       
       try {
-        // 使用我們的後端API代理
-        const apiUrl = '/api/taiwan-ktv';
+        console.log('🔍 搜尋台灣點歌王:', songName.value.trim());
+        
+        // 使用CORS代理服務
+        const taiwanApiUrl = 'https://song.corp.com.tw/api/song.aspx';
         const params = new URLSearchParams({
+          company: '全部',
+          cusType: 'searchList',
           keyword: songName.value.trim()
         });
         
-        console.log('🔍 搜尋台灣點歌王:', songName.value.trim());
+        // 使用allorigins.win作為CORS代理
+        const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(`${taiwanApiUrl}?${params}`)}`;
         
-        const response = await fetch(`${apiUrl}?${params}`, {
+        const response = await fetch(proxyUrl, {
           method: 'GET',
           headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
+            'Accept': 'application/json'
           }
         });
         
         if (response.ok) {
-          let result;
           try {
-            const textContent = await response.text();
-            console.log('📄 API回應狀態:', response.status);
-            console.log('📄 API回應Content-Type:', response.headers.get('content-type'));
-            console.log('📄 API回應長度:', textContent.length);
-            console.log('📄 API回應原始內容:', textContent.substring(0, 300) + '...');
+            const proxyResult = await response.json();
+            console.log('📄 CORS代理回應:', proxyResult.status);
             
-            if (!textContent.trim()) {
-              console.error('❌ 收到空回應');
+            if (proxyResult.status.http_code !== 200) {
+              console.error('❌ 台灣點歌王API請求失敗:', proxyResult.status.http_code);
               taiwanResults.value = [{
-                name: '❌ 空回應',
-                singer: '伺服器回應為空',
+                name: '❌ API錯誤',
+                singer: `HTTP ${proxyResult.status.http_code}`,
                 code: '--',
-                company: '請稍後再試'
+                company: '台灣點歌王服務異常'
               }];
               return;
             }
             
-            // 清理回應內容
-            const cleanContent = textContent.trim().replace(/^\uFEFF/, '');
+            // 解析台灣點歌王的回應
+            const taiwanData = JSON.parse(proxyResult.contents);
+            console.log('📊 搜尋結果:', taiwanData.length, '首歌曲');
             
-            result = JSON.parse(cleanContent);
+            if (Array.isArray(taiwanData) && taiwanData.length > 0) {
+              // 限制顯示數量並轉換格式
+              const limitedData = taiwanData.slice(0, 50).map(song => ({
+                name: song.name || '',
+                singer: song.singer || '',
+                code: song.code || '',
+                company: song.company || ''
+              }));
+              
+              taiwanResults.value = limitedData;
+              console.log('✅ 台灣點歌王搜尋成功，找到', taiwanData.length, '首歌曲，顯示', limitedData.length, '首');
+            } else {
+              taiwanResults.value = [{
+                name: '😔 沒有找到結果',
+                singer: '請嘗試其他關鍵字',
+                code: '--',
+                company: '台灣點歌王'
+              }];
+            }
+            
           } catch (parseError) {
-            console.error('❌ 前端JSON解析失敗:', parseError.message);
-            console.error('📄 無法解析的內容:', textContent);
+            console.error('❌ CORS代理回應解析失敗:', parseError.message);
             taiwanResults.value = [{
               name: '❌ 資料解析錯誤',
-              singer: '伺服器回應格式錯誤: ' + parseError.message,
+              singer: '代理服務回應格式錯誤',
               code: '--',
-              company: '請聯繫系統管理員'
-            }];
-            return;
-          }
-          
-          if (result.success && Array.isArray(result.data)) {
-            taiwanResults.value = result.data;
-            console.log('✅ 台灣點歌王搜尋成功，找到', result.total || result.data.length, '首歌曲');
-          } else if (result.success && result.data.length === 0) {
-            taiwanResults.value = [{
-              name: '😔 沒有找到結果',
-              singer: '請嘗試其他關鍵字',
-              code: '--',
-              company: '台灣點歌王'
-            }];
-          } else {
-            taiwanResults.value = [{
-              name: '❌ 搜尋失敗',
-              singer: result.error || '未知錯誤',
-              code: '--',
-              company: '台灣點歌王'
+              company: '請稍後再試'
             }];
           }
         } else {
