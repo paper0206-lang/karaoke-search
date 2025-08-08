@@ -56,3 +56,6 @@ data/*.json
 songs*.json
 songs*.txt
 js_files/
+
+# Allow public song data for deployment
+!public/songs_simplified.json
