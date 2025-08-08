@@ -177,14 +177,32 @@ export default {
           let result;
           try {
             const textContent = await response.text();
-            console.log('📄 API回應原始內容:', textContent.substring(0, 200) + '...');
+            console.log('📄 API回應狀態:', response.status);
+            console.log('📄 API回應Content-Type:', response.headers.get('content-type'));
+            console.log('📄 API回應長度:', textContent.length);
+            console.log('📄 API回應原始內容:', textContent.substring(0, 300) + '...');
             
-            result = JSON.parse(textContent);
+            if (!textContent.trim()) {
+              console.error('❌ 收到空回應');
+              taiwanResults.value = [{
+                name: '❌ 空回應',
+                singer: '伺服器回應為空',
+                code: '--',
+                company: '請稍後再試'
+              }];
+              return;
+            }
+            
+            // 清理回應內容
+            const cleanContent = textContent.trim().replace(/^\uFEFF/, '');
+            
+            result = JSON.parse(cleanContent);
           } catch (parseError) {
             console.error('❌ 前端JSON解析失敗:', parseError.message);
+            console.error('📄 無法解析的內容:', textContent);
             taiwanResults.value = [{
               name: '❌ 資料解析錯誤',
-              singer: '伺服器回應格式錯誤',
+              singer: '伺服器回應格式錯誤: ' + parseError.message,
               code: '--',
               company: '請聯繫系統管理員'
             }];

@@ -3,6 +3,7 @@ export default async function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, Accept');
+  res.setHeader('Content-Type', 'application/json; charset=utf-8');
   
   // 處理OPTIONS請求 (CORS預檢)
   if (req.method === 'OPTIONS') {
@@ -53,15 +54,22 @@ export default async function handler(req, res) {
       try {
         // 先獲取文字內容，然後手動解析
         const textContent = await response.text();
+        console.log(`📄 台灣點歌王回應狀態: ${response.status}`);
+        console.log(`📄 回應Content-Type: ${response.headers.get('content-type')}`);
+        console.log(`📄 回應長度: ${textContent.length}`);
         console.log(`📄 台灣點歌王原始回應: ${textContent.substring(0, 200)}...`);
+        
+        // 清理回應內容 - 移除可能的BOM和不可見字符
+        const cleanContent = textContent.trim().replace(/^\uFEFF/, '');
         
         // 嘗試解析JSON
         let data;
         try {
-          data = JSON.parse(textContent);
+          data = JSON.parse(cleanContent);
         } catch (parseError) {
           console.error(`❌ JSON解析失敗: ${parseError.message}`);
-          console.error(`📄 無法解析的內容: ${textContent}`);
+          console.error(`📄 清理後的內容: ${cleanContent.substring(0, 500)}`);
+          console.error(`📄 字符編碼檢查: ${Array.from(cleanContent.substring(0, 10)).map(c => c.charCodeAt(0))}`);
           return res.status(500).json({
             success: false,
             error: '搜尋結果格式錯誤，無法解析'
