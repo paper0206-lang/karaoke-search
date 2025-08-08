@@ -174,22 +174,55 @@ export default {
         });
         
         if (response.ok) {
-          const result = await response.json();
+          let result;
+          try {
+            const textContent = await response.text();
+            console.log('📄 API回應原始內容:', textContent.substring(0, 200) + '...');
+            
+            result = JSON.parse(textContent);
+          } catch (parseError) {
+            console.error('❌ 前端JSON解析失敗:', parseError.message);
+            taiwanResults.value = [{
+              name: '❌ 資料解析錯誤',
+              singer: '伺服器回應格式錯誤',
+              code: '--',
+              company: '請聯繫系統管理員'
+            }];
+            return;
+          }
           
           if (result.success && Array.isArray(result.data)) {
             taiwanResults.value = result.data;
             console.log('✅ 台灣點歌王搜尋成功，找到', result.total || result.data.length, '首歌曲');
+          } else if (result.success && result.data.length === 0) {
+            taiwanResults.value = [{
+              name: '😔 沒有找到結果',
+              singer: '請嘗試其他關鍵字',
+              code: '--',
+              company: '台灣點歌王'
+            }];
           } else {
-            taiwanResults.value = [];
-            console.log('⚠️  台灣點歌王沒有找到相關歌曲');
+            taiwanResults.value = [{
+              name: '❌ 搜尋失敗',
+              singer: result.error || '未知錯誤',
+              code: '--',
+              company: '台灣點歌王'
+            }];
           }
         } else {
           console.error('❌ 台灣點歌王搜尋失敗:', response.status, response.statusText);
-          const errorData = await response.json().catch(() => ({}));
+          
+          let errorMessage = `HTTP ${response.status} 錯誤`;
+          try {
+            const errorData = await response.json();
+            errorMessage = errorData.error || errorMessage;
+          } catch (e) {
+            console.warn('無法解析錯誤回應');
+          }
           
           taiwanResults.value = [{
             name: '❌ 搜尋失敗',
-            singer: errorData.error || `HTTP ${response.status} 錯誤`,
+            singer: errorMessage,
             code: '--',
             company: '請稍後再試或聯繫系統管理員'
           }];

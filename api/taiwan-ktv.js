@@ -46,13 +46,27 @@ export default async function handler(req, res) {
     // 發送請求到台灣點歌王API
     const response = await fetch(url, {
       method: 'GET',
-      headers: headers,
-      timeout: 10000
+      headers: headers
     });
     
     if (response.ok) {
       try {
-        const data = await response.json();
+        // 先獲取文字內容，然後手動解析
+        const textContent = await response.text();
+        console.log(`📄 台灣點歌王原始回應: ${textContent.substring(0, 200)}...`);
+        
+        // 嘗試解析JSON
+        let data;
+        try {
+          data = JSON.parse(textContent);
+        } catch (parseError) {
+          console.error(`❌ JSON解析失敗: ${parseError.message}`);
+          console.error(`📄 無法解析的內容: ${textContent}`);
+          return res.status(500).json({
+            success: false,
+            error: '搜尋結果格式錯誤，無法解析'
+          });
+        }
         
         if (Array.isArray(data)) {
           // 限制結果數量，避免過多資料
@@ -74,15 +88,24 @@ export default async function handler(req, res) {
           });
         }
         
-      } catch (jsonError) {
-        console.error(`❌ 台灣點歌王回傳資料解析失敗: ${jsonError.message}`);
+      } catch (error) {
+        console.error(`❌ 台灣點歌王回應處理失敗: ${error.message}`);
         return res.status(500).json({
           success: false,
-          error: '搜尋結果解析失敗'
+          error: '搜尋結果處理失敗'
         });
       }
     } else {
-      console.error(`❌ 台灣點歌王API請求失敗: HTTP ${response.status}`);
+      console.error(`❌ 台灣點歌王API請求失敗: HTTP ${response.status} ${response.statusText}`);
+      
+      // 嘗試獲取錯誤訊息
+      try {
+        const errorText = await response.text();
+        console.error(`📄 錯誤回應內容: ${errorText}`);
+      } catch (e) {
+        console.error('無法讀取錯誤回應內容');
+      }
+      
       return res.status(500).json({
         success: false,
         error: `台灣點歌王API請求失敗: HTTP ${response.status}`
