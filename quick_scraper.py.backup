@@ -1,18 +1,9 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
-"""
-
-from unified_scraper import UnifiedKaraokeScraper
-
 import requests
 import json
 import time
 import random
 from urllib.parse import quote
-# -*- coding: utf-8 -*-
 
 def search_specific_songs():
     """搜尋特定歌曲，包括黑色柳丁"""
@@ -29,7 +20,7 @@ def search_specific_songs():
     
     # 載入現有歌曲
     try:
-        with open('public/unified_karaoke_db.json', 'r', encoding='utf-8') as f:
+        with open('public/songs_simplified.json', 'r', encoding='utf-8') as f:
             existing_songs = json.load(f)
         all_songs = {f"{s['歌名']}-{s['歌手']}-{s['編號']}": s for s in existing_songs}
         print(f"載入現有歌曲: {len(all_songs)} 首")

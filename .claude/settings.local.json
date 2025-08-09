@@ -20,7 +20,15 @@
       "Bash(./check_songs.sh:*)",
       "Bash(mkdir:*)",
       "Bash(rm:*)",
-      "WebFetch(domain:song.corp.com.tw)"
+      "WebFetch(domain:song.corp.com.tw)",
+      "Bash(touch:*)",
+      "Bash(./check_progress.sh:*)",
+      "Bash(./auto_scraper.sh)",
+      "Bash(ping:*)",
+      "WebFetch(domain:karaoke-search-theta.vercel.app)",
+      "Bash(pip install:*)",
+      "Bash(/Users/paper/SuperClaude_Framework/.venv/bin/pip install requests beautifulsoup4)",
+      "Bash(/opt/anaconda3/bin/python:*)"
     ],
     "deny": []
   }

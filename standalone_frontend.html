@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 智能卡拉OK搜尋系統</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .search-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .search-container {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .search-input {
+            flex: 1;
+            padding: 15px 20px;
+            border: 2px solid #e1e5e9;
+            border-radius: 25px;
+            font-size: 16px;
+            outline: none;
+            transition: border-color 0.3s;
+        }
+
+        .search-input:focus {
+            border-color: #667eea;
+        }
+
+        .search-btn {
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            font-weight: bold;
+            transition: transform 0.2s;
+        }
+
+        .search-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .search-btn:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+
+        .data-status {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .update-btn {
+            padding: 8px 16px;
+            background: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            font-size: 18px;
+            color: #667eea;
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 10px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .results-section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+
+        .results-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f1f3f4;
+        }
+
+        .song-card {
+            background: #f8f9fa;
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-left: 4px solid #667eea;
+            transition: all 0.3s;
+        }
+
+        .song-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .song-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 15px;
+        }
+
+        .song-info h3 {
+            font-size: 1.3em;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .song-meta {
+            display: flex;
+            gap: 15px;
+            font-size: 14px;
+            color: #666;
+        }
+
+        .singer-name {
+            font-weight: bold;
+            color: #667eea;
+        }
+
+        .codes-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+        }
+
+        .code-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 15px;
+            border-radius: 8px;
+            border: 1px solid #e1e5e9;
+            background: white;
+        }
+
+        .company-name {
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .song-code {
+            font-family: 'Courier New', monospace;
+            font-weight: bold;
+            padding: 2px 6px;
+            background: #f1f3f4;
+            border-radius: 4px;
+        }
+
+        .no-results {
+            text-align: center;
+            padding: 60px 20px;
+            color: #666;
+        }
+
+        .suggestions {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: left;
+        }
+
+        .suggestion-tags {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .suggestion-tag {
+            padding: 6px 12px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 12px;
+            transition: all 0.3s;
+        }
+
+        .suggestion-tag:hover {
+            background: #5a6fd8;
+            transform: translateY(-1px);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            color: rgba(255,255,255,0.8);
+            font-size: 14px;
+        }
+
+        @media (max-width: 768px) {
+            .container { padding: 10px; }
+            .search-container { flex-direction: column; }
+            .codes-section { grid-template-columns: 1fr; }
+            .data-status { flex-direction: column; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎵 智能卡拉OK搜尋系統</h1>
+            <p>整合多資料源，無需伺服器，智能搜尋</p>
+        </div>
+
+        <div class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="輸入歌曲名稱或歌手名稱（例：周杰倫、青花瓷、告白氣球）"
+                    onkeypress="if(event.key==='Enter') intelligentSearch()"
+                >
+                <button class="search-btn" onclick="intelligentSearch()" id="searchBtn">
+                    🔍 智能搜尋
+                </button>
+            </div>
+
+            <div class="data-status">
+                <div id="dataStats">載入資料庫中...</div>
+                <button class="update-btn" onclick="updateDatabase()" id="updateBtn">
+                    🔄 更新資料
+                </button>
+            </div>
+        </div>
+
+        <div id="loadingSection" class="loading" style="display: none;">
+            <div class="spinner"></div>
+            <div>搜尋中，請稍候...</div>
+        </div>
+
+        <div id="resultsSection" style="display: none;" class="results-section">
+            <div class="results-header">
+                <div class="results-title" id="resultsTitle">搜尋結果</div>
+                <div class="results-stats" id="resultsStats"></div>
+            </div>
+            <div id="resultsContainer"></div>
+        </div>
+
+        <div id="noResults" style="display: none;" class="no-results">
+            <h3>😔 沒有找到相關歌曲</h3>
+            <div class="suggestions">
+                <p><strong>💡 建議：</strong></p>
+                <ul style="text-align: left; margin-left: 20px;">
+                    <li>嘗試搜尋歌手名稱完整拼寫</li>
+                    <li>使用歌曲的關鍵字或部分歌詞</li>
+                    <li>檢查是否有拼字錯誤</li>
+                    <li>嘗試簡化搜尋詞彙</li>
+                </ul>
+                
+                <div class="quick-suggestions">
+                    <p><strong>🔥 熱門搜尋：</strong></p>
+                    <div class="suggestion-tags">
+                        <button class="suggestion-tag" onclick="quickSearch('周杰倫')">周杰倫</button>
+                        <button class="suggestion-tag" onclick="quickSearch('蔡依林')">蔡依林</button>
+                        <button class="suggestion-tag" onclick="quickSearch('鄧紫棋')">鄧紫棋</button>
+                        <button class="suggestion-tag" onclick="quickSearch('告五人')">告五人</button>
+                        <button class="suggestion-tag" onclick="quickSearch('愛情')">愛情</button>
+                        <button class="suggestion-tag" onclick="quickSearch('青花瓷')">青花瓷</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>🎯 涵蓋台灣主要KTV系統 | 🔄 自動更新資料庫 | 🚀 無需伺服器運作</p>
+            <p>📅 最後更新: <span id="lastUpdate">2025-08-10 03:50:00</span></p>
+        </div>
+    </div>
+
+    <script>
+        // 全局變數
+        let localDatabase = {
+            songs: [],
+            singers: {},
+            metadata: { lastUpdate: null, totalSongs: 0 }
+        };
+        let searchResults = [];
+
+        // 初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            loadLocalDatabase();
+        });
+
+        // 載入本地資料庫
+        async function loadLocalDatabase() {
+            try {
+                // 載入歌曲資料庫
+                const songsResponse = await fetch('./public/songs_simplified.json');
+                if (songsResponse.ok) {
+                    localDatabase.songs = await songsResponse.json();
+                }
+
+                // 載入歌手資料庫
+                const singersResponse = await fetch('./public/singers_data.json');
+                if (singersResponse.ok) {
+                    localDatabase.singers = await singersResponse.json();
+                }
+
+                // 載入統一資料庫
+                const unifiedResponse = await fetch('./public/unified_karaoke_db.json');
+                if (unifiedResponse.ok) {
+                    const unified = await unifiedResponse.json();
+                    localDatabase.unified = unified;
+                    localDatabase.metadata = unified.metadata || {};
+                }
+
+                updateDataStats();
+                console.log('本地資料庫載入完成');
+
+            } catch (error) {
+                console.error('載入本地資料庫失敗:', error);
+                document.getElementById('dataStats').textContent = '資料庫載入失敗';
+            }
+        }
+
+        // 更新資料統計
+        function updateDataStats() {
+            const songsCount = localDatabase.songs?.length || 0;
+            const singersCount = Object.keys(localDatabase.singers || {}).length;
+            const unifiedCount = localDatabase.metadata?.total_songs || 0;
+
+            document.getElementById('dataStats').innerHTML = `
+                📚 歌曲: ${songsCount.toLocaleString()} 首 | 
+                🎤 歌手: ${singersCount} 位 | 
+                🔄 統一庫: ${unifiedCount.toLocaleString()} 首
+            `;
+
+            const lastUpdate = localDatabase.metadata?.created || '未知';
+            document.getElementById('lastUpdate').textContent = lastUpdate;
+        }
+
+        // 智能搜尋 (本地版本)
+        function intelligentSearch() {
+            const query = document.getElementById('searchInput').value.trim();
+            
+            if (!query) {
+                alert('請輸入搜尋關鍵字');
+                return;
+            }
+
+            showLoading(true);
+            hideResults();
+
+            // 模擬搜尋延遲，提供更好的用戶體驗
+            setTimeout(() => {
+                try {
+                    const results = performLocalSearch(query);
+                    
+                    if (results.length > 0) {
+                        displayResults(results, query);
+                    } else {
+                        showNoResults();
+                    }
+                } catch (error) {
+                    console.error('搜尋失敗:', error);
+                    alert('搜尋過程發生錯誤');
+                } finally {
+                    showLoading(false);
+                }
+            }, 500);
+        }
+
+        // 執行本地搜尋
+        function performLocalSearch(query) {
+            const results = [];
+            const queryLower = query.toLowerCase().trim();
+
+            // 搜尋策略1: 歌手資料庫
+            Object.entries(localDatabase.singers || {}).forEach(([singerName, singerData]) => {
+                if (singerName.toLowerCase().includes(queryLower)) {
+                    const songs = singerData.歌曲清單 || [];
+                    songs.forEach(song => {
+                        results.push({
+                            ...song,
+                            searchType: 'singer_match',
+                            confidence: 0.9
+                        });
+                    });
+                }
+            });
+
+            // 搜尋策略2: 統一資料庫
+            if (localDatabase.unified?.songs) {
+                Object.entries(localDatabase.unified.songs).forEach(([songId, songData]) => {
+                    const songName = (songData.歌名 || '').toLowerCase();
+                    const singerName = (songData.歌手 || '').toLowerCase();
+                    
+                    if (songName.includes(queryLower) || singerName.includes(queryLower)) {
+                        results.push({
+                            ...songData,
+                            searchType: 'unified_match',
+                            confidence: 0.85
+                        });
+                    }
+                });
+            }
+
+            // 搜尋策略3: 歌曲資料庫
+            localDatabase.songs?.forEach(song => {
+                const songName = (song.歌名 || '').toLowerCase();
+                const singerName = (song.歌手 || '').toLowerCase();
+                
+                if (songName.includes(queryLower) || singerName.includes(queryLower)) {
+                    // 轉換為統一格式
+                    const formattedSong = {
+                        歌名: song.歌名,
+                        歌手: song.歌手,
+                        語言: song.語言 || '',
+                        編號資訊: [{
+                            公司: song.公司 || '',
+                            編號: song.編號 || ''
+                        }],
+                        searchType: 'songs_match',
+                        confidence: 0.8
+                    };
+                    results.push(formattedSong);
+                }
+            });
+
+            // 去重和排序
+            const uniqueResults = deduplicateResults(results);
+            return uniqueResults.sort((a, b) => (b.confidence || 0) - (a.confidence || 0));
+        }
+
+        // 去重處理
+        function deduplicateResults(results) {
+            const uniqueMap = new Map();
+            
+            results.forEach(result => {
+                const key = `${result.歌名}_${result.歌手}`;
+                
+                if (!uniqueMap.has(key)) {
+                    uniqueMap.set(key, {
+                        歌名: result.歌名,
+                        歌手: result.歌手,
+                        語言: result.語言 || '',
+                        編號資訊: [],
+                        confidence: result.confidence,
+                        searchType: result.searchType
+                    });
+                }
+                
+                const existing = uniqueMap.get(key);
+                
+                // 合併編號資訊
+                if (result.編號資訊 && Array.isArray(result.編號資訊)) {
+                    result.編號資訊.forEach(code => {
+                        if (!existing.編號資訊.some(existingCode => 
+                            existingCode.公司 === code.公司 && existingCode.編號 === code.編號)) {
+                            existing.編號資訊.push(code);
+                        }
+                    });
+                }
+                
+                // 保持最高信心度
+                if (result.confidence > existing.confidence) {
+                    existing.confidence = result.confidence;
+                    existing.searchType = result.searchType;
+                }
+            });
+            
+            return Array.from(uniqueMap.values());
+        }
+
+        // 顯示結果
+        function displayResults(results, query) {
+            const resultsSection = document.getElementById('resultsSection');
+            const resultsTitle = document.getElementById('resultsTitle');
+            const resultsStats = document.getElementById('resultsStats');
+            const resultsContainer = document.getElementById('resultsContainer');
+
+            resultsTitle.textContent = `🎵 搜尋結果：${query}`;
+            resultsStats.textContent = `找到 ${results.length} 首歌曲`;
+
+            resultsContainer.innerHTML = '';
+
+            results.slice(0, 100).forEach((song, index) => {  // 限制顯示100首避免頁面過載
+                const songCard = createSongCard(song, index);
+                resultsContainer.appendChild(songCard);
+            });
+
+            resultsSection.style.display = 'block';
+        }
+
+        // 創建歌曲卡片
+        function createSongCard(song) {
+            const card = document.createElement('div');
+            card.className = 'song-card';
+
+            const codes = song.編號資訊 || [];
+            const codesHTML = codes.map(code => `
+                <div class="code-item">
+                    <span class="company-name">${code.公司}</span>
+                    <span class="song-code">${code.編號}</span>
+                </div>
+            `).join('');
+
+            card.innerHTML = `
+                <div class="song-header">
+                    <div class="song-info">
+                        <h3>${song.歌名 || 'N/A'}</h3>
+                        <div class="song-meta">
+                            <span class="singer-name">${song.歌手 || 'N/A'}</span>
+                            ${song.語言 ? `<span>📝 ${song.語言}</span>` : ''}
+                        </div>
+                    </div>
+                </div>
+                
+                ${codes.length > 0 ? `
+                    <div class="codes-section">
+                        ${codesHTML}
+                    </div>
+                ` : '<div style="color: #999; font-style: italic;">暫無編號資訊</div>'}
+            `;
+
+            return card;
+        }
+
+        // 快速搜尋
+        function quickSearch(keyword) {
+            document.getElementById('searchInput').value = keyword;
+            intelligentSearch();
+        }
+
+        // 更新資料庫 (觸發爬蟲)
+        async function updateDatabase() {
+            const updateBtn = document.getElementById('updateBtn');
+            updateBtn.disabled = true;
+            updateBtn.textContent = '🔄 更新中...';
+
+            try {
+                // 這裡可以觸發後端爬蟲或其他更新機制
+                // 目前先重新載入本地資料
+                await loadLocalDatabase();
+                
+                alert('資料庫更新完成！');
+            } catch (error) {
+                console.error('更新失敗:', error);
+                alert('更新失敗，請稍後再試');
+            } finally {
+                updateBtn.disabled = false;
+                updateBtn.textContent = '🔄 更新資料';
+            }
+        }
+
+        // 輔助函數
+        function showLoading(show) {
+            document.getElementById('loadingSection').style.display = show ? 'block' : 'none';
+            document.getElementById('searchBtn').disabled = show;
+        }
+
+        function hideResults() {
+            document.getElementById('resultsSection').style.display = 'none';
+            document.getElementById('noResults').style.display = 'none';
+        }
+
+        function showNoResults() {
+            document.getElementById('noResults').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

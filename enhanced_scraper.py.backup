@@ -1,11 +1,4 @@
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
-"""
-
-from unified_scraper import UnifiedKaraokeScraper
 
 import requests
 import logging
@@ -13,8 +6,6 @@ import json
 import time
 from urllib.parse import quote
 import random
-# -*- coding: utf-8 -*-
-
 
 # 設定日誌
 logging.basicConfig(
@@ -181,7 +172,7 @@ class EnhancedKaraokeScraper:
         
         # 載入現有資料
         try:
-            with open('public/unified_karaoke_db.json', 'r', encoding='utf-8') as f:
+            with open('public/songs_simplified.json', 'r', encoding='utf-8') as f:
                 existing_songs = json.load(f)
             for song in existing_songs:
                 song_id = f"{song.get('歌名', '')}-{song.get('歌手', '')}-{song.get('編號', '')}"

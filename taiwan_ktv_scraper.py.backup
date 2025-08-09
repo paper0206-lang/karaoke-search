@@ -1,24 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
+台灣點歌王搜尋爬蟲
+使用方法: python taiwan_ktv_scraper.py "搜尋關鍵字"
 """
-
-from unified_scraper import UnifiedKaraokeScraper
 
 import requests
 import json
 import sys
 import time
 from urllib.parse import quote
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-台灣點歌王搜尋爬蟲
-使用方法: python taiwan_ktv_scraper.py "搜尋關鍵字"
-"""
-
 
 def search_taiwan_ktv(keyword):
     """搜尋台灣點歌王"""

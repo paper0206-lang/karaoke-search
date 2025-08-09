@@ -1,26 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
-"""
-
-from unified_scraper import UnifiedKaraokeScraper
-
-import json
-import os
-from datetime import datetime
-from collections import Counter
-                        import re
-    import subprocess
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
 
 """
 爬蟲統計工具 - 分析歌曲資料庫
 使用方法: python3 scraper_stats.py
 """
 
+import json
+import os
+from datetime import datetime
+from collections import Counter
 
 def analyze_database():
     """分析歌曲資料庫"""
@@ -34,7 +23,7 @@ def analyze_database():
         return
     
     try:
-        with open('public/unified_karaoke_db.json', 'r', encoding='utf-8') as f:
+        with open('public/songs_simplified.json', 'r', encoding='utf-8') as f:
             songs = json.load(f)
         
         print(f"\n📊 基本統計:")
@@ -95,6 +84,7 @@ def analyze_database():
                 with open('auto_update.log', 'r', encoding='utf-8') as f:
                     log_content = f.read()
                     if '目前總計:' in log_content:
+                        import re
                         counts = re.findall(r'目前總計: (\d+) 首', log_content)
                         if len(counts) >= 2:
                             start_count = int(counts[0])
@@ -113,6 +103,7 @@ def analyze_database():
 
 def check_scraper_status():
     """檢查爬蟲運行狀態"""
+    import subprocess
     
     print(f"\n🤖 爬蟲狀態:")
     try:

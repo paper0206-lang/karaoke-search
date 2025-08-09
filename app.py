@@ -84,8 +84,8 @@ def taiwan_ktv_search():
             try:
                 data = response.json()
                 if isinstance(data, list):
-                    # 限制結果數量，避免過多資料
-                    limited_data = data[:50]
+                    # 增加結果數量，提升搜尋體驗
+                    limited_data = data[:200]  # 從50首增加到200首
                     
                     logging.info(f"台灣點歌王搜尋成功: 找到 {len(data)} 首歌曲，回傳前 {len(limited_data)} 首")
                     
@@ -197,8 +197,8 @@ def taiwan_search():
         results = search_taiwan_ktv(keyword)
         
         if results:
-            # 限制結果數量
-            limited_results = results[:50]
+            # 增加結果數量
+            limited_results = results[:200]  # 從50首增加到200首
             return jsonify({
                 'success': True,
                 'data': limited_results,

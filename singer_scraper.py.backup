@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
+歌手專用爬蟲 - 無上限完整收集單一歌手的所有歌曲
+使用方法: python3 singer_scraper.py
 """
-
-from unified_scraper import UnifiedKaraokeScraper
 
 import requests
 import json
@@ -16,13 +14,6 @@ from datetime import datetime
 from concurrent.futures import ThreadPoolExecutor, as_completed
 import threading
 from collections import defaultdict
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-歌手專用爬蟲 - 無上限完整收集單一歌手的所有歌曲
-使用方法: python3 singer_scraper.py
-"""
-
 
 class SingerScraper:
     def __init__(self, max_workers=2):

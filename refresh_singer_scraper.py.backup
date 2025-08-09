@@ -1,24 +1,15 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
+歌手資料刷新系統 - 重新爬取現有歌手，不重複儲存
 """
 
-from unified_scraper import UnifiedKaraokeScraper
-
 import sys
+sys.path.append('.')
 from singer_scraper import SingerScraper
 import json
 import time
 from datetime import datetime
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-歌手資料刷新系統 - 重新爬取現有歌手，不重複儲存
-"""
-
-sys.path.append('.')
 
 class SingerRefresher:
     def __init__(self):

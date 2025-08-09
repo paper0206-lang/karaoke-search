@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-⚠️ 此爬蟲已更新為統一資料庫架構兼容
-建議使用 unified_scraper.py 或確保此爬蟲正確處理統一資料庫格式
+高級多線程卡拉OK歌曲爬蟲
+使用智能關鍵字生成和多線程並行搜尋
 """
-
-from unified_scraper import UnifiedKaraokeScraper
 
 import requests
 import json
@@ -18,13 +16,6 @@ import threading
 from collections import defaultdict
 import string
 import itertools
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-高級多線程卡拉OK歌曲爬蟲
-使用智能關鍵字生成和多線程並行搜尋
-"""
-
 
 class AdvancedKaraokeScraper:
     def __init__(self, max_workers=3, max_songs=15000):
@@ -278,7 +269,7 @@ class AdvancedKaraokeScraper:
         """執行多線程爬蟲"""
         # 載入現有資料
         try:
-            with open('public/unified_karaoke_db.json', 'r', encoding='utf-8') as f:
+            with open('public/songs_simplified.json', 'r', encoding='utf-8') as f:
                 existing_songs = json.load(f)
             self.all_songs = {f"{s['歌名']}-{s['歌手']}-{s['編號']}": s for s in existing_songs}
             print(f"📚 載入現有歌曲: {len(self.all_songs)} 首")
