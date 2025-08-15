@@ -165,22 +165,47 @@ export default {
       hasSearched.value = true;
       
       try {
-        // 先檢查是否為歌手搜尋
-        const singerMatch = findSingerMatch(searchQuery.value.trim());
+        const query = searchQuery.value.trim();
         
-        if (singerMatch) {
-          // 歌手搜尋模式
+        // 優先使用完整歌曲資料庫搜尋，獲得更多結果
+        let localResults = searchSongs(query);
+        console.log(`🎵 本地搜尋結果: ${localResults.length} 首`);
+        
+        // 如果本地結果較少，嘗試使用歌手資料庫
+        const singerMatch = findSingerMatch(query);
+        if (singerMatch && (localResults.length < 50 || localResults.length < singerMatch.歌曲清單.length)) {
+          console.log(`🎤 歌手資料庫找到: ${singerMatch.歌曲清單.length} 首`);
+          
+          // 合併歌手資料庫的結果
+          const singerSongs = singerMatch.歌曲清單.map(song => ({
+            歌名: song.歌名,
+            歌手: query, // 使用搜尋的歌手名
+            語言: song.語言,
+            編號資訊: song.編號資訊
+          }));
+          
+          // 合併去重
+          const combined = [...localResults];
+          singerSongs.forEach(singerSong => {
+            const exists = combined.find(localSong => 
+              localSong.歌名 === singerSong.歌名 && 
+              localSong.歌手?.includes(query)
+            );
+            if (!exists) {
+              combined.push(singerSong);
+            }
+          });
+          
+          localResults = combined;
           searchMode.value = 'singer';
-          searchResults.value = singerMatch.歌曲清單;
-          totalSongs.value = searchResults.value.length;
-          console.log(`🎤 歌手搜尋: ${singerMatch.歌手名稱}, ${totalSongs.value} 首歌曲`);
         } else {
-          // 歌曲搜尋模式
           searchMode.value = 'song';
-          searchResults.value = searchSongs(searchQuery.value.trim());
-          totalSongs.value = searchResults.value.length;
-          console.log(`🎵 歌曲搜尋: ${searchQuery.value}, ${totalSongs.value} 首歌曲`);
         }
+        
+        searchResults.value = localResults;
+        totalSongs.value = searchResults.value.length;
+        
+        console.log(`✅ 最終搜尋結果: ${totalSongs.value} 首 (模式: ${searchMode.value})`);
         
         // 歸納相同歌曲
         groupResults();

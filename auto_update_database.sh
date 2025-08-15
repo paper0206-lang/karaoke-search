@@ -51,10 +51,28 @@ main() {
     
     # 執行爬蟲程式
     log_info "🔍 開始執行爬蟲程式..."
-    if python3 quick_scraper.py; then
+    
+    # 檢查 Python 依賴
+    if ! python3 -c "import requests, json" 2>/dev/null; then
+        log_warning "Python依賴檢查失敗，嘗試安裝..."
+        pip3 install requests > /dev/null 2>&1
+    fi
+    
+    # 檢查 unified_scraper 模組
+    if [[ ! -f "unified_scraper.py" ]]; then
+        log_warning "unified_scraper.py 不存在，嘗試從備份目錄複製..."
+        if [[ -f "backup_scrapers/unified_scraper.py" ]]; then
+            cp backup_scrapers/unified_scraper.py .
+            log_info "已複製 unified_scraper.py"
+        fi
+    fi
+    
+    # 執行爬蟲 - 使用 timeout 防止卡住，增加錯誤處理
+    if timeout 1800 python3 quick_scraper.py 2>&1 | tee -a scraper_auto_update.log; then
         log_success "爬蟲程式執行完成"
     else
-        log_warning "爬蟲程式執行時遇到一些問題，繼續下一步"
+        SCRAPER_EXIT_CODE=$?
+        log_warning "爬蟲程式執行時遇到問題 (退出碼: $SCRAPER_EXIT_CODE)，繼續下一步"
     fi
     
     # 檢查是否有新歌曲

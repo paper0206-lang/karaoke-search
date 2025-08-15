@@ -18,16 +18,18 @@
     },
     {
       "src": "/songs_simplified.json",
-      "dest": "/songs_simplified.json",
+      "dest": "/public/songs_simplified.json",
       "headers": {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=3600"
       }
     },
     {
       "src": "/singers_data.json",
-      "dest": "/singers_data.json",
+      "dest": "/public/singers_data.json",
       "headers": {
-        "Content-Type": "application/json"
+        "Content-Type": "application/json; charset=utf-8",
+        "Cache-Control": "public, max-age=3600"
       }
     },
     {
