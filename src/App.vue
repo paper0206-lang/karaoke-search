@@ -134,9 +134,22 @@ export default {
           const data = await response.json();
           allSongs.value = data;
           console.log('✅ 歌曲資料載入成功！共', allSongs.value.length, '首');
+        } else {
+          console.error('❌ 歌曲資料載入失敗：HTTP', response.status);
+          // 嘗試備用路徑
+          try {
+            const backupResponse = await fetch('/public/songs_simplified.json');
+            if (backupResponse.ok) {
+              const data = await backupResponse.json();
+              allSongs.value = data;
+              console.log('✅ 歌曲資料載入成功（備用路徑）！共', allSongs.value.length, '首');
+            }
+          } catch (backupError) {
+            console.error('❌ 備用路徑也失敗:', backupError.message);
+          }
         }
       } catch (error) {
-        console.log('❌ 載入歌曲資料失敗:', error.message);
+        console.error('❌ 載入歌曲資料失敗:', error.message);
       }
     };
 
@@ -151,9 +164,23 @@ export default {
           singersData.value = data;
           totalSingers.value = Object.keys(data).length;
           console.log('✅ 歌手資料載入成功！共', totalSingers.value, '位');
+        } else {
+          console.error('❌ 歌手資料載入失敗：HTTP', response.status);
+          // 嘗試備用路徑
+          try {
+            const backupResponse = await fetch('/public/singers_data.json');
+            if (backupResponse.ok) {
+              const data = await backupResponse.json();
+              singersData.value = data;
+              totalSingers.value = Object.keys(data).length;
+              console.log('✅ 歌手資料載入成功（備用路徑）！共', totalSingers.value, '位');
+            }
+          } catch (backupError) {
+            console.error('❌ 備用路徑也失敗:', backupError.message);
+          }
         }
       } catch (error) {
-        console.log('❌ 載入歌手資料失敗:', error.message);
+        console.error('❌ 載入歌手資料失敗:', error.message);
       }
     };
 
