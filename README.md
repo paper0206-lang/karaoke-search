@@ -22,3 +22,4 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+<!-- Deploy trigger 2025年 8月16日 週六 01時31分25秒 CST -->
