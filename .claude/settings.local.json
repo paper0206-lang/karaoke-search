@@ -46,7 +46,8 @@
       "Bash(./start_optimized_scraper.sh:*)",
       "Bash(./stop_optimized_scraper.sh:*)",
       "Bash(./start_4thread_scraper.sh:*)",
-      "Bash(sed:*)"
+      "Bash(sed:*)",
+      "Bash(cat:*)"
     ],
     "deny": []
   }

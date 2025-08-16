@@ -35,120 +35,130 @@ class ImprovedTaiwanComparator:
             'DNT': '1'
         })
     
-    def get_singer_ktv_count_from_website_correct(self, singer_name):
-        """使用正確的搜索方式查詢台灣點歌網（基於HAR文件分析）"""
+    def get_singer_ktv_count_from_website_correct(self, singer_name, max_pages=None):
+        """使用正確的搜索方式查詢台灣點歌網（基於HAR文件分析，支持分頁）"""
         try:
-            self.logger.info(f"🔍 正確方式查詢台灣點歌網: {singer_name}")
-            
-            # 使用HAR文件中發現的正確搜索方式
-            search_url = f"{self.base_url}/songs.aspx?company=全部&keyword={quote(singer_name)}"
-            
-            self.logger.info(f"📡 搜索URL: {search_url}")
-            
-            response = self.session.get(search_url, timeout=20)
-            response.encoding = "utf-8"
-            
-            if response.status_code == 200:
-                soup = BeautifulSoup(response.text, "html.parser")
-                
-                # 分析頁面結構找到歌曲資訊
-                ktv_entries = []
-                
-                # 尋找歌曲表格或清單
-                # 根據台灣點歌網的結構，歌曲通常在特定的表格或div中
-                
-                # 方法1: 尋找mv.aspx連結
-                song_links = soup.select('a[href^="mv.aspx?id="]')
-                
-                for link in song_links:
-                    try:
-                        raw_text = link.get_text().strip()
-                        href = link.get('href', '')
-                        
-                        # 解析歌曲ID
-                        song_id = None
-                        if 'id=' in href:
-                            song_id = href.split('id=')[1].split('&')[0]
-                        
-                        # 解析歌曲信息
-                        lines = raw_text.split('\n')
-                        if len(lines) >= 2:
-                            song_name = lines[0].strip()
-                            additional_info = lines[1].strip() if len(lines) > 1 else ""
-                            
-                            # 尋找KTV公司和編號信息
-                            # 這可能需要進一步解析或從其他元素獲取
-                            ktv_entries.append({
-                                'song_name': song_name,
-                                'singer': singer_name,
-                                'song_id': song_id,
-                                'additional_info': additional_info,
-                                'raw_text': raw_text
-                            })
-                            
-                    except Exception as e:
-                        self.logger.debug(f"解析歌曲連結失敗: {e}")
-                        continue
-                
-                # 方法2: 尋找表格數據
-                tables = soup.find_all('table')
-                for table in tables:
-                    rows = table.find_all('tr')
-                    for row in rows:
-                        cells = row.find_all(['td', 'th'])
-                        if len(cells) >= 2:
-                            # 檢查是否包含歌曲信息
-                            cell_texts = [cell.get_text().strip() for cell in cells]
-                            
-                            # 如果某個cell包含歌手名稱，可能是歌曲行
-                            if any(singer_name in text for text in cell_texts):
-                                ktv_entries.append({
-                                    'song_name': cell_texts[0] if cell_texts else "",
-                                    'singer': singer_name,
-                                    'table_data': cell_texts
-                                })
-                
-                # 方法3: 尋找包含歌手名稱的其他元素
-                all_text_elements = soup.find_all(text=lambda text: text and singer_name in text)
-                
-                self.logger.info(f"🎵 {singer_name} 正確搜索結果:")
-                self.logger.info(f"   mv.aspx連結: {len(song_links)} 個")
-                self.logger.info(f"   表格行: {len([e for e in ktv_entries if 'table_data' in e])} 行")
-                self.logger.info(f"   文字匹配: {len(all_text_elements)} 處")
-                
-                # 統計總數
-                total_ktv_entries = len(ktv_entries)
-                unique_songs = len(set(entry['song_name'] for entry in ktv_entries if entry['song_name']))
-                
-                # 如果結果很少，可能需要調整解析策略
-                if total_ktv_entries < 10:
-                    self.logger.warning(f"⚠️ {singer_name} 搜索結果較少，可能需要調整解析策略")
-                    
-                    # 保存頁面內容以供調試
-                    debug_file = f"debug_search_{singer_name}_{int(time.time())}.html"
-                    with open(debug_file, 'w', encoding='utf-8') as f:
-                        f.write(response.text)
-                    self.logger.info(f"🔧 頁面內容已保存至: {debug_file}")
-                
-                return {
-                    'singer_name': singer_name,
-                    'total_ktv_entries': total_ktv_entries,
-                    'unique_songs': unique_songs,
-                    'ktv_entries': ktv_entries,
-                    'search_successful': True,
-                    'method': 'correct_website_search'
-                }
-                
+            if max_pages:
+                self.logger.info(f"🔍 正確方式查詢台灣點歌網: {singer_name} (最多檢查{max_pages}頁)")
             else:
-                self.logger.error(f"搜索請求失敗: {response.status_code}")
-                return {
-                    'singer_name': singer_name,
-                    'total_ktv_entries': 0,
-                    'unique_songs': 0,
-                    'ktv_entries': [],
-                    'search_successful': False,
-                    'error': f"HTTP {response.status_code}"
-                }
+                self.logger.info(f"🔍 正確方式查詢台灣點歌網: {singer_name} (無上限檢查)")
+            
+            all_ktv_entries = []
+            page = 1
+            consecutive_empty_pages = 0
+            max_empty_pages = 3  # 連續3頁無資料就停止
+            
+            while (max_pages is None or page <= max_pages) and consecutive_empty_pages < max_empty_pages:
+                try:
+                    # 使用HAR文件中發現的正確搜索方式 + 分頁
+                    search_url = f"{self.base_url}/songs.aspx?company=全部&keyword={quote(singer_name)}&page={page}"
+                    
+                    self.logger.debug(f"📡 第{page}頁 URL: {search_url}")
+                    
+                    # 智能延遲避免過於頻繁
+                    if page > 1:
+                        time.sleep(random.uniform(1, 2))
+                    
+                    response = self.session.get(search_url, timeout=20)
+                    response.encoding = "utf-8"
+                    
+                    if response.status_code == 200:
+                        soup = BeautifulSoup(response.text, "html.parser")
+                        
+                        # 尋找歌曲連結
+                        song_links = soup.select('a[href^="mv.aspx?id="]')
+                        
+                        if song_links:
+                            # 重置空頁計數器
+                            consecutive_empty_pages = 0
+                            page_entries = []
+                            
+                            for link in song_links:
+                                try:
+                                    raw_text = link.get_text().strip()
+                                    href = link.get('href', '')
+                                    
+                                    # 解析歌曲ID
+                                    song_id = None
+                                    if 'id=' in href:
+                                        song_id = href.split('id=')[1].split('&')[0]
+                                    
+                                    # 解析歌曲信息
+                                    lines = raw_text.split('\n')
+                                    if len(lines) >= 2:
+                                        song_name = lines[0].strip()
+                                        additional_info = lines[1].strip() if len(lines) > 1 else ""
+                                        
+                                        # 檢查是否真的包含歌手名稱（避免無關歌曲）
+                                        if singer_name in raw_text or singer_name in additional_info:
+                                            entry = {
+                                                'song_name': song_name,
+                                                'singer': singer_name,
+                                                'song_id': song_id,
+                                                'additional_info': additional_info,
+                                                'raw_text': raw_text,
+                                                'page': page
+                                            }
+                                            page_entries.append(entry)
+                                            
+                                except Exception as e:
+                                    self.logger.debug(f"解析歌曲連結失敗: {e}")
+                                    continue
+                            
+                            all_ktv_entries.extend(page_entries)
+                            self.logger.info(f"   第{page}頁: {len(page_entries)} 首歌")
+                            
+                        else:
+                            # 本頁無歌曲資料
+                            consecutive_empty_pages += 1
+                            self.logger.info(f"   第{page}頁: 無資料 ({consecutive_empty_pages}/{max_empty_pages})")
+                    
+                    else:
+                        self.logger.warning(f"第{page}頁 HTTP錯誤: {response.status_code}")
+                        consecutive_empty_pages += 1
+                    
+                    page += 1
+                    
+                except Exception as e:
+                    self.logger.error(f"第{page}頁查詢失敗: {e}")
+                    consecutive_empty_pages += 1
+                    page += 1
+                    continue
+            
+            # 統計總數
+            total_ktv_entries = len(all_ktv_entries)
+            unique_songs = len(set(entry['song_name'] for entry in all_ktv_entries if entry['song_name']))
+            pages_checked = page - 1
+            
+            self.logger.info(f"🎵 {singer_name} 完整搜索結果:")
+            self.logger.info(f"   檢查頁數: {pages_checked} 頁")
+            self.logger.info(f"   KTV編號總數: {total_ktv_entries}")
+            self.logger.info(f"   獨特歌曲數: {unique_songs}")
+            
+            # 如果結果仍然很少，可能需要檢查是否有其他問題
+            if total_ktv_entries < 20 and pages_checked < 3:
+                self.logger.warning(f"⚠️ {singer_name} 搜索結果較少，可能需要調整策略")
+                
+                # 保存第一頁內容以供調試
+                debug_file = f"debug_paginated_search_{singer_name}_{int(time.time())}.html"
+                try:
+                    first_page_url = f"{self.base_url}/songs.aspx?company=全部&keyword={quote(singer_name)}&page=1"
+                    debug_response = self.session.get(first_page_url, timeout=15)
+                    with open(debug_file, 'w', encoding='utf-8') as f:
+                        f.write(debug_response.text)
+                    self.logger.info(f"🔧 第一頁內容已保存至: {debug_file}")
+                except:
+                    pass
+            
+            return {
+                'singer_name': singer_name,
+                'total_ktv_entries': total_ktv_entries,
+                'unique_songs': unique_songs,
+                'ktv_entries': all_ktv_entries,
+                'pages_checked': pages_checked,
+                'search_successful': True,
+                'method': 'correct_paginated_search'
+            }
                 
         except Exception as e:
             self.logger.error(f"查詢 {singer_name} 失敗: {e}")
@@ -157,6 +167,7 @@ class ImprovedTaiwanComparator:
                 'total_ktv_entries': 0,
                 'unique_songs': 0,
                 'ktv_entries': [],
+                'pages_checked': 0,
                 'search_successful': False,
                 'error': str(e)
             }

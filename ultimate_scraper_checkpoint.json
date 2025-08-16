@@ -1,0 +1,14 @@
+{
+  "singers_processed": 5,
+  "singers_scraped": 5,
+  "singers_skipped": 0,
+  "last_update": "2025-08-17T06:51:33.151596",
+  "status": "running",
+  "processed_singers": [
+    "James",
+    "劉琦",
+    "王嘯坤",
+    "寶·巴特爾",
+    "王麗達"
+  ]
+}
