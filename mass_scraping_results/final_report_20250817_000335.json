@@ -1,0 +1,565 @@
+{
+  "execution_summary": {
+    "start_time": "2025-08-16T22:17:27.104223",
+    "end_time": "2025-08-17T00:03:35.819497",
+    "duration": "1:46:08.713728",
+    "benchmark_standard": {
+      "total_songs": 12,
+      "unique_songs": 12,
+      "ktv_entries": 72,
+      "companies_covered": 16,
+      "languages": [
+        "國",
+        "台"
+      ],
+      "taiwan_songs": 5,
+      "mandarin_songs": 7
+    }
+  },
+  "statistics": {
+    "total_singers": 112,
+    "processed_singers": 88,
+    "successful_singers": 15,
+    "new_songs_added": 510,
+    "updated_singers": 15,
+    "failed_singers": 0,
+    "start_time": "2025-08-16T22:17:27.104223",
+    "current_batch": 0
+  },
+  "detailed_results": [
+    {
+      "singer": "張信哲",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "王力宏",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "蕭亞軒",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "張韶涵",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "林憶蓮",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "辛曉琪",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "郭富城",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "王菲",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "黎明",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "那英",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "容祖兒",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "南拳媽媽",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "張國榮",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "梅艷芳",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "飛輪海",
+      "status": "no_data",
+      "benchmark_score": 0.6666666666666666
+    },
+    {
+      "singer": "信樂團",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "四分衛",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "告五人",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "Westlife",
+      "status": "no_data",
+      "benchmark_score": 0.6458333333333334
+    },
+    {
+      "singer": "孫盛希",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "林展逸",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 2,
+      "companies_found": 1,
+      "benchmark_before": 0.5833333333333334,
+      "benchmark_after": 0.5833333333333334,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "陳奕迅",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "齊豫",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "陳昇",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "原子邦妮",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "謝霆鋒",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "高爾宣",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "Backstreet boys",
+      "status": "no_data",
+      "benchmark_score": 0.6458333333333334
+    },
+    {
+      "singer": "蔡小虎",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "葉啟田",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "周華健",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "方瑞娥",
+      "status": "processed",
+      "new_songs": 159,
+      "updated_songs": 11,
+      "total_new_songs": 173,
+      "companies_found": 17,
+      "benchmark_before": 0.6041666666666666,
+      "benchmark_after": 1.0208333333333333,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "羅志祥",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 9,
+      "benchmark_before": 0.6041666666666666,
+      "benchmark_after": 0.7083333333333334,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "姜育恆",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "毛阿敏",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "李翊君",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "龍飄飄",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "童安格",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "宋念宇",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "羅百吉",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "韓紅",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "蔡秋鳳",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "甲子慧",
+      "status": "already_complete",
+      "benchmark_score": 0.7916666666666666
+    },
+    {
+      "singer": "王傑",
+      "status": "no_data",
+      "benchmark_score": 0.6875
+    },
+    {
+      "singer": "古巨基",
+      "status": "no_data",
+      "benchmark_score": 0.6875
+    },
+    {
+      "singer": "ØZI",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "翁立友",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "甄妮",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 5,
+      "companies_found": 4,
+      "benchmark_before": 0.6875,
+      "benchmark_after": 0.6875,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "古慧慧",
+      "status": "no_data",
+      "benchmark_score": 0.6041666666666666
+    },
+    {
+      "singer": "江志豐",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "阿吉仔",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "金門王+李炳輝",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "持修",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "海來阿木",
+      "status": "already_complete",
+      "benchmark_score": 0.75
+    },
+    {
+      "singer": "潘瑋柏",
+      "status": "already_complete",
+      "benchmark_score": 0.7222222222222222
+    },
+    {
+      "singer": "孟庭葦",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 3,
+      "companies_found": 6,
+      "benchmark_before": 0.6597222222222222,
+      "benchmark_after": 0.6597222222222222,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "陳雙",
+      "status": "no_data",
+      "benchmark_score": 0.4930555555555555
+    },
+    {
+      "singer": "邱芸子",
+      "status": "processed",
+      "new_songs": 130,
+      "updated_songs": 8,
+      "total_new_songs": 138,
+      "companies_found": 17,
+      "benchmark_before": 0.6805555555555555,
+      "benchmark_after": 1.0416666666666667,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "郭金發",
+      "status": "processed",
+      "new_songs": 73,
+      "updated_songs": 8,
+      "total_new_songs": 84,
+      "companies_found": 15,
+      "benchmark_before": 0.5972222222222222,
+      "benchmark_after": 0.9791666666666666,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "莊心妍",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 2,
+      "companies_found": 9,
+      "benchmark_before": 0.6805555555555555,
+      "benchmark_after": 0.6805555555555555,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "白冰冰",
+      "status": "already_complete",
+      "benchmark_score": 0.7152777777777778
+    },
+    {
+      "singer": "許茹芸",
+      "status": "no_data",
+      "benchmark_score": 0.6319444444444445
+    },
+    {
+      "singer": "莫文蔚",
+      "status": "no_data",
+      "benchmark_score": 0.6944444444444445
+    },
+    {
+      "singer": "陳小春",
+      "status": "no_data",
+      "benchmark_score": 0.5486111111111112
+    },
+    {
+      "singer": "王建傑",
+      "status": "already_complete",
+      "benchmark_score": 0.7777777777777778
+    },
+    {
+      "singer": "金欣文藝部",
+      "status": "no_data",
+      "benchmark_score": 0.5069444444444445
+    },
+    {
+      "singer": "陳瑞",
+      "status": "processed",
+      "new_songs": 17,
+      "updated_songs": 0,
+      "total_new_songs": 17,
+      "companies_found": 6,
+      "benchmark_before": 0.6527777777777778,
+      "benchmark_after": 0.75,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "吳卓源",
+      "status": "no_data",
+      "benchmark_score": 0.6527777777777778
+    },
+    {
+      "singer": "游鴻明",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 2,
+      "benchmark_before": 0.6111111111111112,
+      "benchmark_after": 0.6111111111111112,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "沈芳如",
+      "status": "processed",
+      "new_songs": 57,
+      "updated_songs": 8,
+      "total_new_songs": 65,
+      "companies_found": 14,
+      "benchmark_before": 0.6944444444444445,
+      "benchmark_after": 0.9583333333333334,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "涂敏恆",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    },
+    {
+      "singer": "李榮浩",
+      "status": "no_data",
+      "benchmark_score": 0.6875
+    },
+    {
+      "singer": "彭嬿",
+      "status": "no_data",
+      "benchmark_score": 0.4791666666666667
+    },
+    {
+      "singer": "夏天Alex",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "伍佰+China Blue",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "1976",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "許志安",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 1,
+      "benchmark_before": 0.6041666666666666,
+      "benchmark_after": 0.6041666666666666,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "任賢齊",
+      "status": "processed",
+      "new_songs": 9,
+      "updated_songs": 0,
+      "total_new_songs": 9,
+      "companies_found": 14,
+      "benchmark_before": 0.625,
+      "benchmark_after": 0.7916666666666666,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "顏人中",
+      "status": "already_complete",
+      "benchmark_score": 0.7083333333333334
+    },
+    {
+      "singer": "陳慧琳",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    },
+    {
+      "singer": "蘇慧倫",
+      "status": "no_data",
+      "benchmark_score": 0.5833333333333334
+    },
+    {
+      "singer": "許富凱",
+      "status": "processed",
+      "new_songs": 63,
+      "updated_songs": 8,
+      "total_new_songs": 72,
+      "companies_found": 15,
+      "benchmark_before": 0.6875,
+      "benchmark_after": 0.9791666666666666,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "Spice girls",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    },
+    {
+      "singer": "吳淑敏",
+      "status": "already_complete",
+      "benchmark_score": 0.7708333333333334
+    },
+    {
+      "singer": "鄭進一",
+      "status": "already_complete",
+      "benchmark_score": 0.7291666666666666
+    },
+    {
+      "singer": "陳曉東",
+      "status": "no_data",
+      "benchmark_score": 0.6041666666666666
+    },
+    {
+      "singer": "王心凌",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "A-Lin",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 12,
+      "benchmark_before": 0.5972222222222222,
+      "benchmark_after": 0.6666666666666666,
+      "meets_benchmark_now": false
+    }
+  ],
+  "lu_benchmark_compliance": {
+    "singers_meeting_benchmark": 8,
+    "benchmark_achievement_rate": 0.5333333333333333
+  }
+}

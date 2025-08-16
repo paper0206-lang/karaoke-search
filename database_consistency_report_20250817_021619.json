@@ -1,0 +1,133 @@
+{
+  "main_db_stats": {
+    "total_singers": 3478,
+    "total_songs": 12801,
+    "total_ktv_entries": 37991,
+    "avg_songs_per_singer": 3.68056354226567,
+    "language_stats": {
+      "國": 9355,
+      "台": 2161,
+      "客": 297,
+      "英": 519,
+      "": 24,
+      "粵": 243,
+      "日": 170,
+      "山": 16,
+      "兒": 15,
+      "韓": 1
+    },
+    "company_stats": {
+      "錢櫃": 6141,
+      "好樂迪": 2993,
+      "銀櫃": 1307,
+      "金嗓": 6603,
+      "星據點": 483,
+      "MV": 1291,
+      "享溫馨": 600,
+      "瑞影": 1348,
+      "金嗓/家庭": 591,
+      "音圓": 4878,
+      "點將家": 2446,
+      "金影": 1560,
+      "音影": 1684,
+      "弘音": 1842,
+      "大唐": 2075,
+      "嘉揚": 832,
+      "金嗓/投幣": 100,
+      "音遊": 857,
+      "音圓原廠": 166,
+      "美華": 187,
+      "一級棒": 7
+    }
+  },
+  "checkpoint_data": {
+    "fixed": {
+      "last_updated": "2025-08-17T02:08:04.975256",
+      "processed_singers": [
+        "鳳飛飛",
+        "林俊傑",
+        "田馥甄",
+        "飛輪海",
+        "孫盛希",
+        "郭富城",
+        "南拳媽媽",
+        "李玟",
+        "張國榮",
+        "林展逸",
+        "洪榮宏",
+        "四分衛",
+        "蘇芮",
+        "林憶蓮",
+        "黃乙玲",
+        "王菲",
+        "張韶涵",
+        "告五人",
+        "容祖兒",
+        "江蕙",
+        "龍千玉",
+        "梁靜茹",
+        "孫燕姿",
+        "鄧紫棋",
+        "孫淑媚",
+        "楊丞琳",
+        "林宥嘉",
+        "詹雅雯",
+        "潘越雲",
+        "蕭亞軒",
+        "宋瑞梅",
+        "信樂團",
+        "梅艷芳",
+        "張信哲",
+        "F.I.R.",
+        "S.H.E",
+        "Westlife",
+        "伍佰",
+        "黎明",
+        "辛曉琪",
+        "陳零九",
+        "那英",
+        "羅大佑",
+        "文夏",
+        "王力宏",
+        "萬芳",
+        "陳瑞",
+        "黃小琥",
+        "蔡依林",
+        "余天"
+      ],
+      "total_processed": 50,
+      "session_stats": {
+        "total_singers": 200,
+        "processed_singers": 50,
+        "successful_singers": 24,
+        "new_songs_added": 1093,
+        "updated_singers": 24,
+        "failed_singers": 0,
+        "git_pushes": 4,
+        "start_time": "2025-08-17T00:12:14.364647"
+      },
+      "benchmark_threshold": 0.95
+    },
+    "old": {
+      "last_updated": "2025-08-17T00:04:08.383388",
+      "processed_singers": [
+        "伍佰"
+      ],
+      "total_processed": 1,
+      "session_stats": {
+        "total_singers": 163,
+        "processed_singers": 1,
+        "successful_singers": 1,
+        "new_songs_added": 0,
+        "updated_singers": 1,
+        "failed_singers": 0,
+        "start_time": "2025-08-17T00:03:42.339251",
+        "current_batch": 0
+      }
+    }
+  },
+  "integrity_issues": [
+    "發現 3141 位歌手歌曲數量過少"
+  ],
+  "inconsistencies": []
+}

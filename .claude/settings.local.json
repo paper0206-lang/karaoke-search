@@ -28,7 +28,25 @@
       "WebFetch(domain:karaoke-search-theta.vercel.app)",
       "Bash(pip install:*)",
       "Bash(/Users/paper/SuperClaude_Framework/.venv/bin/pip install requests beautifulsoup4)",
-      "Bash(/opt/anaconda3/bin/python:*)"
+      "Bash(/opt/anaconda3/bin/python:*)",
+      "Bash(python:*)",
+      "Bash(kill:*)",
+      "Bash(mv:*)",
+      "Bash(true)",
+      "Bash(pkill:*)",
+      "Bash(timeout:*)",
+      "WebFetch(domain:zh.wikipedia.org)",
+      "Bash(ln:*)",
+      "Bash(npm install:*)",
+      "Bash(git reset:*)",
+      "Bash(curl:*)",
+      "Bash(./start_background_scraper.sh:*)",
+      "Bash(./stop_background_scraper.sh:*)",
+      "Bash(./start_fixed_scraper.sh:*)",
+      "Bash(./start_optimized_scraper.sh:*)",
+      "Bash(./stop_optimized_scraper.sh:*)",
+      "Bash(./start_4thread_scraper.sh:*)",
+      "Bash(sed:*)"
     ],
     "deny": []
   }

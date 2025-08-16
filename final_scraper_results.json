@@ -1,0 +1,82 @@
+[
+  {
+    "singer": "James",
+    "action": "scraped",
+    "reason": "insufficient_data",
+    "priority_score": 89.0,
+    "check_result": {
+      "needs_scraping": true,
+      "priority_score": 89.0,
+      "reason": "insufficient_data",
+      "our_count": 1,
+      "website_count": "to_be_checked",
+      "coverage_ratio": 0.0,
+      "priority_level": "very_high"
+    },
+    "scraped_timestamp": "2025-08-17T06:30:40.687466"
+  },
+  {
+    "singer": "劉琦",
+    "action": "scraped",
+    "reason": "insufficient_data",
+    "priority_score": 89.0,
+    "check_result": {
+      "needs_scraping": true,
+      "priority_score": 89.0,
+      "reason": "insufficient_data",
+      "our_count": 1,
+      "website_count": "to_be_checked",
+      "coverage_ratio": 0.0,
+      "priority_level": "very_high"
+    },
+    "scraped_timestamp": "2025-08-17T06:30:42.840702"
+  },
+  {
+    "singer": "王嘯坤",
+    "action": "scraped",
+    "reason": "insufficient_data",
+    "priority_score": 89.0,
+    "check_result": {
+      "needs_scraping": true,
+      "priority_score": 89.0,
+      "reason": "insufficient_data",
+      "our_count": 1,
+      "website_count": "to_be_checked",
+      "coverage_ratio": 0.0,
+      "priority_level": "very_high"
+    },
+    "scraped_timestamp": "2025-08-17T06:30:44.988781"
+  },
+  {
+    "singer": "寶·巴特爾",
+    "action": "scraped",
+    "reason": "insufficient_data",
+    "priority_score": 89.0,
+    "check_result": {
+      "needs_scraping": true,
+      "priority_score": 89.0,
+      "reason": "insufficient_data",
+      "our_count": 1,
+      "website_count": "to_be_checked",
+      "coverage_ratio": 0.0,
+      "priority_level": "very_high"
+    },
+    "scraped_timestamp": "2025-08-17T06:30:47.137585"
+  },
+  {
+    "singer": "王麗達",
+    "action": "scraped",
+    "reason": "insufficient_data",
+    "priority_score": 89.0,
+    "check_result": {
+      "needs_scraping": true,
+      "priority_score": 89.0,
+      "reason": "insufficient_data",
+      "our_count": 1,
+      "website_count": "to_be_checked",
+      "coverage_ratio": 0.0,
+      "priority_level": "very_high"
+    },
+    "scraped_timestamp": "2025-08-17T06:30:49.290670"
+  }
+]

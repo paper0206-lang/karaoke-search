@@ -1,0 +1,106 @@
+{
+  "analysis_time": "2025-08-16T22:10:25.406755",
+  "total_singers_processed": 20,
+  "status_breakdown": {
+    "no_data": 13,
+    "processed": 7
+  },
+  "song_statistics": {
+    "new_songs": 221,
+    "updated_songs": 16,
+    "total_additions": 237
+  },
+  "benchmark_achievement": {
+    "achieved_count": 2,
+    "achievement_rate": 0.2857142857142857
+  },
+  "top_performers": [
+    {
+      "singer": "唐飛",
+      "status": "processed",
+      "new_songs": 108,
+      "updated_songs": 7,
+      "total_new_songs": 115,
+      "companies_found": 16,
+      "benchmark_before": 0.5416666666666666,
+      "benchmark_after": 1.0416666666666667,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "唐儷",
+      "status": "processed",
+      "new_songs": 101,
+      "updated_songs": 9,
+      "total_new_songs": 110,
+      "companies_found": 16,
+      "benchmark_before": 0.5694444444444445,
+      "benchmark_after": 1.0208333333333333,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "甄妮",
+      "status": "processed",
+      "new_songs": 5,
+      "updated_songs": 0,
+      "total_new_songs": 5,
+      "companies_found": 4,
+      "benchmark_before": 0.5347222222222222,
+      "benchmark_after": 0.6875,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "孟庭葦",
+      "status": "processed",
+      "new_songs": 3,
+      "updated_songs": 0,
+      "total_new_songs": 3,
+      "companies_found": 6,
+      "benchmark_before": 0.5138888888888888,
+      "benchmark_after": 0.6597222222222222,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "莊心妍",
+      "status": "processed",
+      "new_songs": 2,
+      "updated_songs": 0,
+      "total_new_songs": 2,
+      "companies_found": 9,
+      "benchmark_before": 0.5,
+      "benchmark_after": 0.6805555555555555,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "游鴻明",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 2,
+      "benchmark_before": 0.5416666666666666,
+      "benchmark_after": 0.6111111111111112,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "許志安",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 1,
+      "benchmark_before": 0.5555555555555555,
+      "benchmark_after": 0.6041666666666666,
+      "meets_benchmark_now": false
+    }
+  ],
+  "overall_stats": {
+    "total_singers": 50,
+    "processed_singers": 20,
+    "successful_singers": 7,
+    "new_songs_added": 221,
+    "updated_singers": 7,
+    "failed_singers": 0,
+    "start_time": "2025-08-16T21:39:28.932435",
+    "current_batch": 0
+  }
+}

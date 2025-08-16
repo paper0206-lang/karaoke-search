@@ -1,0 +1,349 @@
+{
+  "test_info": {
+    "test_time": "2025-08-11 20:48:08",
+    "method": "independent_verification",
+    "approach": [
+      "company_browsing",
+      "direct_search",
+      "page_analysis"
+    ]
+  },
+  "company_browsing_test": {
+    "company": "音圓",
+    "pages_tested": 10,
+    "total_songs_found": 500,
+    "total_singers_found": 41,
+    "test_singers_results": {
+      "周杰倫": {
+        "found": false,
+        "song_count": 0,
+        "songs": []
+      },
+      "蔡依林": {
+        "found": false,
+        "song_count": 0,
+        "songs": []
+      },
+      "詹雅雯": {
+        "found": true,
+        "song_count": 20,
+        "songs": [
+          {
+            "song_id": "410987",
+            "song_name": "想你心就痛",
+            "original_song_name": "想你心就痛",
+            "period": "114-08",
+            "singer": "詹雅雯",
+            "is_live": false,
+            "page": 1,
+            "found_time": "2025-08-11 20:48:08"
+          },
+          {
+            "song_id": "410947",
+            "song_name": "演歌",
+            "original_song_name": "演歌",
+            "period": "114-07",
+            "singer": "詹雅雯",
+            "is_live": false,
+            "page": 1,
+            "found_time": "2025-08-11 20:48:08"
+          },
+          {
+            "song_id": "410987",
+            "song_name": "想你心就痛",
+            "original_song_name": "想你心就痛",
+            "period": "114-08",
+            "singer": "詹雅雯",
+            "is_live": false,
+            "page": 2,
+            "found_time": "2025-08-11 20:48:10"
+          }
+        ]
+      },
+      "龍千玉": {
+        "found": true,
+        "song_count": 20,
+        "songs": [
+          {
+            "song_id": "431518",
+            "song_name": "月光",
+            "original_song_name": "月光",
+            "period": "114-08",
+            "singer": "龍千玉",
+            "is_live": false,
+            "page": 1,
+            "found_time": "2025-08-11 20:48:08"
+          },
+          {
+            "song_id": "410970",
+            "song_name": "愛情若煙火",
+            "original_song_name": "愛情若煙火",
+            "period": "114-08",
+            "singer": "龍千玉",
+            "is_live": false,
+            "page": 1,
+            "found_time": "2025-08-11 20:48:08"
+          },
+          {
+            "song_id": "431518",
+            "song_name": "月光",
+            "original_song_name": "月光",
+            "period": "114-08",
+            "singer": "龍千玉",
+            "is_live": false,
+            "page": 2,
+            "found_time": "2025-08-11 20:48:10"
+          }
+        ]
+      },
+      "五月天": {
+        "found": false,
+        "song_count": 0,
+        "songs": []
+      }
+    },
+    "top_singers": {
+      "龍千玉": 20,
+      "張秀卿": 10,
+      "陳奕珊": 10,
+      "周小玲": 10,
+      "陳淑萍": 10,
+      "陳英吉+潘姵莉": 20,
+      "黃伯樂": 10,
+      "詹秀玉": 20,
+      "江蕙": 10,
+      "余秀娟": 10
+    }
+  },
+  "search_functionality_test": {
+    "search_available": true,
+    "test_results": {
+      "周杰倫": {
+        "method": "GET_search",
+        "status_code": 200,
+        "has_potential_results": true,
+        "content_length": 62957
+      },
+      "蔡依林": {
+        "method": "GET_search",
+        "status_code": 200,
+        "has_potential_results": true,
+        "content_length": 62957
+      }
+    }
+  },
+  "singer_discovery": {
+    "total_discovered": 41,
+    "analysis_sample": {
+      "龍千玉": {
+        "song_count": 20,
+        "live_songs": 0,
+        "regular_songs": 20,
+        "sample_songs": [
+          "月光",
+          "愛情若煙火",
+          "月光"
+        ]
+      },
+      "張秀卿": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "阿桃",
+          "阿桃",
+          "阿桃"
+        ]
+      },
+      "陳奕珊": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "紅花",
+          "紅花",
+          "紅花"
+        ]
+      },
+      "周小玲": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "救贖",
+          "救贖",
+          "救贖"
+        ]
+      },
+      "陳淑萍": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "望你",
+          "望你",
+          "望你"
+        ]
+      },
+      "陳英吉+潘姵莉": {
+        "song_count": 20,
+        "live_songs": 0,
+        "regular_songs": 20,
+        "sample_songs": [
+          "最愛",
+          "愛無理由",
+          "最愛"
+        ]
+      },
+      "黃伯樂": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "乎乾啦",
+          "乎乾啦",
+          "乎乾啦"
+        ]
+      },
+      "詹秀玉": {
+        "song_count": 20,
+        "live_songs": 0,
+        "regular_songs": 20,
+        "sample_songs": [
+          "回頭夢",
+          "濁水溪戀情",
+          "回頭夢"
+        ]
+      },
+      "江蕙": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "花容情",
+          "花容情",
+          "花容情"
+        ]
+      },
+      "余秀娟": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "海中月",
+          "海中月",
+          "海中月"
+        ]
+      },
+      "黃妃": {
+        "song_count": 20,
+        "live_songs": 0,
+        "regular_songs": 20,
+        "sample_songs": [
+          "幾落冬",
+          "冤家落債",
+          "幾落冬"
+        ]
+      },
+      "蔡佳麟+郭婷筠": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "白頭偕老",
+          "白頭偕老",
+          "白頭偕老"
+        ]
+      },
+      "謝遠飛+苗幸榛": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "因為有你",
+          "因為有你",
+          "因為有你"
+        ]
+      },
+      "蔡秋鳳+拍謝少年+孫一軒+寂寞法蘭": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "那走那喝",
+          "那走那喝",
+          "那走那喝"
+        ]
+      },
+      "郭馨琦": {
+        "song_count": 20,
+        "live_songs": 0,
+        "regular_songs": 20,
+        "sample_songs": [
+          "阮的媽媽",
+          "夢中來相見",
+          "阮的媽媽"
+        ]
+      },
+      "葉諾帆+林琇琪": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "來生作伴",
+          "來生作伴",
+          "來生作伴"
+        ]
+      },
+      "詹曼鈴": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "留戀琉戀",
+          "留戀琉戀",
+          "留戀琉戀"
+        ]
+      },
+      "郭婷筠": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "從今以後",
+          "從今以後",
+          "從今以後"
+        ]
+      },
+      "謝宜君": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "情人探戈",
+          "情人探戈",
+          "情人探戈"
+        ]
+      },
+      "梓華": {
+        "song_count": 10,
+        "live_songs": 0,
+        "regular_songs": 10,
+        "sample_songs": [
+          "情海漂流",
+          "情海漂流",
+          "情海漂流"
+        ]
+      }
+    }
+  },
+  "summary": {
+    "test_success": true,
+    "company_browsing_works": true,
+    "search_functionality_available": true,
+    "test_singers_found": 2,
+    "test_singers_not_found": 3,
+    "total_test_songs": 40,
+    "recommendation": "建議：公司瀏覽可行，但可能需要擴大搜尋範圍"
+  }
+}

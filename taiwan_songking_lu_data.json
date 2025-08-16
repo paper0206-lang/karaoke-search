@@ -1,0 +1,358 @@
+{
+  "singer": "盧廣仲",
+  "total_records": 42,
+  "successful_companies": [
+    "音圓",
+    "錢櫃",
+    "好樂迪",
+    "銀櫃",
+    "金嗓",
+    "弘音",
+    "點將家",
+    "享溫馨",
+    "大唐",
+    "瑞影",
+    "MV",
+    "金影",
+    "音影",
+    "音遊"
+  ],
+  "raw_data": [
+    {
+      "company": "音圓",
+      "raw_text": "47828\n明仔載\n\r\n                           台107-08\n盧廣仲",
+      "number": "47828",
+      "song_title": "明仔載",
+      "singer_info": "台107-08 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "74193\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "74193",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "49651\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "49651",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "74817\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "74817",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "72160\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "72160",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "74193\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "74193",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "49651\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "49651",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "74817\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "74817",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "72160\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "72160",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "037061\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "037061",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "1868\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "1868",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "37061\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "37061",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "09180\n手機仔(一)\n\r\n                           台106-09\n盧廣仲",
+      "number": "09180",
+      "song_title": "手機仔(一)",
+      "singer_info": "台106-09 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "59180\n手機仔(一)\n\r\n                           台106-09\n盧廣仲",
+      "number": "59180",
+      "song_title": "手機仔(一)",
+      "singer_info": "台106-09 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "59586\n明仔載\n\r\n                           台108-01\n盧廣仲",
+      "number": "59586",
+      "song_title": "明仔載",
+      "singer_info": "台108-01 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "57429\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "57429",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "弘音",
+      "raw_text": "97818\n明仔載\n\r\n                           台107-10\n盧廣仲",
+      "number": "97818",
+      "song_title": "明仔載",
+      "singer_info": "台107-10 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "87570\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "87570",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "87571\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "87571",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "77283\n明仔載\n\r\n                           台107-10\n盧廣仲",
+      "number": "77283",
+      "song_title": "明仔載",
+      "singer_info": "台107-10 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "46543\n明仔載\n\r\n                           台107-10\n盧廣仲",
+      "number": "46543",
+      "song_title": "明仔載",
+      "singer_info": "台107-10 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "60543\n明仔載\n\r\n                           台107-11\n盧廣仲",
+      "number": "60543",
+      "song_title": "明仔載",
+      "singer_info": "台107-11 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "76981\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "76981",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "享溫馨",
+      "raw_text": "130402\n手機仔(二)\n\r\n                           台105-08\n盧廣仲",
+      "number": "130402",
+      "song_title": "手機仔(二)",
+      "singer_info": "台105-08 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "享溫馨",
+      "raw_text": "41663\n手機仔(一)\n\r\n                           台105-08\n盧廣仲",
+      "number": "41663",
+      "song_title": "手機仔(一)",
+      "singer_info": "台105-08 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "730052\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "730052",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "730053\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "730053",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "684983\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "684983",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "630549\n手機仔(一)\n\r\n                           台106-05\n盧廣仲",
+      "number": "630549",
+      "song_title": "手機仔(一)",
+      "singer_info": "台106-05 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "630585\n明仔載\n\r\n                           台107-08\n盧廣仲",
+      "number": "630585",
+      "song_title": "明仔載",
+      "singer_info": "台107-08 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "640248\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "640248",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "MV",
+      "raw_text": "95681\n手機仔\n\r\n                           台105-08\n盧廣仲",
+      "number": "95681",
+      "song_title": "手機仔",
+      "singer_info": "台105-08 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "MV",
+      "raw_text": "95682\n明仔載\n\r\n                           台107-05\n盧廣仲",
+      "number": "95682",
+      "song_title": "明仔載",
+      "singer_info": "台107-05 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "金影",
+      "raw_text": "64574\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "64574",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "金影",
+      "raw_text": "64575\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "64575",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "金影",
+      "raw_text": "57429\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "57429",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "金影",
+      "raw_text": "94580\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "94580",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "音影",
+      "raw_text": "909907\n手機仔(一)\n\r\n                           台\n盧廣仲",
+      "number": "909907",
+      "song_title": "手機仔(一)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "音影",
+      "raw_text": "909908\n手機仔(二)\n\r\n                           台\n盧廣仲",
+      "number": "909908",
+      "song_title": "手機仔(二)",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=346058"
+    },
+    {
+      "company": "音影",
+      "raw_text": "911580\n明仔載\n\r\n                           台107-08\n盧廣仲",
+      "number": "911580",
+      "song_title": "明仔載",
+      "singer_info": "台107-08 盧廣仲",
+      "url": "mv.aspx?id=67949"
+    },
+    {
+      "company": "音影",
+      "raw_text": "803044\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "803044",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    },
+    {
+      "company": "音遊",
+      "raw_text": "13547\n港邊男兒\n\r\n                           台\n盧廣仲",
+      "number": "13547",
+      "song_title": "港邊男兒",
+      "singer_info": "台 盧廣仲",
+      "url": "mv.aspx?id=254075"
+    }
+  ]
+}

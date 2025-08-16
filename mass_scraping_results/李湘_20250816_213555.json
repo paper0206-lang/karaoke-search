@@ -1,0 +1,141 @@
+{
+  "singer_name": "李湘",
+  "scraped_at": "2025-08-16T21:35:55.445713",
+  "converted_songs": [
+    {
+      "歌名": "痴情",
+      "歌手": "李湘",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "金嗓",
+          "編號": "54132"
+        },
+        {
+          "公司": "大唐",
+          "編號": "797443"
+        },
+        {
+          "公司": "嘉揚",
+          "編號": "54132"
+        }
+      ]
+    },
+    {
+      "歌名": "用生命的愛",
+      "歌手": "李湘",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "金嗓",
+          "編號": "54422"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "95871"
+        },
+        {
+          "公司": "點將家",
+          "編號": "85422"
+        },
+        {
+          "公司": "大唐",
+          "編號": "798933"
+        },
+        {
+          "公司": "嘉揚",
+          "編號": "54422"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "金嗓",
+    "嘉揚",
+    "大唐",
+    "點將家"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "金嗓",
+      "raw_text": "54132\n痴情\n\r\n                           台\n李湘君",
+      "number": "54132",
+      "song_title": "痴情",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=24302",
+      "scraped_at": "2025-08-16T21:35:03.879558"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "54422\n用生命的愛\n\r\n                           台\n李湘君",
+      "number": "54422",
+      "song_title": "用生命的愛",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=42831",
+      "scraped_at": "2025-08-16T21:35:03.879629"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "95871\n用生命的愛\n\r\n                           台\n李湘君",
+      "number": "95871",
+      "song_title": "用生命的愛",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=42831",
+      "scraped_at": "2025-08-16T21:35:03.879643"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "85422\n用生命的愛\n\r\n                           台110-12\n李湘君",
+      "number": "85422",
+      "song_title": "用生命的愛",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=42831",
+      "scraped_at": "2025-08-16T21:35:13.193479"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "797443\n痴情\n\r\n                           台\n李湘君",
+      "number": "797443",
+      "song_title": "痴情",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=24302",
+      "scraped_at": "2025-08-16T21:35:25.251213"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "798933\n用生命的愛\n\r\n                           台\n李湘君",
+      "number": "798933",
+      "song_title": "用生命的愛",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=42831",
+      "scraped_at": "2025-08-16T21:35:25.251238"
+    },
+    {
+      "company": "嘉揚",
+      "raw_text": "54132\n痴情\n\r\n                           台\n李湘君",
+      "number": "54132",
+      "song_title": "痴情",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=24302",
+      "scraped_at": "2025-08-16T21:35:46.210444"
+    },
+    {
+      "company": "嘉揚",
+      "raw_text": "54422\n用生命的愛\n\r\n                           台112-01\n李湘君",
+      "number": "54422",
+      "song_title": "用生命的愛",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=42831",
+      "scraped_at": "2025-08-16T21:35:46.210471"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

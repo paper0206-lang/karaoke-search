@@ -1,0 +1,5424 @@
+{
+  "validation_date": "2025-08-16T20:00:24.114273",
+  "database_stats": {
+    "total_singers": 3478,
+    "total_songs_in_singers_db": 10998,
+    "total_songs_in_songs_db": 56925
+  },
+  "validation_results": {
+    "duplicates": [
+      {
+        "type": "similar_names",
+        "singer1": "高進+小沈陽+葉世榮+迪克牛仔",
+        "singer2": "高進+小沈陽+葉世榮+迪克牛仔",
+        "similarity": 0.8666666666666667
+      },
+      {
+        "type": "similar_names",
+        "singer1": "蕭敬騰+林俊傑",
+        "singer2": "敬騰+林俊傑",
+        "similarity": 0.9230769230769231
+      },
+      {
+        "type": "similar_names",
+        "singer1": "八三夭+周湯豪",
+        "singer2": "八三天+周湯豪",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "董事長樂團+LuLu黃路梓茵",
+        "singer2": "董事長樂團+LULU黃路梓茵",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "藍心湄+脫拉庫",
+        "singer2": "藍心湄+脫拉庫樂團",
+        "similarity": 0.875
+      },
+      {
+        "type": "similar_names",
+        "singer1": "閃靈樂團+珂拉琪",
+        "singer2": "閃靈+珂拉琪",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "閃靈樂團+Randy Blythe",
+        "singer2": "閃靈+Randy Blythe",
+        "similarity": 0.9375
+      },
+      {
+        "type": "similar_names",
+        "singer1": "林子祥+葉蒨文",
+        "singer2": "林子祥+葉倩文",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "梁心頤 (Lara)",
+        "singer2": "梁心頤 Lara",
+        "similarity": 0.8888888888888888
+      },
+      {
+        "type": "similar_names",
+        "singer1": "ØZI+9m88",
+        "singer2": "OZI+9m88",
+        "similarity": 0.875
+      },
+      {
+        "type": "similar_names",
+        "singer1": "孫盛希+ØZI",
+        "singer2": "孫盛希+OZI",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "康士坦的變化球Constant&Change",
+        "singer2": "康士坦的變化球Constant & Change",
+        "similarity": 0.9565217391304348
+      },
+      {
+        "type": "similar_names",
+        "singer1": "康士坦的變化球Constant&Change",
+        "singer2": "康士坦的變化球Constant+Change",
+        "similarity": 0.9545454545454546
+      },
+      {
+        "type": "similar_names",
+        "singer1": "康士坦的變化球Constant & Change",
+        "singer2": "康士坦的變化球Constant+Change",
+        "similarity": 0.9130434782608695
+      },
+      {
+        "type": "similar_names",
+        "singer1": "康士坦的變化球Consta",
+        "singer2": "康士坦的變化球constant",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Crispy脆樂團+熊仔",
+        "singer2": "Crispy脆樂團",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "孫盛希+Karencici 林愷倫",
+        "singer2": "孫盛希+Karencici",
+        "similarity": 0.8666666666666667
+      },
+      {
+        "type": "similar_names",
+        "singer1": "孫盛希+Karencici 林愷倫",
+        "singer2": "孫盛希+Karencici林愷倫",
+        "similarity": 0.9696969696969697
+      },
+      {
+        "type": "similar_names",
+        "singer1": "孫盛希+Karencici",
+        "singer2": "孫盛希+Karencici林愷倫",
+        "similarity": 0.896551724137931
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Carpenters",
+        "singer2": "Carpenter",
+        "similarity": 0.9473684210526315
+      },
+      {
+        "type": "similar_names",
+        "singer1": "超音界-夏琳恩+傅超華",
+        "singer2": "超音界(夏琳恩+傅超華)",
+        "similarity": 0.8695652173913043
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Every Brothers",
+        "singer2": "Everly Brothers",
+        "similarity": 0.9655172413793104
+      },
+      {
+        "type": "similar_names",
+        "singer1": "八三天+玖壹壹",
+        "singer2": "八三夭+玖壹壹",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "187INC RIGHT EYE",
+        "singer2": "187INC+RIGHT EYE",
+        "similarity": 0.9375
+      },
+      {
+        "type": "similar_names",
+        "singer1": "The saturdays",
+        "singer2": "The satudays",
+        "similarity": 0.96
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Brian McKnight",
+        "singer2": "Brian Mcknight",
+        "similarity": 0.9285714285714286
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Atlantic Starr",
+        "singer2": "Atlsntic Starr",
+        "similarity": 0.9285714285714286
+      },
+      {
+        "type": "similar_names",
+        "singer1": "玖壹壹+LU LU黃路梓茵",
+        "singer2": "玖壹壹+LULU黃路梓茵",
+        "similarity": 0.96
+      },
+      {
+        "type": "similar_names",
+        "singer1": "玖壹壹+LuLu 黃路梓茵",
+        "singer2": "玖壹壹+LuLu黃路梓茵",
+        "similarity": 0.96
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Britney Spears",
+        "singer2": "Britney spears",
+        "similarity": 0.9285714285714286
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Dan Hill",
+        "singer2": "Dan hill",
+        "similarity": 0.875
+      },
+      {
+        "type": "similar_names",
+        "singer1": "Zyboy忠宇",
+        "singer2": "zyboy忠宇",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "派偉俊+8lak+Hosea",
+        "singer2": "派偉俊+Blak Hosea",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "阿源+林采潔",
+        "singer2": "阿源+林采",
+        "similarity": 0.9090909090909091
+      },
+      {
+        "type": "similar_names",
+        "singer1": "孫盛希+sunkis",
+        "singer2": "孫盛希+Sunkis",
+        "similarity": 0.9
+      },
+      {
+        "type": "similar_names",
+        "singer1": "太陽とシスコム—ン",
+        "singer2": "太陽とシスコムーン",
+        "similarity": 0.8888888888888888
+      },
+      {
+        "type": "similar_names",
+        "singer1": "ShiGGaShay+孫燕姿",
+        "singer2": "ShiGGa Shay+孫燕姿",
+        "similarity": 0.9655172413793104
+      },
+      {
+        "type": "similar_names",
+        "singer1": "吉 幾三",
+        "singer2": "吉  幾三",
+        "similarity": 0.8888888888888888
+      },
+      {
+        "type": "similar_names",
+        "singer1": "吉 幾三",
+        "singer2": "吉幾三",
+        "similarity": 0.8571428571428571
+      },
+      {
+        "type": "similar_names",
+        "singer1": "HE 有激人",
+        "singer2": "HE有激人",
+        "similarity": 0.9090909090909091
+      },
+      {
+        "type": "similar_names",
+        "singer1": "小龍+倖妏",
+        "singer2": "陳小龍+倖妏",
+        "similarity": 0.9090909090909091
+      },
+      {
+        "type": "similar_names",
+        "singer1": "羅羅大佑+ok合唱團",
+        "singer2": "羅大佑+ok合唱團",
+        "similarity": 0.9473684210526315
+      },
+      {
+        "type": "similar_names",
+        "singer1": "譚詠麟+MR.",
+        "singer2": "譚詠麟+Mr.",
+        "similarity": 0.8571428571428571
+      }
+    ],
+    "missing_data": [
+      {
+        "singer": "車志立",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張嘉洵",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "于櫻櫻",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李香蘭",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃明志",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘裕文",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃鶴翔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "老王樂隊",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳奕迅",
+        "total_songs": 21,
+        "missing_language": 16,
+        "missing_codes": 0
+      },
+      {
+        "singer": "許光漢",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "呂莘",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "James",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林智惠",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "小安",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李湘",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "唐磊",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林文隆",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王宇軒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "唐笑",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘旭",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉琦",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "胡利基",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "慢慢說樂團",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Gambler",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "程嘉敏",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王源",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "舒米恩",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "貓咪呀",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "董育君",
+        "total_songs": 7,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "丁姵均",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王嘯坤",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "寶·巴特爾",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林淑容",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王麗達",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "姜嘉鏘",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳百潭+白冰冰",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蘇醒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "無鳴",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃耀明",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黑龍+雲菲菲",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李霖+張艾莉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁漢文",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鍾明育",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃立行",
+        "total_songs": 4,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "于立成",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳乃榮",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "格楊",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "夏天ALEX+冷顯達",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉瑞琦",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李玖哲",
+        "total_songs": 6,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉信明",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "謝霆鋒+蔡卓妍",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "趙多娜",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蔡卓妍",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王忻辰",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林美秀",
+        "total_songs": 3,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "ハイロウズ",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Saya+夢飛船",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "方大同+薛凱琪",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "甜老虎",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "花影樂團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "夏天Alex+冷顯達",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "江銘",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "田一龍",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張杰+華晨宇",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "石川さゆり",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "倪甄",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳志朋",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "成世昌平",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "津軽ひろ子",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "五木ひろし",
+        "total_songs": 6,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "みずき舞",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葵かを里",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "音羽しのぶ",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "水沢明美",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "島津亜矢",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "水前寺清子",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "門倉有希",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "山本讓二",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "山川豊",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃明志+王雷",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "揚揚+CHI JAN",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "古巨基",
+        "total_songs": 13,
+        "missing_language": 11,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高進+小沈陽+葉世榮+迪克牛仔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王孝君+張國政",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張碧雲",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高進+小沈陽+葉世榮+迪克牛仔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曾靜",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林宗興+九天民俗技藝團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃鶴翔+合唱",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃峰",
+        "total_songs": 3,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "丁香曉曉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "毛寧",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "夏天Alex",
+        "total_songs": 9,
+        "missing_language": 7,
+        "missing_codes": 0
+      },
+      {
+        "singer": "程琳",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Y.E.S",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "于文文",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "柳丁哥哥+橘子姐姐",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "F.I.R. 飛兒樂團+郁可唯",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蕭敬騰+林俊傑",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "敬騰+林俊傑",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "方大同+王力宏",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "周杰倫+派偉俊",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "派偉俊+周杰倫",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "舒淇+劉德華",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉德華+SHARON CUNETA",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉德華+Sharon Cuneta",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "郭富城+蔡依林+羅志祥+吳莫愁",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "庾澄慶+KIMBERLY",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "伍佰+China Blue",
+        "total_songs": 9,
+        "missing_language": 5,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李宗盛+鄭怡",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張雨生+陶晶瑩",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "童安格",
+        "total_songs": 15,
+        "missing_language": 12,
+        "missing_codes": 0
+      },
+      {
+        "singer": "周治平+童安格",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘瑋柏",
+        "total_songs": 15,
+        "missing_language": 8,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘瑋柏+杜詩梅",
+        "total_songs": 3,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘瑋柏+信",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘瑋柏+蔡娟娟",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘瑋柏+戴愛玲",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蘇打綠+priscilla ahn",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Priscilla Ahn+蘇打綠",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "PRISCILLA AHN+蘇打綠",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蘇永康+動力火車",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李翊君+動力火車",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "動力火車+李翊君",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳柏霖",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張靚穎+周延",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蜜雪薇琪",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "BY2",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林寶",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "斯琴高麗",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "By2",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李英宏+萬芳",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃明志+玖壹壹",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張國榮",
+        "total_songs": 38,
+        "missing_language": 19,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林憶蓮+張國榮",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梅艷芳",
+        "total_songs": 32,
+        "missing_language": 10,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梅艷芳+譚詠麟",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳淑樺+鳳飛飛",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鳳飛飛+對唱",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林憶蓮+齊豫",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林憶蓮+齊豫+杜麗莎+劉美君",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林憶蓮+齊豫+劉美君",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "杜德偉+林憶蓮",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "彭佳慧",
+        "total_songs": 21,
+        "missing_language": 14,
+        "missing_codes": 0
+      },
+      {
+        "singer": "楊丞琳+羅志祥",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "羅志祥+楊丞琳",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁靜茹+曹格",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曹格+梁靜茹",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉若英+梁靜茹",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蕭亞軒+羅志祥",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蕭亞軒+黃立行",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蕭亞軒+順子",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "順子+蕭亞軒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "容祖兒",
+        "total_songs": 43,
+        "missing_language": 15,
+        "missing_codes": 0
+      },
+      {
+        "singer": "SD5行堂+容祖兒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張敬軒+容祖兒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "容祖兒+謝霆鋒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "謝霆鋒",
+        "total_songs": 18,
+        "missing_language": 10,
+        "missing_codes": 0
+      },
+      {
+        "singer": "馮德倫+謝霆鋒+李燦森",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "馮德倫+謝霆鋒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "古巨基+梁詠琪",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁詠琪+古巨基",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "萬芳+蓓麗",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "姜育恆",
+        "total_songs": 16,
+        "missing_language": 12,
+        "missing_codes": 0
+      },
+      {
+        "singer": "齊豫",
+        "total_songs": 23,
+        "missing_language": 13,
+        "missing_codes": 0
+      },
+      {
+        "singer": "齊豫+潘越雲",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃鶯鶯",
+        "total_songs": 9,
+        "missing_language": 7,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳小霞+黃鶯鶯",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃鶯鶯+陳小霞",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蘇芮+張惠妹",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "1976",
+        "total_songs": 9,
+        "missing_language": 9,
+        "missing_codes": 0
+      },
+      {
+        "singer": "八三夭+任賢齊+五月天",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閻奕格+八三夭阿璞",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "八三夭+周湯豪",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "家家+茄子蛋",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "茄子蛋+家家",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "滅火器樂團",
+        "total_songs": 17,
+        "missing_language": 6,
+        "missing_codes": 0
+      },
+      {
+        "singer": "董事長樂團",
+        "total_songs": 38,
+        "missing_language": 13,
+        "missing_codes": 0
+      },
+      {
+        "singer": "董事長樂團+LULU",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "董事長樂團+LuLu",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "董事長樂團+LULU黃路梓茵",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "脫拉庫樂團",
+        "total_songs": 19,
+        "missing_language": 10,
+        "missing_codes": 0
+      },
+      {
+        "singer": "盧巧音+脫拉庫樂團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "脫拉庫+盧巧音",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "四分衛",
+        "total_songs": 27,
+        "missing_language": 14,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳如山(四分衛)",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈樂團",
+        "total_songs": 5,
+        "missing_language": 5,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈樂團+珂拉琪",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈+珂拉琪",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈樂團+Randy Blythe",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈+Randy Blythe",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈樂團+RANDY BLYTHE",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "閃靈+何韻詩",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "范琳琳",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "莊薪樺",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高峰",
+        "total_songs": 3,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "羅百吉+曼伶",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "甘鑫宇",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳源",
+        "total_songs": 6,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "慕容婕鈴",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "譚晶",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "費翔",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳聖芬",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳雪凝",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "心瑤",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "二辰+盈妹妹",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "青春美少女組合",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "方阡翊",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李曉東",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李思琳",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "校園快樂幫+卓義峰",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "校園200' >快樂幫",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "校園快樂幫",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "譚詠麟+李克勤",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "谷建芬",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "機動現場",
+        "total_songs": 5,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "賀敬軒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "滾石畢業八人組",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "韓偉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "City魅",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "大支",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "大支+EAC",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "大支+Eac",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李成愛",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "小林幸子",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "宋瑞梅+陳耀來",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鄭伊健",
+        "total_songs": 5,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "傅振輝+高向鵬",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鄧妙華",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林子祥+葉蒨文",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林子祥+葉倩文",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葉蒨文+林子祥",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "歆小瑤",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "田家達",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉可以",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "薛之謙",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李泉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁心頤",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葉樹茵",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林憶蓮+Blue Jeans",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "夏芷筠+BLESSED",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "夏芷筠+Blessed",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "朱孝天",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "何維健",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "詹采妮",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "ZIP發射樂團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Zip發射樂團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "小凌",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曹羽",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "童文華",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鐵源",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "圖騰",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "東來東往",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "DK金大為",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "阿牛",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "南西肯恩",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳偉聯",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鍾鎮濤",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳亮吟",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "邱心儀",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曾淑勤",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高山峰",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "牛奶咖啡",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "長保有紀",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "小田達也",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "大黒裕貴",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高向鵬",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "岩佐美咲",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "岡ゆう子",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳莉",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉佳軒",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "美秀集團",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Who Cares 胡凱兒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "WHO CARES 胡凱兒",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蕭瀟",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Hello Nico",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林佳音",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "田原",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "石嶺聡子",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "許哲珮",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "天童よしみ",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李子恆",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁心頤 (Lara)",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁心碩",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "梁心頤 Lara",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張碧珠",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃美珍",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葉雲安+黃暄媗",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林欣彤",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王俊凱",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "賴富正",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張若凡",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "岩本公水",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳明喜",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳明憙",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "王晶",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李威+林佑威",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "WEWE",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "八代亜紀",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "八代亞紀",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "季欣霈",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "伊能靜",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林海峰+黃貫中",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "小春Kenzy+張震嶽",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林子淵",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "ØZI+9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "ØZI+落日飛車",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+ØZI",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Marz23+ØZI",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫尤安+ØZI",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "吳卓源+陳芳語",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "吳卓源",
+        "total_songs": 12,
+        "missing_language": 6,
+        "missing_codes": 0
+      },
+      {
+        "singer": "吳卓源+瘦子E.SO",
+        "total_songs": 3,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "熊仔+吳卓源",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "OZI+9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Solar 頌樂+9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "吳青峰+9m88",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃宣+9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "熊仔+9m88",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Leo王+9m88",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "春艷+持修",
+        "total_songs": 3,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "血肉果汁機",
+        "total_songs": 3,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳芳語+血肉果汁機",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "許富凱+血肉果汁機",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球Constant&Change",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球Constant & Change",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球",
+        "total_songs": 3,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球Consta",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球Constant+Change",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "康士坦的變化球constant",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "理想混蛋",
+        "total_songs": 18,
+        "missing_language": 6,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Crispy脆樂團+熊仔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "楊乃文+Crispy脆樂團",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Crispy脆樂團",
+        "total_songs": 7,
+        "missing_language": 7,
+        "missing_codes": 0
+      },
+      {
+        "singer": "傷心欲絕",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蔡詩芸+高爾宣OSN",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高爾宣OSN+李浩瑋HOWARD LEE",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高爾宣+李浩瑋",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高爾宣OSN+李浩瑋",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高爾宣OSN+王 ADEN",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "高爾宣+派偉俊",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "LEO王",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "9M88+LEO王",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "LEO王+陳嫺靜",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "魏如萱+壞特+華晨宇",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "壞特",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曹雅雯+?te壞特",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曹雅雯+?TE壞特",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+KIRE",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+Kire",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+Karencici 林愷倫",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+Karencici",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+Karencici林愷倫",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "孫盛希+OZI",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "OZI+孫盛希",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "陳零九",
+        "total_songs": 30,
+        "missing_language": 10,
+        "missing_codes": 0
+      },
+      {
+        "singer": "五堅情+邱鋒澤+陳零九+賴晏駒+黃偉晉+婁峻碩",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "邱鋒澤+小賴+陳零九..",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "邱鋒澤+小賴+陳零九+黃偉晉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "顏人中",
+        "total_songs": 9,
+        "missing_language": 6,
+        "missing_codes": 0
+      },
+      {
+        "singer": "周傳雄+顏人中",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "宋念宇",
+        "total_songs": 15,
+        "missing_language": 15,
+        "missing_codes": 0
+      },
+      {
+        "singer": "熊仔+宋念宇",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "叫吠音樂聯盟",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "姜燦",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "江映蓉",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "楊立鈦",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "E-TURN",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "E-Turn",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "麗蓉",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "曾玲芳",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鄭興",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "石尤",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李愛綺",
+        "total_songs": 6,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李輝",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蔡鳳凰+楊鳴",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張政雄+薛珮潔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "許志豪",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "吳梵",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "潘美辰",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "草東沒有派對",
+        "total_songs": 4,
+        "missing_language": 4,
+        "missing_codes": 0
+      },
+      {
+        "singer": "原子邦妮+Yalu",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "原子邦妮",
+        "total_songs": 20,
+        "missing_language": 8,
+        "missing_codes": 0
+      },
+      {
+        "singer": "楊乃文+落日飛車",
+        "total_songs": 2,
+        "missing_language": 2,
+        "missing_codes": 0
+      },
+      {
+        "singer": "游媄鎂",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "肖楊",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "xxxmiracle+Nemokii",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張棋翔",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Barbra Streisand",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葉麗儀",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "GuccI mane",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "David guetta+kid cudi",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Ryu",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "やしきたかじん",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Fool's Garden",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蔡旻佑",
+        "total_songs": 6,
+        "missing_language": 3,
+        "missing_codes": 0
+      },
+      {
+        "singer": "派偉俊",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "牛飛",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鳳琴",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "藍聖文",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "蓓蕾",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "恬恬姐妹",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "張俐敏",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "葛蘭",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "單行道",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黎姿",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "同恩",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "鄒文玉",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "李學仕",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "俊然",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "許巍",
+        "total_songs": 2,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉若英+黃立行",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "黃立行+劉若英",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "羅文聰+曾心梅",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "劉家雯",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "卓琇琴+蘇文良",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "都はるみ",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "三角COOL",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "麋先生",
+        "total_songs": 3,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "T-RUSH",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "T-Rush",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "林采欣",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Matzka+Elephant Dee",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "Matzka+小S",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      },
+      {
+        "singer": "ATZKA+徐熙娣",
+        "total_songs": 1,
+        "missing_language": 1,
+        "missing_codes": 0
+      }
+    ],
+    "inconsistencies": [],
+    "quality_issues": []
+  },
+  "completeness_stats": {
+    "missing_language": 1169,
+    "missing_codes": 0,
+    "empty_singers": []
+  },
+  "update_suggestions": [
+    {
+      "singer": "車志立",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張嘉洵",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "于櫻櫻",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李香蘭",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃明志",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘裕文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃鶴翔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "老王樂隊",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳奕迅",
+      "priority": "medium",
+      "reason": "缺少語言標記16首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "許光漢",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "呂莘",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "James",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林智惠",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "小安",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李湘",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "唐磊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林文隆",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王宇軒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "唐笑",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘旭",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉琦",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "胡利基",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "慢慢說樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Gambler",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "程嘉敏",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王源",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "舒米恩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "貓咪呀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "董育君",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "丁姵均",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王嘯坤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "寶·巴特爾",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林淑容",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王麗達",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "姜嘉鏘",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳百潭+白冰冰",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蘇醒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "無鳴",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃耀明",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黑龍+雲菲菲",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李霖+張艾莉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁漢文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鍾明育",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃立行",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "于立成",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳乃榮",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "格楊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "夏天ALEX+冷顯達",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉瑞琦",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李玖哲",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉信明",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "謝霆鋒+蔡卓妍",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "趙多娜",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蔡卓妍",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王忻辰",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林美秀",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "ハイロウズ",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Saya+夢飛船",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "方大同+薛凱琪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "甜老虎",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "花影樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "夏天Alex+冷顯達",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "江銘",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "田一龍",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張杰+華晨宇",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "石川さゆり",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "倪甄",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳志朋",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "成世昌平",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "津軽ひろ子",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "五木ひろし",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "みずき舞",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葵かを里",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "音羽しのぶ",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "水沢明美",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "島津亜矢",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "水前寺清子",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "門倉有希",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "山本讓二",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "山川豊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃明志+王雷",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "揚揚+CHI JAN",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "古巨基",
+      "priority": "medium",
+      "reason": "缺少語言標記11首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高進+小沈陽+葉世榮+迪克牛仔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王孝君+張國政",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張碧雲",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高進+小沈陽+葉世榮+迪克牛仔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曾靜",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林宗興+九天民俗技藝團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃鶴翔+合唱",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃峰",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "丁香曉曉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "毛寧",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "夏天Alex",
+      "priority": "medium",
+      "reason": "缺少語言標記7首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "程琳",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Y.E.S",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "于文文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "柳丁哥哥+橘子姐姐",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "F.I.R. 飛兒樂團+郁可唯",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蕭敬騰+林俊傑",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "敬騰+林俊傑",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "方大同+王力宏",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "周杰倫+派偉俊",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "派偉俊+周杰倫",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "舒淇+劉德華",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉德華+SHARON CUNETA",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉德華+Sharon Cuneta",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "郭富城+蔡依林+羅志祥+吳莫愁",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "庾澄慶+KIMBERLY",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "伍佰+China Blue",
+      "priority": "medium",
+      "reason": "缺少語言標記5首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李宗盛+鄭怡",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張雨生+陶晶瑩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "童安格",
+      "priority": "medium",
+      "reason": "缺少語言標記12首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "周治平+童安格",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘瑋柏",
+      "priority": "medium",
+      "reason": "缺少語言標記8首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘瑋柏+杜詩梅",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘瑋柏+信",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘瑋柏+蔡娟娟",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘瑋柏+戴愛玲",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蘇打綠+priscilla ahn",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Priscilla Ahn+蘇打綠",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "PRISCILLA AHN+蘇打綠",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蘇永康+動力火車",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李翊君+動力火車",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "動力火車+李翊君",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳柏霖",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張靚穎+周延",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蜜雪薇琪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "BY2",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林寶",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "斯琴高麗",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "By2",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李英宏+萬芳",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃明志+玖壹壹",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張國榮",
+      "priority": "medium",
+      "reason": "缺少語言標記19首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林憶蓮+張國榮",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梅艷芳",
+      "priority": "medium",
+      "reason": "缺少語言標記10首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梅艷芳+譚詠麟",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳淑樺+鳳飛飛",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鳳飛飛+對唱",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林憶蓮+齊豫",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林憶蓮+齊豫+杜麗莎+劉美君",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林憶蓮+齊豫+劉美君",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "杜德偉+林憶蓮",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "彭佳慧",
+      "priority": "medium",
+      "reason": "缺少語言標記14首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "楊丞琳+羅志祥",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "羅志祥+楊丞琳",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁靜茹+曹格",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曹格+梁靜茹",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉若英+梁靜茹",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蕭亞軒+羅志祥",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蕭亞軒+黃立行",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蕭亞軒+順子",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "順子+蕭亞軒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "容祖兒",
+      "priority": "medium",
+      "reason": "缺少語言標記15首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "SD5行堂+容祖兒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張敬軒+容祖兒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "容祖兒+謝霆鋒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "謝霆鋒",
+      "priority": "medium",
+      "reason": "缺少語言標記10首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "馮德倫+謝霆鋒+李燦森",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "馮德倫+謝霆鋒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "古巨基+梁詠琪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁詠琪+古巨基",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "萬芳+蓓麗",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "姜育恆",
+      "priority": "medium",
+      "reason": "缺少語言標記12首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "齊豫",
+      "priority": "medium",
+      "reason": "缺少語言標記13首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "齊豫+潘越雲",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃鶯鶯",
+      "priority": "medium",
+      "reason": "缺少語言標記7首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳小霞+黃鶯鶯",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃鶯鶯+陳小霞",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蘇芮+張惠妹",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "1976",
+      "priority": "medium",
+      "reason": "缺少語言標記9首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "八三夭+任賢齊+五月天",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閻奕格+八三夭阿璞",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "八三夭+周湯豪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "家家+茄子蛋",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "茄子蛋+家家",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "滅火器樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記6首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "董事長樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記13首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "董事長樂團+LULU",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "董事長樂團+LuLu",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "董事長樂團+LULU黃路梓茵",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "脫拉庫樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記10首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "盧巧音+脫拉庫樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "脫拉庫+盧巧音",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "四分衛",
+      "priority": "medium",
+      "reason": "缺少語言標記14首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳如山(四分衛)",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記5首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈樂團+珂拉琪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈+珂拉琪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈樂團+Randy Blythe",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈+Randy Blythe",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈樂團+RANDY BLYTHE",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "閃靈+何韻詩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "范琳琳",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "莊薪樺",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高峰",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "羅百吉+曼伶",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "甘鑫宇",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳源",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "慕容婕鈴",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "譚晶",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "費翔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳聖芬",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳雪凝",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "心瑤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "二辰+盈妹妹",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "青春美少女組合",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "方阡翊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李曉東",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李思琳",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "校園快樂幫+卓義峰",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "校園200' >快樂幫",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "校園快樂幫",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "譚詠麟+李克勤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "谷建芬",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "機動現場",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "賀敬軒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "滾石畢業八人組",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "韓偉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "City魅",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "大支",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "大支+EAC",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "大支+Eac",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李成愛",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "小林幸子",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "宋瑞梅+陳耀來",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鄭伊健",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "傅振輝+高向鵬",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鄧妙華",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林子祥+葉蒨文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林子祥+葉倩文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葉蒨文+林子祥",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "歆小瑤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "田家達",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉可以",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "薛之謙",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李泉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁心頤",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葉樹茵",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林憶蓮+Blue Jeans",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "夏芷筠+BLESSED",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "夏芷筠+Blessed",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "朱孝天",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "何維健",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "詹采妮",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "ZIP發射樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Zip發射樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "小凌",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曹羽",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "童文華",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鐵源",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "圖騰",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "東來東往",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "DK金大為",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "阿牛",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "南西肯恩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳偉聯",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鍾鎮濤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳亮吟",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "邱心儀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曾淑勤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高山峰",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "牛奶咖啡",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "長保有紀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "小田達也",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "大黒裕貴",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高向鵬",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "岩佐美咲",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "岡ゆう子",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳莉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉佳軒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "美秀集團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Who Cares 胡凱兒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "WHO CARES 胡凱兒",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蕭瀟",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Hello Nico",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林佳音",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "田原",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "石嶺聡子",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "許哲珮",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "天童よしみ",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李子恆",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁心頤 (Lara)",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁心碩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "梁心頤 Lara",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張碧珠",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃美珍",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葉雲安+黃暄媗",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林欣彤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王俊凱",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "賴富正",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張若凡",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "岩本公水",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳明喜",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳明憙",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "王晶",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李威+林佑威",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "WEWE",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "八代亜紀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "八代亞紀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "季欣霈",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "伊能靜",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林海峰+黃貫中",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "小春Kenzy+張震嶽",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林子淵",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "ØZI+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "ØZI+落日飛車",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+ØZI",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Marz23+ØZI",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫尤安+ØZI",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "吳卓源+陳芳語",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "吳卓源",
+      "priority": "medium",
+      "reason": "缺少語言標記6首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "吳卓源+瘦子E.SO",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "熊仔+吳卓源",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "OZI+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Solar 頌樂+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "吳青峰+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃宣+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "熊仔+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Leo王+9m88",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "春艷+持修",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "血肉果汁機",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳芳語+血肉果汁機",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "許富凱+血肉果汁機",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球Constant&Change",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球Constant & Change",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球Consta",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球Constant+Change",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "康士坦的變化球constant",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "理想混蛋",
+      "priority": "medium",
+      "reason": "缺少語言標記6首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Crispy脆樂團+熊仔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "楊乃文+Crispy脆樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Crispy脆樂團",
+      "priority": "medium",
+      "reason": "缺少語言標記7首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "傷心欲絕",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蔡詩芸+高爾宣OSN",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高爾宣OSN+李浩瑋HOWARD LEE",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高爾宣+李浩瑋",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高爾宣OSN+李浩瑋",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高爾宣OSN+王 ADEN",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "高爾宣+派偉俊",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "LEO王",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "9M88+LEO王",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "LEO王+陳嫺靜",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "魏如萱+壞特+華晨宇",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "壞特",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曹雅雯+?te壞特",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曹雅雯+?TE壞特",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+KIRE",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+Kire",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+Karencici 林愷倫",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+Karencici",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+Karencici林愷倫",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "孫盛希+OZI",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "OZI+孫盛希",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "陳零九",
+      "priority": "medium",
+      "reason": "缺少語言標記10首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "五堅情+邱鋒澤+陳零九+賴晏駒+黃偉晉+婁峻碩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "邱鋒澤+小賴+陳零九..",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "邱鋒澤+小賴+陳零九+黃偉晉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "顏人中",
+      "priority": "medium",
+      "reason": "缺少語言標記6首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "周傳雄+顏人中",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "宋念宇",
+      "priority": "medium",
+      "reason": "缺少語言標記15首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "熊仔+宋念宇",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "叫吠音樂聯盟",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "姜燦",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "江映蓉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "楊立鈦",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "E-TURN",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "E-Turn",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "麗蓉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "曾玲芳",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鄭興",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "石尤",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李愛綺",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李輝",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蔡鳳凰+楊鳴",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張政雄+薛珮潔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "許志豪",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "吳梵",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "潘美辰",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "草東沒有派對",
+      "priority": "medium",
+      "reason": "缺少語言標記4首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "原子邦妮+Yalu",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "原子邦妮",
+      "priority": "medium",
+      "reason": "缺少語言標記8首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "楊乃文+落日飛車",
+      "priority": "medium",
+      "reason": "缺少語言標記2首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "游媄鎂",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "肖楊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "xxxmiracle+Nemokii",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張棋翔",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Barbra Streisand",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葉麗儀",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "GuccI mane",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "David guetta+kid cudi",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Ryu",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "やしきたかじん",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Fool's Garden",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蔡旻佑",
+      "priority": "medium",
+      "reason": "缺少語言標記3首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "派偉俊",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "牛飛",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鳳琴",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "藍聖文",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "蓓蕾",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "恬恬姐妹",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "張俐敏",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "葛蘭",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "單行道",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黎姿",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "同恩",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "鄒文玉",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "李學仕",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "俊然",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "許巍",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉若英+黃立行",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "黃立行+劉若英",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "羅文聰+曾心梅",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "劉家雯",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "卓琇琴+蘇文良",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "都はるみ",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "三角COOL",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "麋先生",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "T-RUSH",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "T-Rush",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "林采欣",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Matzka+Elephant Dee",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "Matzka+小S",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    },
+    {
+      "singer": "ATZKA+徐熙娣",
+      "priority": "medium",
+      "reason": "缺少語言標記1首，缺少編號0首",
+      "recommendation": "重新爬取補全資料"
+    }
+  ],
+  "summary": {
+    "duplicates_found": 43,
+    "missing_data_issues": 428,
+    "inconsistencies_found": 0,
+    "quality_issues": 0,
+    "singers_need_update": 428
+  }
+}

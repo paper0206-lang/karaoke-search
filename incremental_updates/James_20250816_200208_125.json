@@ -1,0 +1,23 @@
+{
+  "singer": "James",
+  "updated_songs": [
+    {
+      "歌名": "春",
+      "歌手": "James",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "MV",
+          "編號": "51565"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "new_songs": 0,
+    "updated_songs": 0,
+    "companies_added": 0,
+    "language_tags_added": 0,
+    "total_songs": 1
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "search_mechanism": {
+    "search_forms": [
+      {
+        "index": 0,
+        "action": "./",
+        "method": "post",
+        "inputs": [
+          {
+            "type": "hidden",
+            "name": "__EVENTTARGET",
+            "placeholder": "",
+            "value": ""
+          },
+          {
+            "type": "hidden",
+            "name": "__EVENTARGUMENT",
+            "placeholder": "",
+            "value": ""
+          },
+          {
+            "type": "hidden",
+            "name": "__VIEWSTATE",
+            "placeholder": "",
+            "value": "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"
+          },
+          {
+            "type": "hidden",
+            "name": "__VIEWSTATEGENERATOR",
+            "placeholder": "",
+            "value": "90059987"
+          },
+          {
+            "type": "text",
+            "name": "",
+            "placeholder": "歌名,歌號,歌手查詢",
+            "value": ""
+          }
+        ]
+      }
+    ],
+    "search_inputs": [],
+    "page_title": "\r\n\t台灣點歌王-歌單編號查詢系統\r\n"
+  },
+  "real_search_results": [
+    {
+      "query": "周杰倫",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E5%91%A8%E6%9D%B0%E5%80%AB",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "蔡依林",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E8%94%A1%E4%BE%9D%E6%9E%97",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "張惠妹",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E5%BC%B5%E6%83%A0%E5%A6%B9",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "五月天",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E4%BA%94%E6%9C%88%E5%A4%A9",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "林俊傑",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E6%9E%97%E4%BF%8A%E5%82%91",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "月亮代表我的心",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E6%9C%88%E4%BA%AE%E4%BB%A3%E8%A1%A8%E6%88%91%E7%9A%84%E5%BF%83",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "童話",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E7%AB%A5%E8%A9%B1",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "聽海",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E8%81%BD%E6%B5%B7",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "愛你",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E6%84%9B%E4%BD%A0",
+      "error": null,
+      "status_code": 200
+    },
+    {
+      "query": "小幸運",
+      "success": false,
+      "songs_found": 0,
+      "first_song": null,
+      "search_url": "https://song.corp.com.tw/search.aspx?q=%E5%B0%8F%E5%B9%B8%E9%81%8B",
+      "error": null,
+      "status_code": 200
+    }
+  ],
+  "post_search_results": null,
+  "company_vs_real_comparison": {
+    "company_search": {
+      "url": "https://song.corp.com.tw/songs.aspx?company=音圓",
+      "songs_count": 50,
+      "first_song": "431518\n月光\n\r\n                           114-08\n龍千玉",
+      "success": true
+    },
+    "real_search": {
+      "url": "https://song.corp.com.tw/search.aspx?q=%E9%9F%B3%E5%9C%93",
+      "status_code": 200,
+      "songs_count": 0,
+      "success": false,
+      "first_song": null
+    },
+    "analysis": {
+      "company_works": true,
+      "real_search_works": false,
+      "different_mechanisms": true,
+      "conclusion": "公司搜尋是特殊瀏覽模式，真實搜尋機制不同或無效"
+    }
+  },
+  "analysis_timestamp": "20250811_193403"
+}

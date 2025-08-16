@@ -1,0 +1,129 @@
+{
+  "javascript_analysis": {
+    "ajax_patterns": [],
+    "fetch_patterns": [],
+    "postback_patterns": [],
+    "url_construction_patterns": [],
+    "pagination_functions": [],
+    "event_handlers": [],
+    "hidden_endpoints": []
+  },
+  "ajax_endpoints_test": [
+    {
+      "endpoint": "/songs.aspx?company=%E9%9F%B3%E5%9C%93&page=2&ajax=1",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 59963,
+      "success": true,
+      "data_type": "html",
+      "songs_count": 50
+    },
+    {
+      "endpoint": "/songs.aspx?company=%E9%9F%B3%E5%9C%93&page=2&partial=1",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 59969,
+      "success": true,
+      "data_type": "html",
+      "songs_count": 50
+    },
+    {
+      "endpoint": "/ajax/songs.aspx?company=%E9%9F%B3%E5%9C%93&page=2",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 62348,
+      "success": false,
+      "data_type": "html"
+    },
+    {
+      "endpoint": "/api/songs?company=%E9%9F%B3%E5%9C%93&page=2",
+      "method": "GET",
+      "status_code": 404,
+      "content_type": "text/html",
+      "content_length": 1229,
+      "success": false,
+      "data_type": "unknown"
+    },
+    {
+      "endpoint": "/services/songs.asmx/GetSongs",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 62945,
+      "success": false,
+      "data_type": "html"
+    },
+    {
+      "endpoint": "/handlers/songs.ashx?company=%E9%9F%B3%E5%9C%93&page=2",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 62794,
+      "success": false,
+      "data_type": "html"
+    },
+    {
+      "endpoint": "/songs.aspx/GetSongsData",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 62841,
+      "success": false,
+      "data_type": "html"
+    },
+    {
+      "endpoint": "/Default.aspx/GetSongs",
+      "method": "GET",
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 58231,
+      "success": false,
+      "data_type": "html"
+    }
+  ],
+  "ajax_postback_test": [
+    {
+      "combination_index": 0,
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 63297,
+      "success": true,
+      "data_type": "html",
+      "songs_count": 50,
+      "first_song": {
+        "id": "431518",
+        "name": "月光",
+        "artist": "龍千玉"
+      }
+    },
+    {
+      "combination_index": 1,
+      "status_code": 200,
+      "content_type": "text/html; charset=utf-8",
+      "content_length": 63297,
+      "success": true,
+      "data_type": "html",
+      "songs_count": 50,
+      "first_song": {
+        "id": "431518",
+        "name": "月光",
+        "artist": "龍千玉"
+      }
+    }
+  ],
+  "network_patterns": {
+    "javascript_ajax_calls": [],
+    "form_submission_patterns": [
+      {
+        "action": "./songs.aspx?company=%u97f3%u5713",
+        "method": "POST",
+        "onsubmit": ""
+      }
+    ],
+    "hidden_iframe_patterns": [],
+    "meta_refresh_patterns": []
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "singer_name": "羅志祥",
+  "scraped_at": "2025-08-16T22:31:57.302802",
+  "converted_songs": [
+    {
+      "歌名": "惜命命",
+      "歌手": "羅志祥",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "72556"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "72556"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "036652"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "1262"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "1551"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "36652"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "08195"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "58195"
+        },
+        {
+          "公司": "大唐",
+          "編號": "716983"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "635348"
+        },
+        {
+          "公司": "金影",
+          "編號": "8195"
+        },
+        {
+          "公司": "金影",
+          "編號": "97203"
+        },
+        {
+          "公司": "音影",
+          "編號": "907223"
+        },
+        {
+          "公司": "音遊",
+          "編號": "15759"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "金嗓",
+    "音遊",
+    "大唐",
+    "好樂迪",
+    "瑞影",
+    "音影",
+    "銀櫃",
+    "錢櫃",
+    "金影"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "錢櫃",
+      "raw_text": "72556\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "72556",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:20.362215"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "72556\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "72556",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:25.474947"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "036652\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "036652",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:32.527971"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "1262\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "1262",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:32.527992"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "1551\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "1551",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:32.528004"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "36652\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "36652",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:32.528015"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "08195\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "08195",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:39.194725"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "58195\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "58195",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:30:39.194751"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "716983\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "716983",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:11.758639"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "635348\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "635348",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:16.264043"
+    },
+    {
+      "company": "金影",
+      "raw_text": "8195\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "8195",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:30.327457"
+    },
+    {
+      "company": "金影",
+      "raw_text": "97203\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "97203",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:30.327481"
+    },
+    {
+      "company": "音影",
+      "raw_text": "907223\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "907223",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:36.764129"
+    },
+    {
+      "company": "音遊",
+      "raw_text": "15759\n惜命命\n\r\n                           台\n羅志祥",
+      "number": "15759",
+      "song_title": "惜命命",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=67960",
+      "scraped_at": "2025-08-16T22:31:49.825109"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

@@ -1,0 +1,202 @@
+{
+  "singer_name": "莊心妍",
+  "scraped_at": "2025-08-16T21:45:33.025876",
+  "converted_songs": [
+    {
+      "歌名": "花開等花謝",
+      "歌手": "莊心妍",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "15455"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "80166"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "001943"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "927612"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "98042"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "07918"
+        },
+        {
+          "公司": "星據點",
+          "編號": "75765"
+        },
+        {
+          "公司": "享溫馨",
+          "編號": "302865"
+        },
+        {
+          "公司": "大唐",
+          "編號": "752263"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "625229"
+        },
+        {
+          "公司": "嘉揚",
+          "編號": "05478"
+        }
+      ]
+    },
+    {
+      "歌名": "花開等花謝(台語舞曲)",
+      "歌手": "莊心妍",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "銀櫃",
+          "編號": "000323"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "享溫馨",
+    "星據點",
+    "金嗓",
+    "銀櫃",
+    "瑞影",
+    "錢櫃",
+    "好樂迪",
+    "嘉揚",
+    "大唐"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "錢櫃",
+      "raw_text": "15455\n花開等花謝\n\r\n                           台106-02\n莊心妍",
+      "number": "15455",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:31.390705"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "80166\n花開等花謝\n\r\n                           台106-02\n莊心妍",
+      "number": "80166",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:35.779971"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "001943\n花開等花謝\n\r\n                           台109-04\n莊心妍",
+      "number": "001943",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:39.034036"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "000323\n花開等花謝(台語舞曲)\n\r\n                           台110-10\n莊心妍",
+      "number": "000323",
+      "song_title": "花開等花謝(台語舞曲)",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:39.034061"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "927612\n花開等花謝\n\r\n                           台110-10\n莊心妍",
+      "number": "927612",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:44.180524"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "98042\n花開等花謝\n\r\n                           台106-03\n莊心妍",
+      "number": "98042",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:44.180552"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "07918\n花開等花謝\n\r\n                           台106-02\n莊心妍",
+      "number": "07918",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:44.180566"
+    },
+    {
+      "company": "星據點",
+      "raw_text": "75765\n花開等花謝\n\r\n                           台109-03\n莊心妍",
+      "number": "75765",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:44:56.948833"
+    },
+    {
+      "company": "享溫馨",
+      "raw_text": "302865\n花開等花謝\n\r\n                           台109-03\n莊心妍",
+      "number": "302865",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:45:01.998745"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "752263\n花開等花謝\n\r\n                           台\n莊心妍",
+      "number": "752263",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:45:05.305915"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "625229\n花開等花謝\n\r\n                           台109-06\n莊心妍",
+      "number": "625229",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:45:09.813707"
+    },
+    {
+      "company": "嘉揚",
+      "raw_text": "05478\n花開等花謝\n\r\n                           台\n莊心妍",
+      "number": "05478",
+      "song_title": "花開等花謝",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=846745",
+      "scraped_at": "2025-08-16T21:45:25.085221"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

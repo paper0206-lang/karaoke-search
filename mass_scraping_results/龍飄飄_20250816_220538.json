@@ -1,0 +1,498 @@
+{
+  "singer_name": "龍飄飄",
+  "scraped_at": "2025-08-16T22:05:38.357042",
+  "converted_songs": [
+    {
+      "歌名": "隨風飄",
+      "歌手": "龍飄飄",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "70823"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "70823"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "03496"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "26887"
+        },
+        {
+          "公司": "弘音",
+          "編號": "26887"
+        },
+        {
+          "公司": "點將家",
+          "編號": "15089"
+        },
+        {
+          "公司": "大唐",
+          "編號": "640633"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "635075"
+        },
+        {
+          "公司": "MV",
+          "編號": "15089"
+        },
+        {
+          "公司": "音影",
+          "編號": "902054"
+        },
+        {
+          "公司": "音遊",
+          "編號": "17707"
+        }
+      ]
+    },
+    {
+      "歌名": "人生車站",
+      "歌手": "龍飄飄",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "70826"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "70826"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "26896"
+        },
+        {
+          "公司": "弘音",
+          "編號": "26896"
+        },
+        {
+          "公司": "點將家",
+          "編號": "15082"
+        },
+        {
+          "公司": "大唐",
+          "編號": "647783"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "645113"
+        },
+        {
+          "公司": "MV",
+          "編號": "15082"
+        },
+        {
+          "公司": "音影",
+          "編號": "901803"
+        },
+        {
+          "公司": "音遊",
+          "編號": "10386"
+        }
+      ]
+    },
+    {
+      "歌名": "明白你的心",
+      "歌手": "龍飄飄",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "70825"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "70825"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "26897"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "92758"
+        },
+        {
+          "公司": "弘音",
+          "編號": "26897"
+        },
+        {
+          "公司": "點將家",
+          "編號": "15083"
+        },
+        {
+          "公司": "大唐",
+          "編號": "649503"
+        },
+        {
+          "公司": "MV",
+          "編號": "15083"
+        },
+        {
+          "公司": "音影",
+          "編號": "901907"
+        },
+        {
+          "公司": "音遊",
+          "編號": "10409"
+        }
+      ]
+    },
+    {
+      "歌名": "流浪姐妹花",
+      "歌手": "龍飄飄",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "美華",
+          "編號": "60258"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "音影",
+    "金嗓",
+    "美華",
+    "點將家",
+    "瑞影",
+    "錢櫃",
+    "好樂迪",
+    "音遊",
+    "弘音",
+    "MV",
+    "大唐"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "錢櫃",
+      "raw_text": "70823\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "70823",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:34.953260"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "70826\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "70826",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:04:34.953289"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "70825\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "70825",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:34.953302"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "70823\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "70823",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:39.824538"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "70826\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "70826",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:04:39.824563"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "70825\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "70825",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:39.824575"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "03496\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "03496",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:49.445983"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "26887\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "26887",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:49.446010"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "26896\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "26896",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:04:49.446023"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "26897\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "26897",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:49.446035"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "92758\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "92758",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:49.446047"
+    },
+    {
+      "company": "弘音",
+      "raw_text": "26887\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "26887",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:53.631905"
+    },
+    {
+      "company": "弘音",
+      "raw_text": "26896\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "26896",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:04:53.631931"
+    },
+    {
+      "company": "弘音",
+      "raw_text": "26897\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "26897",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:53.631944"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "15089\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "15089",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:04:57.227571"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "15082\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "15082",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:04:57.227595"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "15083\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "15083",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:04:57.227607"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "640633\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "640633",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:05:08.798448"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "647783\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "647783",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:05:08.798476"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "649503\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "649503",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:05:08.798489"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "635075\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "635075",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:05:12.047732"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "645113\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "645113",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:05:12.047757"
+    },
+    {
+      "company": "MV",
+      "raw_text": "15089\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "15089",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:05:15.772426"
+    },
+    {
+      "company": "MV",
+      "raw_text": "15082\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "15082",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:05:15.772451"
+    },
+    {
+      "company": "MV",
+      "raw_text": "15083\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "15083",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:05:15.772465"
+    },
+    {
+      "company": "音影",
+      "raw_text": "902054\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "902054",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:05:24.003036"
+    },
+    {
+      "company": "音影",
+      "raw_text": "901803\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "901803",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:05:24.003068"
+    },
+    {
+      "company": "音影",
+      "raw_text": "901907\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "901907",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:05:24.003083"
+    },
+    {
+      "company": "音遊",
+      "raw_text": "17707\n隨風飄\n\r\n                           台\n龍飄飄",
+      "number": "17707",
+      "song_title": "隨風飄",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=6364",
+      "scraped_at": "2025-08-16T22:05:33.329746"
+    },
+    {
+      "company": "音遊",
+      "raw_text": "10386\n人生車站\n\r\n                           台\n龍飄飄",
+      "number": "10386",
+      "song_title": "人生車站",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=12578",
+      "scraped_at": "2025-08-16T22:05:33.329769"
+    },
+    {
+      "company": "音遊",
+      "raw_text": "10409\n明白你的心\n\r\n                           台\n龍飄飄",
+      "number": "10409",
+      "song_title": "明白你的心",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=13254",
+      "scraped_at": "2025-08-16T22:05:33.329781"
+    },
+    {
+      "company": "美華",
+      "raw_text": "60258\n流浪姐妹花\n\r\n                           台105-04\n龍飄飄",
+      "number": "60258",
+      "song_title": "流浪姐妹花",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=48330",
+      "scraped_at": "2025-08-16T22:05:37.933525"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

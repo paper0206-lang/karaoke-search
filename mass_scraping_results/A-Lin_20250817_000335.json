@@ -1,0 +1,240 @@
+{
+  "singer_name": "A-Lin",
+  "scraped_at": "2025-08-17T00:03:35.702562",
+  "converted_songs": [
+    {
+      "歌名": "失戀無罪",
+      "歌手": "A-Lin",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "音圓",
+          "編號": "4042"
+        },
+        {
+          "公司": "音圓",
+          "編號": "40562"
+        },
+        {
+          "公司": "錢櫃",
+          "編號": "41354"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "41354"
+        },
+        {
+          "公司": "銀櫃",
+          "編號": "040318"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "18204"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "31901"
+        },
+        {
+          "公司": "金嗓",
+          "編號": "48031"
+        },
+        {
+          "公司": "弘音",
+          "編號": "48031"
+        },
+        {
+          "公司": "點將家",
+          "編號": "25070"
+        },
+        {
+          "公司": "大唐",
+          "編號": "355963"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "345054"
+        },
+        {
+          "公司": "MV",
+          "編號": "93705"
+        },
+        {
+          "公司": "金影",
+          "編號": "82056"
+        },
+        {
+          "公司": "音影",
+          "編號": "930322"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "MV",
+    "金嗓",
+    "點將家",
+    "好樂迪",
+    "大唐",
+    "音圓",
+    "瑞影",
+    "音影",
+    "銀櫃",
+    "錢櫃",
+    "金影",
+    "弘音"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "音圓",
+      "raw_text": "4042\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "4042",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:12.892604"
+    },
+    {
+      "company": "音圓",
+      "raw_text": "40562\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "40562",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:12.892633"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "41354\n失戀無罪\n\r\n                           台095-06\nA-Lin",
+      "number": "41354",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:17.770229"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "41354\n失戀無罪\n\r\n                           台095-06\nA-Lin",
+      "number": "41354",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:24.192426"
+    },
+    {
+      "company": "銀櫃",
+      "raw_text": "040318\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "040318",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:30.102135"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "18204\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "18204",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:35.081293"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "31901\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "31901",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:35.081324"
+    },
+    {
+      "company": "金嗓",
+      "raw_text": "48031\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "48031",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:35.081338"
+    },
+    {
+      "company": "弘音",
+      "raw_text": "48031\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "48031",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:41.620688"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "25070\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "25070",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:02:48.146595"
+    },
+    {
+      "company": "大唐",
+      "raw_text": "355963\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "355963",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:03:06.712585"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "345054\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "345054",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:03:12.355833"
+    },
+    {
+      "company": "MV",
+      "raw_text": "93705\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "93705",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:03:16.625463"
+    },
+    {
+      "company": "金影",
+      "raw_text": "82056\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "82056",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:03:21.689471"
+    },
+    {
+      "company": "音影",
+      "raw_text": "930322\n失戀無罪\n\r\n                           台\nA-Lin",
+      "number": "930322",
+      "song_title": "失戀無罪",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=92074",
+      "scraped_at": "2025-08-17T00:03:28.897440"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

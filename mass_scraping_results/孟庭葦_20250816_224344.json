@@ -1,0 +1,192 @@
+{
+  "singer_name": "孟庭葦",
+  "scraped_at": "2025-08-16T22:43:44.602054",
+  "converted_songs": [
+    {
+      "歌名": "找一個人",
+      "歌手": "孟庭葦",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "76590"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "76590"
+        }
+      ]
+    },
+    {
+      "歌名": "故作浪漫",
+      "歌手": "孟庭葦",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "錢櫃",
+          "編號": "76195"
+        },
+        {
+          "公司": "好樂迪",
+          "編號": "76195"
+        },
+        {
+          "公司": "點將家",
+          "編號": "66309"
+        },
+        {
+          "公司": "瑞影",
+          "編號": "64049"
+        },
+        {
+          "公司": "金影",
+          "編號": "80363"
+        },
+        {
+          "公司": "音影",
+          "編號": "980857"
+        }
+      ]
+    },
+    {
+      "歌名": "愛到史艷文",
+      "歌手": "孟庭葦",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "點將家",
+          "編號": "67164"
+        },
+        {
+          "公司": "金影",
+          "編號": "81341"
+        },
+        {
+          "公司": "音影",
+          "編號": "982755"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "好樂迪",
+    "瑞影",
+    "音影",
+    "點將家",
+    "錢櫃",
+    "金影"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "錢櫃",
+      "raw_text": "76590\n找一個人\n\r\n                           台\n孟庭葦",
+      "number": "76590",
+      "song_title": "找一個人",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=304214",
+      "scraped_at": "2025-08-16T22:42:18.598579"
+    },
+    {
+      "company": "錢櫃",
+      "raw_text": "76195\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "76195",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:42:18.598603"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "76590\n找一個人\n\r\n                           台\n孟庭葦",
+      "number": "76590",
+      "song_title": "找一個人",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=304214",
+      "scraped_at": "2025-08-16T22:42:25.722072"
+    },
+    {
+      "company": "好樂迪",
+      "raw_text": "76195\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "76195",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:42:25.722095"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "66309\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "66309",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:42:48.912636"
+    },
+    {
+      "company": "點將家",
+      "raw_text": "67164\n愛到史艷文\n\r\n                           台\n孟庭葦",
+      "number": "67164",
+      "song_title": "愛到史艷文",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=35851",
+      "scraped_at": "2025-08-16T22:42:48.912661"
+    },
+    {
+      "company": "瑞影",
+      "raw_text": "64049\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "64049",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:43:10.286761"
+    },
+    {
+      "company": "金影",
+      "raw_text": "80363\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "80363",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:43:20.623948"
+    },
+    {
+      "company": "金影",
+      "raw_text": "81341\n愛到史艷文\n\r\n                           台\n孟庭葦",
+      "number": "81341",
+      "song_title": "愛到史艷文",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=35851",
+      "scraped_at": "2025-08-16T22:43:20.623971"
+    },
+    {
+      "company": "音影",
+      "raw_text": "980857\n故作浪漫\n\r\n                           台\n孟庭葦",
+      "number": "980857",
+      "song_title": "故作浪漫",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=22040",
+      "scraped_at": "2025-08-16T22:43:25.589368"
+    },
+    {
+      "company": "音影",
+      "raw_text": "982755\n愛到史艷文\n\r\n                           台\n孟庭葦",
+      "number": "982755",
+      "song_title": "愛到史艷文",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=35851",
+      "scraped_at": "2025-08-16T22:43:25.589392"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

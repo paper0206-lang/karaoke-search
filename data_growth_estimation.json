@@ -1,0 +1,79 @@
+{
+  "analysis_time": "2025-08-16T22:25:26.917623",
+  "current_database": {
+    "total_singers": 3478,
+    "total_songs": 11189,
+    "total_ktv_entries": 29553,
+    "language_stats": {
+      "國": 7743,
+      "台": 2161,
+      "客": 297,
+      "英": 519,
+      "": 24,
+      "粵": 243,
+      "日": 170,
+      "山": 16,
+      "兒": 15,
+      "韓": 1
+    },
+    "company_stats": {
+      "錢櫃": 5682,
+      "好樂迪": 2383,
+      "銀櫃": 1040,
+      "金嗓": 5991,
+      "星據點": 401,
+      "MV": 654,
+      "享溫馨": 419,
+      "瑞影": 809,
+      "金嗓/家庭": 591,
+      "音圓": 4384,
+      "點將家": 1738,
+      "金影": 900,
+      "音影": 1064,
+      "弘音": 1168,
+      "大唐": 1386,
+      "嘉揚": 273,
+      "金嗓/投幣": 100,
+      "音遊": 342,
+      "音圓原廠": 166,
+      "美華": 55,
+      "一級棒": 7
+    },
+    "avg_songs_per_singer": 3.2170787809085684,
+    "avg_ktv_per_song": 2.6412548038251855
+  },
+  "scraper_progress": {
+    "total_target_singers": 112,
+    "total_batches": 23,
+    "completed_batches": 5,
+    "singers_already_meeting_standard": 18,
+    "singers_needing_scraping": 0,
+    "singers_with_no_data": 2
+  },
+  "historical_performance": {
+    "sample_size": 20,
+    "successful_processing": 7,
+    "met_benchmark": 2,
+    "avg_new_songs_per_successful": 33.857142857142854,
+    "taiwan_song_king_hit_rate": 0.35,
+    "benchmark_achievement_rate": 0.286
+  },
+  "estimations": {
+    "optimistic": {
+      "successful_singers": 32,
+      "new_songs": 1083,
+      "final_total": 12272
+    },
+    "conservative": {
+      "successful_singers": 18,
+      "new_songs": 487,
+      "final_total": 11676
+    },
+    "realistic": {
+      "successful_singers": 11,
+      "new_songs": 220,
+      "final_total": 11409,
+      "new_ktv_entries": 581
+    }
+  }
+}

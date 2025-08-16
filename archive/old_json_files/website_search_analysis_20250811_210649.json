@@ -1,0 +1,412 @@
+{
+  "analysis_time": "2025-08-11 21:06:49",
+  "website": "https://song.corp.com.tw",
+  "homepage_structure": {
+    "forms": [
+      {
+        "index": 0,
+        "action": "./index.aspx",
+        "method": "post",
+        "id": "form1",
+        "inputs": [
+          {
+            "type": "hidden",
+            "name": "__EVENTTARGET",
+            "id": "__EVENTTARGET",
+            "value": "",
+            "placeholder": ""
+          },
+          {
+            "type": "hidden",
+            "name": "__EVENTARGUMENT",
+            "id": "__EVENTARGUMENT",
+            "value": "",
+            "placeholder": ""
+          },
+          {
+            "type": "hidden",
+            "name": "__VIEWSTATE",
+            "id": "__VIEWSTATE",
+            "value": "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",
+            "placeholder": ""
+          },
+          {
+            "type": "hidden",
+            "name": "__VIEWSTATEGENERATOR",
+            "id": "__VIEWSTATEGENERATOR",
+            "value": "90059987",
+            "placeholder": ""
+          },
+          {
+            "type": "text",
+            "name": "",
+            "id": "songkeyword",
+            "value": "",
+            "placeholder": "歌名,歌號,歌手查詢"
+          }
+        ]
+      }
+    ],
+    "search_inputs": [],
+    "search_buttons": [],
+    "viewstate": "Vz/WhXr53aobwrBehMSIFbtaGrlrm1xB+oWgTN1DI4yCd0YugfhQqV5/Fuor32Exu8q9eqkzUErw+LhSU2SojfPXWEPh1vRc3vcR...",
+    "eventvalidation": null,
+    "possible_search_endpoints": []
+  },
+  "search_method_tests": {
+    "周杰倫": {
+      "GET_search": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/index.aspx?keyword=%E5%91%A8%E6%9D%B0%E5%80%AB",
+        "content_length": 62314,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "POST_search_1": {
+        "status_code": 200,
+        "post_data_keys": [
+          "ctl00$ContentPlaceHolder1$txt_keyword",
+          "ctl00$ContentPlaceHolder1$but_sel"
+        ],
+        "content_length": 61637,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "endpoint__search.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/search.aspx?q=%E5%91%A8%E6%9D%B0%E5%80%AB",
+        "content_length": 62679,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__songs.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/songs.aspx?q=%E5%91%A8%E6%9D%B0%E5%80%AB",
+        "content_length": 58204,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__api_search": {
+        "status_code": 404,
+        "url": "https://song.corp.com.tw/api/search?q=%E5%91%A8%E6%9D%B0%E5%80%AB",
+        "content_length": 1229,
+        "contains_keyword": false,
+        "contains_mv_links": false
+      }
+    },
+    "蔡依林": {
+      "GET_search": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/index.aspx?keyword=%E8%94%A1%E4%BE%9D%E6%9E%97",
+        "content_length": 58277,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "POST_search_1": {
+        "status_code": 200,
+        "post_data_keys": [
+          "ctl00$ContentPlaceHolder1$txt_keyword",
+          "ctl00$ContentPlaceHolder1$but_sel"
+        ],
+        "content_length": 57600,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "endpoint__search.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/search.aspx?q=%E8%94%A1%E4%BE%9D%E6%9E%97",
+        "content_length": 62241,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__songs.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/songs.aspx?q=%E8%94%A1%E4%BE%9D%E6%9E%97",
+        "content_length": 62884,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__api_search": {
+        "status_code": 404,
+        "url": "https://song.corp.com.tw/api/search?q=%E8%94%A1%E4%BE%9D%E6%9E%97",
+        "content_length": 1229,
+        "contains_keyword": false,
+        "contains_mv_links": false
+      }
+    },
+    "A-Lin": {
+      "GET_search": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/index.aspx?keyword=A-Lin",
+        "content_length": 62922,
+        "contains_keyword": true,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "POST_search_1": {
+        "status_code": 200,
+        "post_data_keys": [
+          "ctl00$ContentPlaceHolder1$txt_keyword",
+          "ctl00$ContentPlaceHolder1$but_sel"
+        ],
+        "content_length": 57600,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "endpoint__search.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/search.aspx?q=A-Lin",
+        "content_length": 62241,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__songs.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/songs.aspx?q=A-Lin",
+        "content_length": 62679,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__api_search": {
+        "status_code": 404,
+        "url": "https://song.corp.com.tw/api/search?q=A-Lin",
+        "content_length": 1229,
+        "contains_keyword": false,
+        "contains_mv_links": false
+      }
+    },
+    "鄧紫棋": {
+      "GET_search": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/index.aspx?keyword=%E9%84%A7%E7%B4%AB%E6%A3%8B",
+        "content_length": 62752,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "POST_search_1": {
+        "status_code": 200,
+        "post_data_keys": [
+          "ctl00$ContentPlaceHolder1$txt_keyword",
+          "ctl00$ContentPlaceHolder1$but_sel"
+        ],
+        "content_length": 57600,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "endpoint__search.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/search.aspx?q=%E9%84%A7%E7%B4%AB%E6%A3%8B",
+        "content_length": 62884,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__songs.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/songs.aspx?q=%E9%84%A7%E7%B4%AB%E6%A3%8B",
+        "content_length": 62679,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__api_search": {
+        "status_code": 404,
+        "url": "https://song.corp.com.tw/api/search?q=%E9%84%A7%E7%B4%AB%E6%A3%8B",
+        "content_length": 1229,
+        "contains_keyword": false,
+        "contains_mv_links": false
+      }
+    },
+    "五月天": {
+      "GET_search": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/index.aspx?keyword=%E4%BA%94%E6%9C%88%E5%A4%A9",
+        "content_length": 62752,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "POST_search_1": {
+        "status_code": 200,
+        "post_data_keys": [
+          "ctl00$ContentPlaceHolder1$txt_keyword",
+          "ctl00$ContentPlaceHolder1$but_sel"
+        ],
+        "content_length": 57600,
+        "contains_keyword": false,
+        "contains_mv_links": true,
+        "redirect_url": null
+      },
+      "endpoint__search.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/search.aspx?q=%E4%BA%94%E6%9C%88%E5%A4%A9",
+        "content_length": 62884,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__songs.aspx": {
+        "status_code": 200,
+        "url": "https://song.corp.com.tw/songs.aspx?q=%E4%BA%94%E6%9C%88%E5%A4%A9",
+        "content_length": 62679,
+        "contains_keyword": false,
+        "contains_mv_links": true
+      },
+      "endpoint__api_search": {
+        "status_code": 404,
+        "url": "https://song.corp.com.tw/api/search?q=%E4%BA%94%E6%9C%88%E5%A4%A9",
+        "content_length": 1229,
+        "contains_keyword": false,
+        "contains_mv_links": false
+      }
+    }
+  },
+  "analysis_summary": {
+    "working_methods": [
+      {
+        "method": "GET_search",
+        "keyword": "周杰倫",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "POST_search_1",
+        "keyword": "周杰倫",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__search.aspx",
+        "keyword": "周杰倫",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__songs.aspx",
+        "keyword": "周杰倫",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "GET_search",
+        "keyword": "蔡依林",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "POST_search_1",
+        "keyword": "蔡依林",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__search.aspx",
+        "keyword": "蔡依林",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__songs.aspx",
+        "keyword": "蔡依林",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "GET_search",
+        "keyword": "A-Lin",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "POST_search_1",
+        "keyword": "A-Lin",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__search.aspx",
+        "keyword": "A-Lin",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__songs.aspx",
+        "keyword": "A-Lin",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "GET_search",
+        "keyword": "鄧紫棋",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "POST_search_1",
+        "keyword": "鄧紫棋",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__search.aspx",
+        "keyword": "鄧紫棋",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__songs.aspx",
+        "keyword": "鄧紫棋",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "GET_search",
+        "keyword": "五月天",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "POST_search_1",
+        "keyword": "五月天",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__search.aspx",
+        "keyword": "五月天",
+        "evidence": "contains_mv_links"
+      },
+      {
+        "method": "endpoint__songs.aspx",
+        "keyword": "五月天",
+        "evidence": "contains_mv_links"
+      }
+    ],
+    "failed_methods": [
+      {
+        "method": "endpoint__api_search",
+        "keyword": "周杰倫",
+        "reason": "no_relevant_content"
+      },
+      {
+        "method": "endpoint__api_search",
+        "keyword": "蔡依林",
+        "reason": "no_relevant_content"
+      },
+      {
+        "method": "endpoint__api_search",
+        "keyword": "A-Lin",
+        "reason": "no_relevant_content"
+      },
+      {
+        "method": "endpoint__api_search",
+        "keyword": "鄧紫棋",
+        "reason": "no_relevant_content"
+      },
+      {
+        "method": "endpoint__api_search",
+        "keyword": "五月天",
+        "reason": "no_relevant_content"
+      }
+    ],
+    "keywords_with_results": [
+      "周杰倫",
+      "蔡依林",
+      "A-Lin",
+      "鄧紫棋",
+      "五月天"
+    ],
+    "keywords_without_results": [],
+    "recommended_approach": {
+      "method": "endpoint",
+      "success_rate": "10/5 keywords",
+      "confidence": "high"
+    }
+  }
+}

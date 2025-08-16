@@ -1,0 +1,54 @@
+{
+  "singer_name": "林展逸",
+  "scraped_at": "2025-08-16T22:25:33.776922",
+  "converted_songs": [
+    {
+      "歌名": "這首情歌",
+      "歌手": "林展逸",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "音圓",
+          "編號": "451661"
+        }
+      ]
+    },
+    {
+      "歌名": "過時的花蕊",
+      "歌手": "林展逸",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "音圓",
+          "編號": "451640"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "音圓"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "音圓",
+      "raw_text": "451661\n這首情歌\n\r\n                           台114-01\n林展逸",
+      "number": "451661",
+      "song_title": "這首情歌",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=3291275",
+      "scraped_at": "2025-08-16T22:24:02.733649"
+    },
+    {
+      "company": "音圓",
+      "raw_text": "451640\n過時的花蕊\n\r\n                           台113-12\n林展逸",
+      "number": "451640",
+      "song_title": "過時的花蕊",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=3243328",
+      "scraped_at": "2025-08-16T22:24:02.733690"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

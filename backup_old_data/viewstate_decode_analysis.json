@@ -1,0 +1,128 @@
+{
+  "initial_state": {
+    "viewstate_length": 13288,
+    "generator": "735EA74D",
+    "cookies_count": 2
+  },
+  "viewstate_structure": {
+    "total_length": 9964,
+    "hex_preview": "21ecefa9e97b8328cff5ab5ef049684100ab91ad9cc2545d1f2c79df36f1543d9e142416cc8e58180e9b544876da6e9e9963e52814d521fa410a973e9a0ef7ec787aded876300fde9a84dfed97cd5be38dc7b0f255e2de3d435accbe49343f0ebf1763b9",
+    "possible_structures": [],
+    "string_patterns": [],
+    "control_patterns": []
+  },
+  "postback_results": [
+    {
+      "combination": {
+        "target": "",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "",
+        "argument": "Page$Next"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "ctl00$ContentPlaceHolder1$GridView1",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "ctl00$MainContent$GridView1",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "GridView1",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "ctl00$ContentPlaceHolder1$DataList1",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "ctl00$MainContent$DataList1",
+        "argument": "Page$2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    },
+    {
+      "combination": {
+        "target": "ctl00$ContentPlaceHolder1$PagingControl",
+        "argument": "2"
+      },
+      "success": true,
+      "first_song_id": "431518",
+      "first_song_name": "月光",
+      "first_song_artist": "龍千玉",
+      "total_songs": 50,
+      "response_url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93"
+    }
+  ],
+  "has_breakthrough": false,
+  "url_vs_postback_comparison": {
+    "url_method": {
+      "id": "431518",
+      "name": "月光",
+      "artist": "龍千玉",
+      "total": 50
+    },
+    "postback_method": {
+      "id": "431518",
+      "name": "月光",
+      "artist": "龍千玉",
+      "total": 50
+    },
+    "are_different": false
+  }
+}

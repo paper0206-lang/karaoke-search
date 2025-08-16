@@ -1,0 +1,67 @@
+{
+  "metadata": {
+    "created_time": "2025-08-11 20:41:03",
+    "extractor_version": "1.0.0",
+    "database_type": "singer_songs_extraction",
+    "source_database": "音圓完整數據_20250810_221337.json",
+    "singer_source": "FINAL_singer_database_20250811_200210.json",
+    "total_singers_processed": 5,
+    "total_songs_extracted": 0,
+    "total_singers_to_process": 5
+  },
+  "extraction_results": {
+    "周杰倫": {
+      "status": "no_songs",
+      "songs_count": 0,
+      "songs": [],
+      "variants_used": [
+        "周杰倫"
+      ]
+    },
+    "蔡依林": {
+      "status": "no_songs",
+      "songs_count": 0,
+      "songs": [],
+      "variants_used": [
+        "蔡依林"
+      ]
+    },
+    "林俊傑": {
+      "status": "no_songs",
+      "songs_count": 0,
+      "songs": [],
+      "variants_used": [
+        "林俊傑"
+      ]
+    },
+    "鄧紫棋": {
+      "status": "no_songs",
+      "songs_count": 0,
+      "songs": [],
+      "variants_used": [
+        "鄧紫棋"
+      ]
+    },
+    "五月天": {
+      "status": "no_songs",
+      "songs_count": 0,
+      "songs": [],
+      "variants_used": [
+        "五月天"
+      ]
+    }
+  },
+  "statistics": {
+    "singers_with_songs": [],
+    "singers_without_songs": [
+      "周杰倫",
+      "蔡依林",
+      "林俊傑",
+      "鄧紫棋",
+      "五月天"
+    ],
+    "total_unique_songs": 0,
+    "live_songs_count": 0,
+    "regular_songs_count": 0
+  }
+}

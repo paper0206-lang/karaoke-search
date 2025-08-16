@@ -125,29 +125,36 @@ class EnhancedTaiwanScraper:
                     continue
                 
                 soup = BeautifulSoup(response.text, "html.parser")
-                rows = soup.select("table tr")
+                # 新的網站結構：使用link格式而非table
+                song_links = soup.select('a[href^="mv.aspx?id="]')
                 
-                if len(rows) <= 1:  # 只有表頭，沒有資料
+                if len(song_links) == 0:  # 沒有歌曲連結
                     logging.info(f"{company} 第{page}頁 無更多資料，完成")
                     break
                 
                 page_songs = 0
-                for row in rows[1:]:  # 跳過表頭
-                    cols = [c.get_text().strip() for c in row.find_all("td")]
-                    if cols and len(cols) >= 3:  # 確保有足夠欄位
-                        # 標準化資料格式
-                        song_data = {
-                            '公司': company,
-                            '編號': cols[0] if len(cols) > 0 else '',
-                            '歌名': cols[1] if len(cols) > 1 else '',
-                            '歌手': cols[2] if len(cols) > 2 else '',
-                            '語言': cols[3] if len(cols) > 3 else '',
-                            'raw_data': cols,  # 保留原始資料
-                            'scraped_at': datetime.now().isoformat()
-                        }
+                for link in song_links:
+                    try:
+                        # 提取歌曲資訊
+                        link_text = link.get_text().strip()
+                        parts = link_text.split()
                         
-                        company_data.append(song_data)
-                        page_songs += 1
+                        if len(parts) >= 4:
+                            song_data = {
+                                '公司': company,
+                                '編號': parts[0] if len(parts) > 0 else '',
+                                '歌名': parts[1] if len(parts) > 1 else '',
+                                '期別': parts[2] if len(parts) > 2 else '',
+                                '歌手': ' '.join(parts[3:]) if len(parts) > 3 else '',
+                                '語言': '',  # 需要從其他地方獲取
+                                'link_url': link.get('href', ''),
+                                'scraped_at': datetime.now().isoformat()
+                            }
+                            
+                            company_data.append(song_data)
+                            page_songs += 1
+                    except Exception as e:
+                        logging.debug(f"解析歌曲連結失敗: {e}")
                 
                 if page_songs == 0:
                     logging.warning(f"{company} 第{page}頁 無有效資料")
@@ -221,6 +228,9 @@ class EnhancedTaiwanScraper:
     def _save_intermediate_results(self):
         """保存中間結果"""
         try:
+            # 確保目錄存在
+            os.makedirs(os.path.dirname(self.output_files['json']), exist_ok=True)
+            
             # 保存JSON格式
             with open(self.output_files['json'], 'w', encoding='utf-8') as f:
                 json.dump(self.all_data, f, ensure_ascii=False, indent=2)
@@ -228,6 +238,14 @@ class EnhancedTaiwanScraper:
             logging.info(f"中間結果已保存: {len(self.all_data)} 首歌")
         except Exception as e:
             logging.error(f"保存中間結果失敗: {e}")
+            # 如果保存失敗，嘗試保存到當前目錄
+            try:
+                backup_file = f'taiwan_backup_{datetime.now().strftime("%Y%m%d_%H%M%S")}.json'
+                with open(backup_file, 'w', encoding='utf-8') as f:
+                    json.dump(self.all_data, f, ensure_ascii=False, indent=2)
+                logging.info(f"備份保存成功: {backup_file}")
+            except Exception as e2:
+                logging.error(f"備份保存也失敗: {e2}")
     
     def save_results(self):
         """保存最終結果"""
@@ -239,7 +257,7 @@ class EnhancedTaiwanScraper:
             # 1. 保存CSV格式 (原始格式)
             with open(self.output_files['csv'], 'w', newline='', encoding='utf-8-sig') as f:
                 writer = csv.writer(f)
-                writer.writerow(['公司', '編號', '歌名', '歌手', '語言'])
+                writer.writerow(['公司', '編號', '歌名', '歌手', '期別', '語言'])
                 
                 for song in self.all_data:
                     writer.writerow([
@@ -247,6 +265,7 @@ class EnhancedTaiwanScraper:
                         song.get('編號', ''),
                         song.get('歌名', ''),
                         song.get('歌手', ''),
+                        song.get('期別', ''),
                         song.get('語言', '')
                     ])
             

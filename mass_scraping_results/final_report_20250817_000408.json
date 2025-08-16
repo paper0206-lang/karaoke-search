@@ -1,0 +1,46 @@
+{
+  "execution_summary": {
+    "start_time": "2025-08-17T00:03:42.339251",
+    "end_time": "2025-08-17T00:04:08.387741",
+    "duration": "0:00:26.048397",
+    "benchmark_standard": {
+      "total_songs": 12,
+      "unique_songs": 12,
+      "ktv_entries": 72,
+      "companies_covered": 16,
+      "languages": [
+        "國",
+        "台"
+      ],
+      "taiwan_songs": 5,
+      "mandarin_songs": 7
+    }
+  },
+  "statistics": {
+    "total_singers": 163,
+    "processed_singers": 1,
+    "successful_singers": 1,
+    "new_songs_added": 0,
+    "updated_singers": 1,
+    "failed_singers": 0,
+    "start_time": "2025-08-17T00:03:42.339251",
+    "current_batch": 0
+  },
+  "detailed_results": [
+    {
+      "singer": "伍佰",
+      "status": "processed",
+      "new_songs": 0,
+      "updated_songs": 2,
+      "total_new_songs": 13,
+      "companies_found": 1,
+      "benchmark_before": 0.9375,
+      "benchmark_after": 0.9375,
+      "meets_benchmark_now": false
+    }
+  ],
+  "lu_benchmark_compliance": {
+    "singers_meeting_benchmark": 0,
+    "benchmark_achievement_rate": 0.0
+  }
+}

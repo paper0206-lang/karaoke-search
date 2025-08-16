@@ -1,0 +1,90 @@
+{
+  "batch_number": 1,
+  "completed_at": "2025-08-16T22:03:57.560852",
+  "batch_results": [
+    {
+      "singer": "游鴻明",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 2,
+      "benchmark_before": 0.5416666666666666,
+      "benchmark_after": 0.6111111111111112,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "陳慧琳",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    },
+    {
+      "singer": "Spice girls",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    },
+    {
+      "singer": "唐飛",
+      "status": "processed",
+      "new_songs": 108,
+      "updated_songs": 7,
+      "total_new_songs": 115,
+      "companies_found": 16,
+      "benchmark_before": 0.5416666666666666,
+      "benchmark_after": 1.0416666666666667,
+      "meets_benchmark_now": true
+    },
+    {
+      "singer": "陳小春",
+      "status": "no_data",
+      "benchmark_score": 0.5486111111111112
+    },
+    {
+      "singer": "許志安",
+      "status": "processed",
+      "new_songs": 1,
+      "updated_songs": 0,
+      "total_new_songs": 1,
+      "companies_found": 1,
+      "benchmark_before": 0.5555555555555555,
+      "benchmark_after": 0.6041666666666666,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "夏天Alex",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "1976",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "王心凌",
+      "status": "no_data",
+      "benchmark_score": 0.5625
+    },
+    {
+      "singer": "唐儷",
+      "status": "processed",
+      "new_songs": 101,
+      "updated_songs": 9,
+      "total_new_songs": 110,
+      "companies_found": 16,
+      "benchmark_before": 0.5694444444444445,
+      "benchmark_after": 1.0208333333333333,
+      "meets_benchmark_now": true
+    }
+  ],
+  "overall_stats": {
+    "total_singers": 50,
+    "processed_singers": 20,
+    "successful_singers": 7,
+    "new_songs_added": 221,
+    "updated_singers": 7,
+    "failed_singers": 0,
+    "start_time": "2025-08-16T21:39:28.932435",
+    "current_batch": 0
+  }
+}

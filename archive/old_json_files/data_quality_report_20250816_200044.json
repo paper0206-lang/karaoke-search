@@ -1,0 +1,55 @@
+{
+  "cleaning_date": "2025-08-16T20:00:44.186943",
+  "cleaning_stats": {
+    "duplicates_removed": 326,
+    "invalid_entries_removed": 0,
+    "language_tags_corrected": 1139,
+    "company_names_normalized": 0,
+    "song_names_cleaned": 36,
+    "numbers_normalized": 1671
+  },
+  "database_stats_after_cleaning": {
+    "total_singers": 3478,
+    "total_songs": 10672,
+    "language_distribution": {
+      "國": 7241,
+      "台": 2156,
+      "英": 508,
+      "客": 297,
+      "粵": 243,
+      "日": 170,
+      "山": 16,
+      "兒": 15,
+      "韓": 1
+    },
+    "company_distribution": {
+      "金嗓": 5784,
+      "錢櫃": 5527,
+      "音圓": 4206,
+      "好樂迪": 2217,
+      "點將家": 1522,
+      "大唐": 1175,
+      "弘音": 997,
+      "銀櫃": 971,
+      "音影": 883,
+      "金影": 704,
+      "瑞影": 660,
+      "金嗓/家庭": 579,
+      "MV": 439,
+      "星據點": 369,
+      "享溫馨": 337,
+      "嘉揚": 172,
+      "音圓原廠": 166,
+      "音遊": 158,
+      "金嗓/投幣": 98,
+      "美華": 27,
+      "一級棒": 7
+    }
+  },
+  "quality_improvements": {
+    "data_consistency": "Improved through normalization",
+    "duplicate_reduction": "Removed 326 duplicates",
+    "language_coverage": "Added/corrected 1139 language tags",
+    "invalid_data_removal": "Removed 0 invalid entries"
+  }
+}

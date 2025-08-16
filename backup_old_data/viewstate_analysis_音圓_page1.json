@@ -1,0 +1,98 @@
+{
+  "url": "https://song.corp.com.tw/songs.aspx?company=%E9%9F%B3%E5%9C%93&page=1",
+  "company": "音圓",
+  "page": 1,
+  "html_analysis": {
+    "title": "\r\n\t音圓 台語 新歌速遞 台灣點歌王\r\n",
+    "forms_count": 1,
+    "scripts_count": 21,
+    "hidden_inputs_count": 6,
+    "links_count": 79,
+    "song_links_count": 50
+  },
+  "viewstate_analysis": {
+    "__VIEWSTATE": {
+      "exists": true,
+      "value_length": 13276,
+      "value_preview": "bUAHGeoXpYQBF4nA1tt8D780DQ0QNeRoLEiWxYT7voJyr0e71TczzgSdQi1+dkR24RW+4PvDt0Y0/Nz0yYF3wduCKooOJ/6FY9H0..."
+    },
+    "__VIEWSTATEGENERATOR": {
+      "exists": true,
+      "value_length": 8,
+      "value_preview": "735EA74D"
+    },
+    "__EVENTVALIDATION": {
+      "exists": true,
+      "value_length": 92,
+      "value_preview": "gDuYVoFzo2qmPp8gec+M3Rh3Kqh/W6bElTfGn9FVej8V0Acd1ESx5+pZ2agcYpd7yf8L4MaH08EBOWY6SrM0VIkTdRI="
+    },
+    "__EVENTTARGET": {
+      "exists": true,
+      "value_length": 0,
+      "value_preview": ""
+    },
+    "__EVENTARGUMENT": {
+      "exists": true,
+      "value_length": 0,
+      "value_preview": ""
+    },
+    "__LASTFOCUS": {
+      "exists": false
+    },
+    "__SCROLLPOSITIONX": {
+      "exists": false
+    },
+    "__SCROLLPOSITIONY": {
+      "exists": false
+    },
+    "viewstate_decode": {
+      "original_length": 13276,
+      "base64_valid": true,
+      "decoded_length": 9956,
+      "decoded_preview": "b\"m@\\x07\\x19\\xea\\x17\\xa5\\x84\\x01\\x17\\x89\\xc0\\xd6\\xdb|\\x0f\\xbf4\\r\\r\\x105\\xe4h,H\\x96\\xc5\\x84\\xfb\\xbe\\x82r\\xafG\\xbb\\xd573\\xce\\x04\\x9dB-~vDv\\xe1\\x15\\xbe\\xe0\\xfb\\xc3\\xb7F4\\xfc\\xdc\\xf4\\xc9\\x81w\\xc1\\xdb\\x82*\\x8a\\x0e'\\xfe\\x85c\\xd1\\xf4\\xcfAyZ\\x9ak\\xba+\\x80B7\\xe4\\xda\\x82\\xd8m\\x88\\x1b\\x1b\\xee\\xa5\\xacj?\\xaf\\xc1\\x0e%uHY\\xb3\\xe9\\x7f\\x1c\\xa5e7I\\xb7\\x19S\\xe3\\x13\\xe9-}\\xb8\\x0c\\x89.\\x98\\xde%\\xf8\\xd1T\\xca\\x1d\\xbc\\xaeTk\\xc7\\r\\x1dB%\\xbe\\xf5\\x99_\\xff\\xeft\\x07\\x84UW]\\xdaHc\\xb2r\\x7f\\xce08x\\xb1\\xea\\x97\\x84\\xee\\nt\\xfdI\\x8d\\to\\xce\\x11\\xd6\\xf4\\xa0\\xbd\\xa6\\x94\\xa7\\xe7\\xb16]ox\\xa2C\\xde\\x1f\\x89*v=\"",
+      "structure_hints": []
+    }
+  },
+  "form_analysis": {
+    "forms_count": 1,
+    "forms_details": [
+      {
+        "index": 0,
+        "id": "form1",
+        "name": "No name",
+        "method": "POST",
+        "action": "./songs.aspx?company=%u97f3%u5713&page=1",
+        "inputs_count": 7,
+        "hidden_inputs": 6,
+        "buttons_count": 0
+      }
+    ]
+  },
+  "javascript_analysis": {
+    "scripts_count": 21,
+    "postback_functions": [
+      "function __doPostBack(eventTarget, eventArgument) {\r",
+      "function __doPostBack(eventTarget, eventArgument) {\r"
+    ],
+    "pagination_functions": [
+      "Sys.WebForms.PageRequestManager._initialize('ctl00$ctl00$ScriptManager1', 'form1', [], [], [], 90, 'ctl00$ctl00');\r"
+    ],
+    "ajax_patterns": [
+      "if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax 用戶端架構無法載入。');\r"
+    ],
+    "interesting_code": []
+  },
+  "postback_analysis": {
+    "dopostback_function_exists": true,
+    "event_target_field_exists": true,
+    "event_argument_field_exists": true,
+    "possible_targets": [],
+    "form_submit_method": "Unknown"
+  },
+  "pagination_analysis": {
+    "pagination_controls": [],
+    "page_numbers": [],
+    "next_prev_buttons": [],
+    "hidden_pagination": []
+  }
+}

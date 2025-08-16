@@ -1,0 +1,48 @@
+{
+  "singer_name": "游鴻明",
+  "scraped_at": "2025-08-16T23:03:26.742711",
+  "converted_songs": [
+    {
+      "歌名": "輕輕叫出聲",
+      "歌手": "游鴻明",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "點將家",
+          "編號": "18774"
+        },
+        {
+          "公司": "MV",
+          "編號": "18774"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "MV",
+    "點將家"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "點將家",
+      "raw_text": "18774\n輕輕叫出聲\n\r\n                           台\n陳美鳳+游鴻明",
+      "number": "18774",
+      "song_title": "輕輕叫出聲",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=279930",
+      "scraped_at": "2025-08-16T23:02:31.033972"
+    },
+    {
+      "company": "MV",
+      "raw_text": "18774\n輕輕叫出聲\n\r\n                           台\n陳美鳳+游鴻明",
+      "number": "18774",
+      "song_title": "輕輕叫出聲",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=279930",
+      "scraped_at": "2025-08-16T23:02:59.893360"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

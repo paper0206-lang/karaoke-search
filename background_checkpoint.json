@@ -1,0 +1,17 @@
+{
+  "last_updated": "2025-08-17T00:04:08.383388",
+  "processed_singers": [
+    "伍佰"
+  ],
+  "total_processed": 1,
+  "session_stats": {
+    "total_singers": 163,
+    "processed_singers": 1,
+    "successful_singers": 1,
+    "new_songs_added": 0,
+    "updated_singers": 1,
+    "failed_singers": 0,
+    "start_time": "2025-08-17T00:03:42.339251",
+    "current_batch": 0
+  }
+}

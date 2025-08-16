@@ -1,0 +1,84 @@
+{
+  "batch_number": 0,
+  "completed_at": "2025-08-16T21:51:32.048048",
+  "batch_results": [
+    {
+      "singer": "江美琪",
+      "status": "no_data",
+      "benchmark_score": 0.47222222222222215
+    },
+    {
+      "singer": "彭嬿",
+      "status": "no_data",
+      "benchmark_score": 0.4791666666666667
+    },
+    {
+      "singer": "陳雙",
+      "status": "no_data",
+      "benchmark_score": 0.4930555555555555
+    },
+    {
+      "singer": "范瑋琪",
+      "status": "no_data",
+      "benchmark_score": 0.4930555555555555
+    },
+    {
+      "singer": "莊心妍",
+      "status": "processed",
+      "new_songs": 2,
+      "updated_songs": 0,
+      "total_new_songs": 2,
+      "companies_found": 9,
+      "benchmark_before": 0.5,
+      "benchmark_after": 0.6805555555555555,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "金欣文藝部",
+      "status": "no_data",
+      "benchmark_score": 0.5069444444444445
+    },
+    {
+      "singer": "孟庭葦",
+      "status": "processed",
+      "new_songs": 3,
+      "updated_songs": 0,
+      "total_new_songs": 3,
+      "companies_found": 6,
+      "benchmark_before": 0.5138888888888888,
+      "benchmark_after": 0.6597222222222222,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "劉秀喡",
+      "status": "no_data",
+      "benchmark_score": 0.5138888888888888
+    },
+    {
+      "singer": "甄妮",
+      "status": "processed",
+      "new_songs": 5,
+      "updated_songs": 0,
+      "total_new_songs": 5,
+      "companies_found": 4,
+      "benchmark_before": 0.5347222222222222,
+      "benchmark_after": 0.6875,
+      "meets_benchmark_now": false
+    },
+    {
+      "singer": "涂敏恆",
+      "status": "no_data",
+      "benchmark_score": 0.5416666666666666
+    }
+  ],
+  "overall_stats": {
+    "total_singers": 50,
+    "processed_singers": 10,
+    "successful_singers": 3,
+    "new_songs_added": 10,
+    "updated_singers": 3,
+    "failed_singers": 0,
+    "start_time": "2025-08-16T21:39:28.932435",
+    "current_batch": 0
+  }
+}

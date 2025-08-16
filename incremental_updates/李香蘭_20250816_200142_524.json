@@ -1,0 +1,31 @@
+{
+  "singer": "李香蘭",
+  "updated_songs": [
+    {
+      "歌名": "三年",
+      "歌手": "李香蘭",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "MV",
+          "編號": "4064"
+        },
+        {
+          "公司": "MV",
+          "編號": "04064"
+        },
+        {
+          "公司": "MV",
+          "編號": "04064"
+        }
+      ]
+    }
+  ],
+  "stats": {
+    "new_songs": 0,
+    "updated_songs": 1,
+    "companies_added": 2,
+    "language_tags_added": 0,
+    "total_songs": 1
+  }
+}

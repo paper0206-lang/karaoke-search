@@ -1,0 +1,33 @@
+{
+  "singer_name": "許志安",
+  "scraped_at": "2025-08-16T23:49:16.537186",
+  "converted_songs": [
+    {
+      "歌名": "戀愛頻率",
+      "歌手": "許志安",
+      "語言": "國",
+      "編號資訊": [
+        {
+          "公司": "弘音",
+          "編號": "82877"
+        }
+      ]
+    }
+  ],
+  "companies_found": [
+    "弘音"
+  ],
+  "raw_taiwan_data": [
+    {
+      "company": "弘音",
+      "raw_text": "82877\n戀愛頻率\n\r\n                           台\n許志安",
+      "number": "82877",
+      "song_title": "戀愛頻率",
+      "singer_info": "",
+      "language": "國",
+      "url": "mv.aspx?id=3078",
+      "scraped_at": "2025-08-16T23:48:08.127819"
+    }
+  ],
+  "benchmark_applied": "lu_guangzhong_standard"
+}

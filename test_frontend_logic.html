@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>前端搜尋邏輯測試</title>
+</head>
+<body>
+    <h1>前端搜尋邏輯測試</h1>
+    <div id="results"></div>
+
+    <script>
+        async function testSearch() {
+            const resultsDiv = document.getElementById('results');
+            
+            try {
+                console.log('🔍 開始測試資料載入...');
+                
+                // 測試資料載入
+                const songsResponse = await fetch('/songs_simplified.json');
+                const singersResponse = await fetch('/singers_data.json');
+                
+                console.log('Songs response:', songsResponse.status);
+                console.log('Singers response:', singersResponse.status);
+                
+                if (!songsResponse.ok || !singersResponse.ok) {
+                    resultsDiv.innerHTML = `
+                        <p style="color: red;">❌ 資料載入失敗</p>
+                        <p>歌曲資料: ${songsResponse.status}</p>
+                        <p>歌手資料: ${singersResponse.status}</p>
+                    `;
+                    return;
+                }
+                
+                const allSongs = await songsResponse.json();
+                const singersData = await singersResponse.json();
+                
+                console.log('✅ 資料載入成功');
+                console.log('歌曲總數:', allSongs.length);
+                console.log('歌手總數:', Object.keys(singersData).length);
+                
+                // 測試周杰倫搜尋
+                const query = '周杰倫';
+                
+                // 搜尋歌曲資料庫
+                const songResults = allSongs.filter(song => 
+                    song.歌名?.includes(query) || 
+                    song.歌手?.includes(query)
+                );
+                
+                // 檢查歌手資料庫
+                const singerMatch = singersData[query];
+                const singerSongs = singerMatch ? singerMatch.歌曲清單.length : 0;
+                
+                console.log(`🎵 歌曲資料庫搜尋結果: ${songResults.length} 首`);
+                console.log(`🎤 歌手資料庫搜尋結果: ${singerSongs} 首`);
+                
+                resultsDiv.innerHTML = `
+                    <h2>✅ 測試結果</h2>
+                    <p><strong>歌曲總數:</strong> ${allSongs.length.toLocaleString()}</p>
+                    <p><strong>歌手總數:</strong> ${Object.keys(singersData).length.toLocaleString()}</p>
+                    <hr>
+                    <h3>周杰倫搜尋測試</h3>
+                    <p><strong>歌曲資料庫:</strong> ${songResults.length} 首</p>
+                    <p><strong>歌手資料庫:</strong> ${singerSongs} 首</p>
+                    <hr>
+                    <h3>前5首歌曲範例:</h3>
+                    <ul>
+                        ${songResults.slice(0, 5).map(song => 
+                            `<li>${song.歌名} - ${song.歌手} (${song.公司})</li>`
+                        ).join('')}
+                    </ul>
+                `;
+                
+            } catch (error) {
+                console.error('測試失敗:', error);
+                resultsDiv.innerHTML = `
+                    <p style="color: red;">❌ 測試失敗: ${error.message}</p>
+                `;
+            }
+        }
+        
+        // 頁面載入後自動執行測試
+        document.addEventListener('DOMContentLoaded', testSearch);
+    </script>
+</body>
+</html>
