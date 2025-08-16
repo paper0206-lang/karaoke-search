@@ -47,7 +47,9 @@
       "Bash(./stop_optimized_scraper.sh:*)",
       "Bash(./start_4thread_scraper.sh:*)",
       "Bash(sed:*)",
-      "Bash(cat:*)"
+      "Bash(cat:*)",
+      "Bash(./start_singer_multithreaded.sh:*)",
+      "Bash(./check_singer_multithreaded.sh:*)"
     ],
     "deny": []
   }

@@ -1,14 +1,19 @@
 {
-  "singers_processed": 5,
-  "singers_scraped": 5,
+  "singers_processed": 10,
+  "singers_scraped": 10,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T06:51:33.151596",
+  "last_update": "2025-08-17T07:07:11.237120",
   "status": "running",
   "processed_singers": [
     "James",
     "劉琦",
     "王嘯坤",
     "寶·巴特爾",
-    "王麗達"
+    "王麗達",
+    "姜嘉鏘",
+    "無鳴",
+    "黃耀明",
+    "黑龍+雲菲菲",
+    "梁漢文"
   ]
 }
