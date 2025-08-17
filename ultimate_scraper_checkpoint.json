@@ -1,8 +1,8 @@
 {
-  "singers_processed": 20,
-  "singers_scraped": 20,
+  "singers_processed": 25,
+  "singers_scraped": 25,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T08:07:46.341650",
+  "last_update": "2025-08-17T08:52:57.529106",
   "status": "running",
   "processed_singers": [
     "James",
@@ -24,6 +24,11 @@
     "成世昌平",
     "津軽ひろ子",
     "みずき舞",
-    "葵かを里"
+    "葵かを里",
+    "音羽しのぶ",
+    "水前寺清子",
+    "門倉有希",
+    "山本讓二",
+    "山川豊"
   ]
 }
