@@ -1,8 +1,8 @@
 {
-  "singers_processed": 25,
-  "singers_scraped": 25,
+  "singers_processed": 30,
+  "singers_scraped": 30,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T08:52:57.529106",
+  "last_update": "2025-08-17T08:53:46.566144",
   "status": "running",
   "processed_singers": [
     "James",
@@ -29,6 +29,11 @@
     "水前寺清子",
     "門倉有希",
     "山本讓二",
-    "山川豊"
+    "山川豊",
+    "揚揚+CHI JAN",
+    "高進+小沈陽+葉世榮+迪克牛仔",
+    "王孝君+張國政",
+    "張碧雲",
+    "林宗興+九天民俗技藝團"
   ]
 }
