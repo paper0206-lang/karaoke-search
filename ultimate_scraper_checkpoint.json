@@ -1,8 +1,8 @@
 {
-  "singers_processed": 35,
-  "singers_scraped": 35,
+  "singers_processed": 40,
+  "singers_scraped": 40,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T09:38:39.146696",
+  "last_update": "2025-08-17T09:54:06.453780",
   "status": "running",
   "processed_singers": [
     "James",
@@ -39,6 +39,11 @@
     "丁香曉曉",
     "毛寧",
     "程琳",
-    "Y.E.S"
+    "Y.E.S",
+    "舒淇+劉德華",
+    "劉德華+Sharon Cuneta",
+    "庾澄慶+KIMBERLY",
+    "周治平+童安格",
+    "潘瑋柏+蔡娟娟"
   ]
 }
