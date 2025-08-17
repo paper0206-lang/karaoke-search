@@ -1,8 +1,8 @@
 {
-  "singers_processed": 15,
-  "singers_scraped": 15,
+  "singers_processed": 20,
+  "singers_scraped": 20,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T07:52:20.950293",
+  "last_update": "2025-08-17T08:07:46.341650",
   "status": "running",
   "processed_singers": [
     "James",
@@ -19,6 +19,11 @@
     "蔡卓妍",
     "ハイロウズ",
     "Saya+夢飛船",
-    "江銘"
+    "江銘",
+    "田一龍",
+    "成世昌平",
+    "津軽ひろ子",
+    "みずき舞",
+    "葵かを里"
   ]
 }
