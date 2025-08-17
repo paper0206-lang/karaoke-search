@@ -1,8 +1,8 @@
 {
-  "singers_processed": 30,
-  "singers_scraped": 30,
+  "singers_processed": 35,
+  "singers_scraped": 35,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T08:53:46.566144",
+  "last_update": "2025-08-17T09:38:39.146696",
   "status": "running",
   "processed_singers": [
     "James",
@@ -34,6 +34,11 @@
     "高進+小沈陽+葉世榮+迪克牛仔",
     "王孝君+張國政",
     "張碧雲",
-    "林宗興+九天民俗技藝團"
+    "林宗興+九天民俗技藝團",
+    "黃鶴翔+合唱",
+    "丁香曉曉",
+    "毛寧",
+    "程琳",
+    "Y.E.S"
   ]
 }
