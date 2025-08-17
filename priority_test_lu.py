@@ -38,7 +38,8 @@ def scrape_lu_guangzhong_complete():
     all_songs = []
     page = 1
     consecutive_empty = 0
-    max_empty = 3
+    max_empty = 5  # 連續5頁重複就終止
+    seen_songs = set()  # 用於檢測重複
     
     logger.info(f"🎵 開始爬取 {singer_name}")
     start_time = time.time()
@@ -60,44 +61,58 @@ def scrape_lu_guangzhong_complete():
                 
                 if response.status_code == 200:
                     soup = BeautifulSoup(response.text, "html.parser")
-                    song_links = soup.select('a[href^="mv.aspx?id="]')
+                    # 更新HTML選擇器 - 現在歌曲在li標籤中
+                    song_items = soup.select('li[id^="id_"]')
                     
-                    if song_links:
-                        consecutive_empty = 0
+                    if song_items:
                         page_songs = []
                         
-                        for link in song_links:
+                        for item in song_items:
                             try:
-                                raw_text = link.get_text().strip()
-                                lines = raw_text.split('\\n')
+                                # 新的HTML結構
+                                code_div = item.select_one('.code')
+                                name_div = item.select_one('.name') 
+                                lang_div = item.select_one('.lang')
+                                singer_div = item.select_one('.singer')
                                 
-                                if len(lines) >= 2:
-                                    # 基本信息
-                                    line1 = lines[0].strip()  # 通常是編號
-                                    line2 = lines[1].strip()  # 通常是歌名
-                                    line3 = lines[2].strip() if len(lines) > 2 else ""  # 歌手信息
+                                if code_div and name_div and singer_div:
+                                    code = code_div.get_text().strip()
+                                    name = name_div.get_text().strip()
+                                    lang = lang_div.get_text().strip() if lang_div else ""
+                                    singer = singer_div.get_text().strip()
                                     
                                     # 檢查是否真的包含盧廣仲
-                                    if singer_name in raw_text:
-                                        # 解析編號和歌名
-                                        song_data = {
-                                            'raw_line1': line1,
-                                            'raw_line2': line2, 
-                                            'raw_line3': line3,
-                                            'singer': singer_name,
-                                            'page': page,
-                                            'raw_text': raw_text,
-                                            'scraped_at': datetime.now().isoformat()
-                                        }
+                                    if singer_name in singer:
+                                        # 創建唯一標識符用於重複檢測
+                                        song_key = f"{code}_{name}_{lang}"
                                         
-                                        page_songs.append(song_data)
+                                        if song_key not in seen_songs:
+                                            song_data = {
+                                                'code': code,
+                                                'name': name,
+                                                'lang': lang,
+                                                'singer': singer,
+                                                'page': page,
+                                                'scraped_at': datetime.now().isoformat()
+                                            }
+                                            
+                                            page_songs.append(song_data)
+                                            seen_songs.add(song_key)
                                         
                             except Exception as e:
                                 logger.debug(f"解析歌曲失敗: {e}")
                                 continue
                         
-                        all_songs.extend(page_songs)
-                        logger.info(f"   第{page}頁: {len(page_songs)} 首相關歌曲")
+                        if page_songs:
+                            all_songs.extend(page_songs)
+                            consecutive_empty = 0  # 重置計數器
+                            logger.info(f"   第{page}頁: {len(page_songs)} 首新歌曲")
+                        else:
+                            consecutive_empty += 1
+                            logger.info(f"   第{page}頁: 全部重複 ({consecutive_empty}/{max_empty})")
+                            if consecutive_empty >= max_empty:
+                                logger.info(f"🛑 連續{max_empty}頁重複，停止爬取")
+                                break
                         
                     else:
                         consecutive_empty += 1
@@ -137,20 +152,20 @@ def analyze_lu_data(songs_data):
     logger.info(f"📋 資料樣本分析:")
     for i, song in enumerate(songs_data[:5]):
         logger.info(f"   樣本{i+1}:")
-        logger.info(f"     Line1: {song['raw_line1']}")
-        logger.info(f"     Line2: {song['raw_line2']}")
-        logger.info(f"     Line3: {song['raw_line3']}")
-        logger.info(f"     Raw: {song['raw_text'][:100]}...")
+        logger.info(f"     編號: {song['code']}")
+        logger.info(f"     歌名: {song['name']}")
+        logger.info(f"     語言/公司: {song['lang']}")
+        logger.info(f"     歌手: {song['singer']}")
         logger.info("")
     
     # 統計
     total_songs = len(songs_data)
-    unique_line2 = len(set(song['raw_line2'] for song in songs_data))
+    unique_names = len(set(song['name'] for song in songs_data))
     pages_used = len(set(song['page'] for song in songs_data))
     
     logger.info(f"📈 統計結果:")
     logger.info(f"   總條目: {total_songs}")
-    logger.info(f"   獨特歌名: {unique_line2}")
+    logger.info(f"   獨特歌名: {unique_names}")
     logger.info(f"   爬取頁數: {pages_used}")
     logger.info(f"   平均每頁: {total_songs/pages_used:.1f}條")
 
