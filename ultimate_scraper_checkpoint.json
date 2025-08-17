@@ -1,8 +1,8 @@
 {
-  "singers_processed": 45,
-  "singers_scraped": 45,
+  "singers_processed": 50,
+  "singers_scraped": 50,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T10:09:42.053650",
+  "last_update": "2025-08-17T10:39:24.157119",
   "status": "running",
   "processed_singers": [
     "James",
@@ -49,6 +49,11 @@
     "PRISCILLA AHN+蘇打綠",
     "張靚穎+周延",
     "黃明志+玖壹壹",
-    "梅艷芳+譚詠麟"
+    "梅艷芳+譚詠麟",
+    "蕭亞軒+黃立行",
+    "順子+蕭亞軒",
+    "SD5行堂+容祖兒",
+    "張敬軒+容祖兒",
+    "馮德倫+謝霆鋒"
   ]
 }
