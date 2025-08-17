@@ -1,8 +1,8 @@
 {
-  "singers_processed": 40,
-  "singers_scraped": 40,
+  "singers_processed": 45,
+  "singers_scraped": 45,
   "singers_skipped": 0,
-  "last_update": "2025-08-17T09:54:06.453780",
+  "last_update": "2025-08-17T10:09:42.053650",
   "status": "running",
   "processed_singers": [
     "James",
@@ -44,6 +44,11 @@
     "劉德華+Sharon Cuneta",
     "庾澄慶+KIMBERLY",
     "周治平+童安格",
-    "潘瑋柏+蔡娟娟"
+    "潘瑋柏+蔡娟娟",
+    "蘇打綠+priscilla ahn",
+    "PRISCILLA AHN+蘇打綠",
+    "張靚穎+周延",
+    "黃明志+玖壹壹",
+    "梅艷芳+譚詠麟"
   ]
 }
